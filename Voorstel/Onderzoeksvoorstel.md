@@ -41,20 +41,20 @@ IPAM laat toe IP adressen efficiënt te beheren in een netwerk, het geeft een ge
 
 ## 3. Probleemstelling
 Deze bachelorproef zal uitgevoerd worden bij Universiteit Gent (UGent) dienst ICT. Momenteel werkt UGent met scripts die op basis van zo genaamde subnetbestanden de nodige acties uitvoeren op de DHCP en DNS servers. 
-Deze subnetbestanden stellen elk 1 subnet voor en beschrijven cruciale informatie zoals DNS servers, welk *Virtual Local Area Network* (VLAN) nummer, gateway, etc. Hiernaast bevatten deze ook alle beschikbare, vrije, IP adressen als alle gereserveerde adressen met daarbij eventueel enkele regels voor DNS en beveiliging.
+Deze subnetbestanden stellen elk 1 subnet voor en beschrijven cruciale informatie zoals DNS servers, welk *Virtual Local Area Network* (VLAN) nummer, gateway, etc. Hiernaast bevatten deze ook alle beschikbare, vrije IP adressen, als alle gereserveerde adressen met daarbij eventueel enkele regels voor DNS en beveiliging.
 Voor elke IP reservatie die moet gebeuren krijgt het netwerk team van interne UGent personeel een mail met daarin de nodige hostinformatie die ze in het daarvoor bestemde subnetbestand plakken. Indien hier nog extra DNS of beveiligingsregels bij horen, moet de netwerkbeheerder deze er zelf nog bijschrijven.
 Het overzicht van de beschikbare IP ranges is beschreven in een intern wikipediapagina met daarbij de beschrijving van elke range. Deze brengt meerdere uitdagingen met zich mee:
 - **Tijd**: Het onderhouden van de scripts, subnetbestanden, IP reservaties (maken en opkuisen) kan veel tijd vragen.
 - **Schaalbaarheid**: Er is weinig historische data waardoor men moeilijk trends kan herkennen, ook wikipedia pagina's moet men manueel bijwerken bij wijzigingen.
 - **Consistentie**: De huidige aanpak vraagt meerdere manuele acties wat vatbaar is voor menselijke fouten of vergissingen.  
-- **Beveiliging**: Ook hier heeft het gebrek aan historische data impact.
+- **Beveiliging**: Ook hier heeft het gebrek aan historische data impact. **deze uitdaging snap i kniet**
 
-UGent is stappen aan het ondernemen voor het implementeren van Efficiënt IP (EIP), een IPAM-softwarepakket, in hun opzet. Dankzij deze implementatie is de verwachting dat de hierboven beschreven indicatoren zullen verbeteren.
+UGent is momenteel stappen aan het ondernemen voor het implementeren van Efficiënt IP (EIP), een IPAM-softwarepakket, in hun opzet. Dankzij deze implementatie is de verwachting dat de hierboven beschreven indicatoren zullen verbeteren.
 
 ## 4. Doelstelling van de Bachelorproef
 Deze bachelorproef zal een abstractielaag maken boven EIP waarbij python scripts via de *application programming interface* (API) van EIP commando's zullen uitvoeren op EIP.
-Door de omvang van het EIP-project is het niet haalbaar om UGent volledig over te zetten op de werking van EIP. Aangezien dit kritische componenten zijn zal alles eerst uitvoerig getest worden waarbij elke stap wel overwogen is.
-Daarom stel ik als doel om een eerste versie op te leveren van een webportaal waarop men reeds meerdere IP reservaties kan aanmaken, wijzigen of verwijderen. Netwerkbeheerders zullen op deze eerste versie de mogelijkheid hebben om een overzicht te krijgen van alle openstaande aanvragen en deze al dan niet goed te keuren.
+Door de omvang van het EIP-project is het niet haalbaar om UGent volledig over te zetten op de werking van EIP. Aangezien dit kritische componenten zijn, zal alles eerst uitvoerig getest worden waarbij elke stap wel overwogen is. **Deze laatste zin snap ik niet. Is dat chatgtp?**
+Daarom stel ik als doel om een eerste versie op te leveren van een webportaal waarop men reeds meerdere IP reservaties kan aanmaken, wijzigen of verwijderen. Netwerkbeheerders zullen in deze eerste versie de mogelijkheid hebben om een overzicht te krijgen van alle openstaande aanvragen en deze al dan niet goed te keuren.
 
 ## 5. Methodiek
 Binnen UGent zijn er reeds eerste stappen ondernomen voor het implementeren van EIP, deze stappen zijn:
@@ -65,13 +65,13 @@ Binnen UGent zijn er reeds eerste stappen ondernomen voor het implementeren van 
    - Uitlezen van EIP en maken van UGent Subnet bestanden.
 
 ### 5.1 Gebruikte software
-De scripts voor deze bachelorproef zijn geschreven in **Python3** via **Visual studio code**. Voor het testen van de API methodes wordt gebruik gemaakt van **Postman**.
+De scripts voor deze bachelorproef zijn (**worden?)** geschreven in **Python3** via **Visual studio code**. Voor het testen van de API methodes wordt gebruik gemaakt van **Postman**.
 
 ### 5.2 Methodiek scripts
-Voordat een script wordt geschreven worden eerst testen gedaan via Postman en het webportaal van EIP. Hierbij worden de API methodes getest, eens deze testen succesvol zijn wordt er overgegaan tot het implementeren van de API methode in python scripts.
+Voordat een script wordt geschreven, worden eerst testen gedaan via Postman en het webportaal van EIP. Hierbij worden de API methodes getest. Eens deze testen succesvol zijn, wordt er overgegaan tot het implementeren van de API methode in Python scripts.
 
-### 5.3 Tijdlijn Bachelorproef
-Voor het uitvoeren van de bachelorproef is er eerst een literatuurstudie waarbij gericht gezocht zal worden op gelijkaardige implementaties van webapplicaties die via scripts samenwerken met API's van toepassingen. 
+### 5.3 Tijdslijn Bachelorproef
+Voor het uitvoeren van de bachelorproef wordt er eerst een literatuurstudie uitgevoerd waarbij gericht gezocht zal worden naar gelijkaardige implementaties van webapplicaties die via scripts samenwerken met API's van toepassingen. 
 
 ```mermaid
 gantt
