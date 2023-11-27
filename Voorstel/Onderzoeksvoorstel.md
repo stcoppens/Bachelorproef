@@ -23,32 +23,37 @@ DNS voorziet meerdere types resource records die netwerkbeheerders kunnen meegev
     - NS: Dit is een *name server* record, het beschrijft welke DNS servers verantwoordleijk zijn voor het beheren van DNS informatie voor een domein. Vb. "voorbeeld.com IN NS dns1.voorbeeld.com" verwijst naar dns1 als DNS server voor het domein voorbeeld.com.
     - PTR: Dit is een *Pointer* record, het wordt gebruikt om via IP een vertaling te vragen aan de DNS server in plaats van via de naam.
     - SOA: Dit is een *Start of Authority* record die belangrijke informatie bevat over de zone, zoals welke de primaire DNS server, contactpersonen, etc.
+[RFC1034](https://www.rfc-editor.org/rfc/rfc1034)
 
 #### 2.1.2 DHCP
 IP netwerken worden door netwerkbeheerders op een logische manier opgesplitst in subnetwerken. Hierbij worden de beschikbare IP adressen verdeelt in sub-netwerken (subnet). Toestellen binnen subnet A zullen elkaar kunnen bereiken terwijl een toestel in een subnet B zonder de nodige routering geen verbinding zal kunnen maken met de toestellen in subnet A.
-Voor DHCP zullen netwerkbeheerders subnets (of pools van IP adressen) aanbieden aan de DHCP server die (onder andere) deze IP adressen zal uitdelen aan nieuwe toestellen die verbinden op het netwerk en de DHCP server laten weten dat ze nog geen IP adres hebben.
+Voor DHCP zullen netwerkbeheerders subnets (of pools van IP adressen) aanbieden aan de DHCP server. De DHCP server uit deze pools (onder andere) IP adressen uitdelen aan toestellen die verbinden op het netwerk en daarbij de DHCP server laten weten dat ze nog geen IP adres hebben.
 DHCP beschrijft 3 mechanismes voor het uitdelen van IP adressen:
     - Automatisch toewijzen: Permanent toewijzen van een IP adres.
     - Dynamisch toewijzen: IP adres voor een bepaalde tijd toewijzen.
-    - Manueel toewijzen: Een (door de netwerkbeheerd) vooraf bepaald IP adres toewijzen[RFC2131](https://datatracker.ietf.org/doc/html/rfc2131).
+    - Manueel toewijzen: Een (door de netwerkbeheerder) vooraf bepaald IP adres toewijzen, in vakjargon noemt met dit een IP reservatie.
+[RFC2131](https://datatracker.ietf.org/doc/html/rfc2131)
 
 #### 2.2 IPAM
-Naast de vele uitdagingen die zowel DNS als DHCP met zich meebrengen is het beheren van  meerdere uitdagingen, waarbij de administratie een vrij grote is. 
+Naast de vele uitdagingen die zowel DNS als DHCP met zich meebrengen is het beheren van de vele DNS records, IP adres ranges en de vaak vele IP reservaties zeker iets waar een netwerkbeheerder over moet waken. 
+Een mogelijke oplossing hiervoor is het gebruiken van IP Address Management (IPAM), IPAM laat toe het beheer van deze middelen te automatiseren.
 
-Dat brengt enkele uitdagingen met zich mee waarvan een van de grootste het beheer is van de beschikbare en gereserveerde IP adressen.
-Een oplossing daarvoor is het gebruik van IP Address Management (IPAM), die geeft de optie het te automatiseren.
-**Is de eerste keer dat je UGent aanhaalt denk ik. Je zal dit eerst even moeten kaderen dat je jouw onderzoek uitvoert binnen UGent.** Momenteel gebruikt UGent een systeem waarbij ze alle IP reservaties en alle vrije IP adressen registeren in meerdere bestanden met daarin nog een hele hoop belangrijke informatie **(concretiseren, zoals bijvoorbeeld....')**.
-We gaan naar een IPAM tool migreren, ik heb daar ondertussen al enkele scripts voor geschreven om de migratie te vergemakkelijken en tussenstadia te overbruggen.
-Daarnaast is nog belangrijk om te weten dat API een interface is waarop software kan communiceren met andere software.
-Het doel is om volledig op die IPAM tool te zitten, wat mijn doel is voor men bachelorproef;
-Ik wil een webportaal maken die meerdere scripts activeren die ik zou schrijven in men BP. 
-Die scripts communiceren dan met de API van de IPAM tool en doen het nodige om op een vrij automatische, uniforme manier het netwerk te beheren. 
-Uiteindelijk is het de bedoeling dat bijna niemand nog in het IPAM tool zou moeten komen.
-Inleiding
-- DNS
-- DACP
-- IPAM
-- Uitdagingen als netwerkbeheerder (belang benadrukken zoals je eerder hebt gedaan, maar nog meer kak rond hangen)
+## 3. Probleemstelling
+Deze bachelorproef zal plaatsvinden bij Universiteit Gent waarbij de omschakeling naar IPAM gemaakt zal worden. Momenteel werkt UGent met scripts die op basis van zo genaamde subnetbestanden de nodige acties uitvoeren op de DHCP en DNS servers.
+Deze subnetbestanden stellen elk 1 subnet voor en beschrijven cruciale informatie zoals DNS servers, welk *Virtual Local Area Network* (VLAN) nummer, gateway, etc. Hiernaast bevatten deze ook alle beschikbare, vrije, IP adressen als alle gereserveerde adressen met daarbij eventueel enkele regels voor DNS en beveiliging.
+Voor elke IP reservatie die moet gebeuren krijgt het netwerk team van interne UGent personeel een mail met daarin de nodige hostinformatie die ze in het daarvoor bestemde subnetbestand plakken. Indien hier nog extra DNS of beveiligingsregels bij horen moet de netwerkbeheerder deze er zelf nog bijschrijven.
+Het overzicht van de beschikbare IP ranges is beschreven in een intern wikipediapagina met daarbij de beschrijving van elke range.
+
+## 4. Doelstelling van de Bachelorproef
+Universiteit Gent is stappen aan het ondernemen voor het implementeren van Efficiënt IP (EP), een IPAM-softwarepakket, in hun opzet.
+Deze bachelorproef zal een abstractielaag maken boven EP waarbij python scripts via de API van EP commando's zullen uitvoeren op EP.
+Op deze manier kunnen bijvoorbeeld de aanvragers van IP reservaties zelf alle nodige informatie ingeven via een webportaal die de abstractielaag zal aansturen.
+De netwerkbeheerders zullen deze aanvragen dan in een overzicht kunnen nakijken en al dan niet goedkeuren.
+Deze abstractielaag en het implementeren van IPAM heeft meerdere voordelen zoals tijdbesparing, schaalbaarheid van het netwerk, consistentie van IP gegevens, terugvinden van wijzigingen en andere.
+
+## 5. Methode
+
+
 
 Doelstelling van de BP
 - UGent als voorbeeld waar bovengeschreven uitdagingen zichtbaar zijn
@@ -109,7 +114,7 @@ Inleiding
 - DNS
 - DACP
 - IPAM
-- Uitdagingen als netwerkbeheerder (belang benadrukken zoals je eerder hebt gedaan, maar nog meer kak rond hangen)
+- Uitdagingen als netwerkbeheerder (belang benadrukken zoals je eerder hebt gedaan, maar nog meer  rond hangen)
 
 Doelstelling van de BP
 - UGent als voorbeeld waar bovengeschreven uitdagingen zichtbaar zijn
