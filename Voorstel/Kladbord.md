@@ -54,15 +54,38 @@ waarbij de focus ligt op het opleveren van een eerste versie van het webportaal 
 ## Nuttige info:
 Belangrijk om te weten:
 Er zijn 2 kritische protocols binnen netwerkbeheer: 
-- DNS (woordenboekservice die vertaling doet van domeinnaam naar IP adres (google.be <> 8.8.8.8)
+- DNS **alle afkortingen nog uitschrijven** (woordenboekservice die vertaling doet van domeinnaam naar IP adres (google.be <> 8.8.8.8)
 - DHCP (automatisch uitdelen van beschikbare IP adressen aan hosts binnen het domein)
 Hosts kunnen IP adressen reserveren in DHCP en daarbij ook een alias (DNS Record) krijgen.
 Dat brengt enkele uitdagingen met zich mee waarvan een van de grootste het beheer is van de beschikbare en gereserveerde IP adressen.
 Een oplossing daarvoor is het gebruik van IPAM, IP address mgmt, die geeft de optie het te automatiseren.
-Momenteel gebruikt UGent een systeem waarbij ze alle IP reservaties en alle vrije IP adressen registeren in meerdere bestanden met daarin nog een hele hoop belangrijke informatie.
-We gaan naar een IPAM tool migreren, ik heb daar ondertussen al enkele scripts voor geschreven voor de migratie te vergemakkelijken en tussenstadia te overbruggen.
+** Is de eerste keer dat je UGent aanhaalt denk ik. Je zal dit eerst even moeten kaderen dat je jouw onderzoek uitvoert binnen UGent.** Momenteel gebruikt UGent een systeem waarbij ze alle IP reservaties en alle vrije IP adressen registeren in meerdere bestanden met daarin nog een hele hoop belangrijke informatie **(concretiseren, zoals bijvoorbeeld....')**.
+We gaan naar een IPAM tool migreren, ik heb daar ondertussen al enkele scripts voor geschreven om de migratie te vergemakkelijken en tussenstadia te overbruggen.
 Daarnaast is nog belangrijk om te weten dat API een interface is waarop software kan communiceren met andere software.
 Het doel is om volledig op die IPAM tool te zitten, wat mijn doel is voor men bachelorproef;
 Ik wil een webportaal maken die meerdere scripts activeren die ik zou schrijven in men BP. 
 Die scripts communiceren dan met de API van de IPAM tool en doen het nodige om op een vrij automatische, uniforme manier het netwerk te beheren. 
 Uiteindelijk is het de bedoeling dat bijna niemand nog in het IPAM tool zou moeten komen.
+
+## Nota's Lien
+
+Inleiding
+- DNS
+- DACP
+- IPAM
+- Uitdagingen als netwerkbeheerder (belang benadrukken zoals je eerder hebt gedaan, maar nog meer kak rond hangen)
+
+Doelstelling van de BP
+- UGent als voorbeeld waar bovengeschreven uitdagingen zichtbaar zijn
+- Context/uitvoeringsplaats van de BP in UGent -> beschrijven van de IPAM tool van UGent
+- Zo toewerken naar je doel: scripts ontwikkelen
+
+Methode
+- tools beschrijven
+- stappen:
+-   0) selectie onderdelen van de IPAM die geautomatiseerd zullen worden
+    1) ontwikkelen van de scripts
+    2) Evaluatie/validatie/whatever fancy term dat je eraan wilt geven: testing en foutjes opsporen
+ 
+Eventueel nog figuur van die drie lagen, dat je ook visueel ziet waar jouw rol zit (die scripts in Python)
+  
