@@ -8,7 +8,7 @@ Deze abstractielaag maakt interactie met de IPAM-tool mogelijk via Python-script
 Het doel is om de complexiteit van het handmatig beheren van netwerkconfiguraties, inclusief IP-adresallocatie, te verminderen, waardoor efficiëntie en gebruiksvriendelijkheid worden verbeterd.
 
 ## 2. Inleiding
-Internet Protocol (IP) is het fundament van elk gestructureerd, goed functionerend en veilig netwerk. Het geeft de mogelijkheid efficiënt gegevens te routeren, netwerken te verdelen in meer beheersbare eenheden, toegang te beperken tot gevoelige data of systemen, services te identificeren en het oplossen van netwerkproblemen [RFC791](https://www.rfc-editor.org/rfc/rfc791). Dit hoofdstuk legt via DNS en DHCP de basis van uit voor het beheren van IP netwerken. 
+Internet Protocol (IP) is het fundament van elk gestructureerd, goed functionerend en veilig netwerk. IP is een set regels en procedures die apparaten op netwerken adresseert met unieke numerieke identificaties. Dit geeft de mogelijkheid efficiënt gegevens te routeren, netwerken te verdelen in meer beheersbare eenheden, toegang te beperken tot gevoelige data of systemen, services te identificeren en het oplossen van netwerkproblemen [RFC791](https://www.rfc-editor.org/rfc/rfc791). Dit hoofdstuk legt via DNS en DHCP de basis van uit voor het beheren van IP netwerken. 
 
 ### 2.1 Veelgebruikte protocols
 Binnen het domein van IT Netwerkbeheer zijn er twee kritische protocols: 
@@ -53,7 +53,7 @@ UGent is momenteel stappen aan het ondernemen voor het implementeren van Effici�
 
 ## 4. Doelstelling van de Bachelorproef
 Deze bachelorproef zal een abstractielaag maken boven EIP waarbij python scripts via de *application programming interface* (API) van EIP commando's zullen uitvoeren op EIP.
-Door de omvang van het EIP-project is het niet haalbaar om UGent volledig over te zetten op de werking van EIP. Aangezien dit kritische componenten zijn, zal alles eerst uitvoerig getest worden waarbij elke stap wel overwogen is. **Deze laatste zin snap ik niet. Is dat chatgtp?**
+Door de omvang van het EIP-project is het niet haalbaar om UGent volledig over te zetten op de werking van EIP. Aangezien dit kritische componenten zijn, zal elke stap in de migratie naar EIP eerst uitvoerig getest worden voordat deze in productie gaat.
 Daarom stel ik als doel om een eerste versie op te leveren van een webportaal waarop men reeds meerdere IP reservaties kan aanmaken, wijzigen of verwijderen. Netwerkbeheerders zullen in deze eerste versie de mogelijkheid hebben om een overzicht te krijgen van alle openstaande aanvragen en deze al dan niet goed te keuren.
 
 ## 5. Methodiek
