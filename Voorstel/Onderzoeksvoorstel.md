@@ -47,7 +47,7 @@ Het overzicht van de beschikbare IP ranges is beschreven in een intern wikipedia
 - **Tijd**: Het onderhouden van de scripts, subnetbestanden, IP reservaties (maken en opkuisen) kan veel tijd vragen.
 - **Schaalbaarheid**: Er is weinig historische data waardoor men moeilijk trends kan herkennen, ook wikipedia pagina's moet men manueel bijwerken bij wijzigingen.
 - **Consistentie**: De huidige aanpak vraagt meerdere manuele acties wat vatbaar is voor menselijke fouten of vergissingen.  
-- **Beveiliging**: Ook hier heeft het gebrek aan historische data impact. **deze uitdaging snap i kniet**
+- **Beveiliging**: Het bewaren van alle IP- en subnetgegevens in ongecrypteerde bestanden vergroot de kans dat ongeautoriseerde personen toegang krijgen tot deze informatie, wat kan leiden tot privacyrisico's en mogelijke misbruik. 
 
 UGent is momenteel stappen aan het ondernemen voor het implementeren van Efficiënt IP (EIP), een IPAM-softwarepakket, in hun opzet. Dankzij deze implementatie is de verwachting dat de hierboven beschreven indicatoren zullen verbeteren.
 
