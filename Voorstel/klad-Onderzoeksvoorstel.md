@@ -79,14 +79,19 @@ gantt
     dateFormat YYYY-MM-DD
     section Literatuurstudie
         Literatuur zoeken: a1, 2024-03-01, 5d
-        Literatuurstudie schrijven: after a1, 17d
+        Literatuurstudie schrijven: after a1, 9d
     section Scripts
-        Selectie functies: b1,2024-03-15, 12d
-        Uitschrijven scripts: b2, after b1, 2024-05-01
-        Testing scripts: after b2, 15d
+        Schrijven script "IP reservatie maken": b1,2024-03-15, 1w
+        Script testen: b2, after b1, 1w
+        Schrijven script "IP reservatie wijzigen": b3, after b2, 1w
+        Script testen: b4, after b3, 1w
+        Schrijven script "IP reservatie verwijderen": b5, after b4, 1w
+        Script testen: after b5, 1w
+    section Webpagina
+        Schrijven hoofdpagina: c1, 2024-04-01, 3w
+        Schrijven netadmin pagina: after c1, 3w
     section Scriptie
-        Bijhouden notities: c1, 2024-03-06, 2024-05-10
-        Schrijven scriptie: after c1, 2024-05-24
+        Schrijven scriptie: 2024-05-10, 2024-05-24
 ```
 
 ## 6. Conclusie

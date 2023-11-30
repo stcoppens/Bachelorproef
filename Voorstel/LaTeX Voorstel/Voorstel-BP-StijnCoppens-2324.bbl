@@ -1,0 +1,337 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{apa/apasortcite//global/global}
+    \entry{Droms1997}{report}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ba62d9eef469b585eaed0db8dc553db7}{%
+           family={Droms},
+           familyi={D\bibinitperiod},
+           given={Ralph},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {RFC Editor}%
+      }
+      \strng{namehash}{ba62d9eef469b585eaed0db8dc553db7}
+      \strng{fullhash}{ba62d9eef469b585eaed0db8dc553db7}
+      \strng{bibnamehash}{ba62d9eef469b585eaed0db8dc553db7}
+      \strng{authorbibnamehash}{ba62d9eef469b585eaed0db8dc553db7}
+      \strng{authornamehash}{ba62d9eef469b585eaed0db8dc553db7}
+      \strng{authorfullhash}{ba62d9eef469b585eaed0db8dc553db7}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Dynamic Host Configuration Protocol}
+      \field{type}{techreport}
+      \field{year}{1997}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.17487/RFC2131
+      \endverb
+      \verb{urlraw}
+      \verb https://www.rfc-editor.org/info/rfc2131
+      \endverb
+      \verb{url}
+      \verb https://www.rfc-editor.org/info/rfc2131
+      \endverb
+    \endentry
+    \entry{Mockapetris1987}{report}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a44b90ef653ba684badd93d3f7acb017}{%
+           family={Mockapetris},
+           familyi={M\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a44b90ef653ba684badd93d3f7acb017}
+      \strng{fullhash}{a44b90ef653ba684badd93d3f7acb017}
+      \strng{bibnamehash}{a44b90ef653ba684badd93d3f7acb017}
+      \strng{authorbibnamehash}{a44b90ef653ba684badd93d3f7acb017}
+      \strng{authornamehash}{a44b90ef653ba684badd93d3f7acb017}
+      \strng{authorfullhash}{a44b90ef653ba684badd93d3f7acb017}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Domain names-concepts and facilities}
+      \field{type}{techreport}
+      \field{year}{1987}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.17487/RFC1034
+      \endverb
+      \verb{urlraw}
+      \verb https://www.rfc-editor.org/info/rfc1034
+      \endverb
+      \verb{url}
+      \verb https://www.rfc-editor.org/info/rfc1034
+      \endverb
+    \endentry
+    \entry{Postel1981}{report}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=02b8dba2b9241ee3cbe59775cce0328d}{%
+           family={Postel},
+           familyi={P\bibinitperiod},
+           given={Jon},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{02b8dba2b9241ee3cbe59775cce0328d}
+      \strng{fullhash}{02b8dba2b9241ee3cbe59775cce0328d}
+      \strng{bibnamehash}{02b8dba2b9241ee3cbe59775cce0328d}
+      \strng{authorbibnamehash}{02b8dba2b9241ee3cbe59775cce0328d}
+      \strng{authornamehash}{02b8dba2b9241ee3cbe59775cce0328d}
+      \strng{authorfullhash}{02b8dba2b9241ee3cbe59775cce0328d}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Internet protocol}
+      \field{type}{techreport}
+      \field{year}{1981}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.17487/RFC0791
+      \endverb
+      \verb{urlraw}
+      \verb https://www.rfc-editor.org/rfc/rfc791
+      \endverb
+      \verb{url}
+      \verb https://www.rfc-editor.org/rfc/rfc791
+      \endverb
+    \endentry
+    \entry{Rooney2020}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=14d5149928cc79d27b83a5750cf5a356}{%
+           family={Rooney},
+           familyi={R\bibinitperiod},
+           given={Timothy},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5b723712daa40d9cef27dc77046fd0d6}{%
+           family={Dooley},
+           familyi={D\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley \& Sons}%
+      }
+      \strng{namehash}{bbf32990123cc110daefb6d4033f7ad2}
+      \strng{fullhash}{bbf32990123cc110daefb6d4033f7ad2}
+      \strng{bibnamehash}{bbf32990123cc110daefb6d4033f7ad2}
+      \strng{authorbibnamehash}{bbf32990123cc110daefb6d4033f7ad2}
+      \strng{authornamehash}{bbf32990123cc110daefb6d4033f7ad2}
+      \strng{authorfullhash}{bbf32990123cc110daefb6d4033f7ad2}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{IP Address Management}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.1002/9781119692263
+      \endverb
+      \verb{urlraw}
+      \verb https://books.google.com/books?hl=en&lr=&id=rE0PEAAAQBAJ&oi=fnd&pg=PP1&dq=ip+address+management&ots=tAZF_0cNKd&sig=S1A-IQS4P0hJ0MCpkv6TLex3SBc
+      \endverb
+      \verb{url}
+      \verb https://books.google.com/books?hl=en&lr=&id=rE0PEAAAQBAJ&oi=fnd&pg=PP1&dq=ip+address+management&ots=tAZF_0cNKd&sig=S1A-IQS4P0hJ0MCpkv6TLex3SBc
+      \endverb
+    \endentry
+  \enddatalist
+  \datalist[entry]{apa/global//global/global}
+    \entry{Droms1997}{report}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ba62d9eef469b585eaed0db8dc553db7}{%
+           family={Droms},
+           familyi={D\bibinitperiod},
+           given={Ralph},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {RFC Editor}%
+      }
+      \strng{namehash}{ba62d9eef469b585eaed0db8dc553db7}
+      \strng{fullhash}{ba62d9eef469b585eaed0db8dc553db7}
+      \strng{bibnamehash}{ba62d9eef469b585eaed0db8dc553db7}
+      \strng{authorbibnamehash}{ba62d9eef469b585eaed0db8dc553db7}
+      \strng{authornamehash}{ba62d9eef469b585eaed0db8dc553db7}
+      \strng{authorfullhash}{ba62d9eef469b585eaed0db8dc553db7}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Dynamic Host Configuration Protocol}
+      \field{type}{techreport}
+      \field{year}{1997}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.17487/RFC2131
+      \endverb
+      \verb{urlraw}
+      \verb https://www.rfc-editor.org/info/rfc2131
+      \endverb
+      \verb{url}
+      \verb https://www.rfc-editor.org/info/rfc2131
+      \endverb
+    \endentry
+    \entry{Mockapetris1987}{report}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a44b90ef653ba684badd93d3f7acb017}{%
+           family={Mockapetris},
+           familyi={M\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a44b90ef653ba684badd93d3f7acb017}
+      \strng{fullhash}{a44b90ef653ba684badd93d3f7acb017}
+      \strng{bibnamehash}{a44b90ef653ba684badd93d3f7acb017}
+      \strng{authorbibnamehash}{a44b90ef653ba684badd93d3f7acb017}
+      \strng{authornamehash}{a44b90ef653ba684badd93d3f7acb017}
+      \strng{authorfullhash}{a44b90ef653ba684badd93d3f7acb017}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Domain names-concepts and facilities}
+      \field{type}{techreport}
+      \field{year}{1987}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.17487/RFC1034
+      \endverb
+      \verb{urlraw}
+      \verb https://www.rfc-editor.org/info/rfc1034
+      \endverb
+      \verb{url}
+      \verb https://www.rfc-editor.org/info/rfc1034
+      \endverb
+    \endentry
+    \entry{Postel1981}{report}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=02b8dba2b9241ee3cbe59775cce0328d}{%
+           family={Postel},
+           familyi={P\bibinitperiod},
+           given={Jon},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{02b8dba2b9241ee3cbe59775cce0328d}
+      \strng{fullhash}{02b8dba2b9241ee3cbe59775cce0328d}
+      \strng{bibnamehash}{02b8dba2b9241ee3cbe59775cce0328d}
+      \strng{authorbibnamehash}{02b8dba2b9241ee3cbe59775cce0328d}
+      \strng{authornamehash}{02b8dba2b9241ee3cbe59775cce0328d}
+      \strng{authorfullhash}{02b8dba2b9241ee3cbe59775cce0328d}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Internet protocol}
+      \field{type}{techreport}
+      \field{year}{1981}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.17487/RFC0791
+      \endverb
+      \verb{urlraw}
+      \verb https://www.rfc-editor.org/rfc/rfc791
+      \endverb
+      \verb{url}
+      \verb https://www.rfc-editor.org/rfc/rfc791
+      \endverb
+    \endentry
+    \entry{Rooney2020}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=14d5149928cc79d27b83a5750cf5a356}{%
+           family={Rooney},
+           familyi={R\bibinitperiod},
+           given={Timothy},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5b723712daa40d9cef27dc77046fd0d6}{%
+           family={Dooley},
+           familyi={D\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley \& Sons}%
+      }
+      \strng{namehash}{bbf32990123cc110daefb6d4033f7ad2}
+      \strng{fullhash}{bbf32990123cc110daefb6d4033f7ad2}
+      \strng{bibnamehash}{bbf32990123cc110daefb6d4033f7ad2}
+      \strng{authorbibnamehash}{bbf32990123cc110daefb6d4033f7ad2}
+      \strng{authornamehash}{bbf32990123cc110daefb6d4033f7ad2}
+      \strng{authorfullhash}{bbf32990123cc110daefb6d4033f7ad2}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{IP Address Management}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.1002/9781119692263
+      \endverb
+      \verb{urlraw}
+      \verb https://books.google.com/books?hl=en&lr=&id=rE0PEAAAQBAJ&oi=fnd&pg=PP1&dq=ip+address+management&ots=tAZF_0cNKd&sig=S1A-IQS4P0hJ0MCpkv6TLex3SBc
+      \endverb
+      \verb{url}
+      \verb https://books.google.com/books?hl=en&lr=&id=rE0PEAAAQBAJ&oi=fnd&pg=PP1&dq=ip+address+management&ots=tAZF_0cNKd&sig=S1A-IQS4P0hJ0MCpkv6TLex3SBc
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
