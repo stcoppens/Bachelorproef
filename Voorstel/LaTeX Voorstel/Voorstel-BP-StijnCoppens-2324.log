@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.4.22)  30 NOV 2023 22:34
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.4.22)  2 DEC 2023 16:08
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1461,19 +1461,19 @@ Package hyperref Info: Link coloring ON on input line 43.
 \openout4 = `Voorstel-BP-StijnCoppens-2324.out'.
 
 LaTeX Font Info:    Font shape `TU/FiraMath(2)/m/n' will be
-(Font)              scaled to size 9.00096pt on input line 55.
+(Font)              scaled to size 9.00096pt on input line 51.
 LaTeX Font Info:    Font shape `TU/FiraMath(2)/m/n' will be
-(Font)              scaled to size 6.00064pt on input line 55.
+(Font)              scaled to size 6.00064pt on input line 51.
 LaTeX Font Info:    Font shape `TU/FiraMath(2)/m/n' will be
-(Font)              scaled to size 5.00053pt on input line 55.
+(Font)              scaled to size 5.00053pt on input line 51.
 LaTeX Font Info:    Font shape `TU/FiraMath(3)/m/n' will be
-(Font)              scaled to size 8.99904pt on input line 55.
+(Font)              scaled to size 8.99904pt on input line 51.
 LaTeX Font Info:    Font shape `TU/FiraMath(3)/m/n' will be
-(Font)              scaled to size 5.99936pt on input line 55.
+(Font)              scaled to size 5.99936pt on input line 51.
 LaTeX Font Info:    Font shape `TU/FiraMath(3)/m/n' will be
-(Font)              scaled to size 4.99947pt on input line 55.
+(Font)              scaled to size 4.99947pt on input line 51.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 55.
+ mdframed uses option nobreak mdframed on input line 51.
 
 (./Voorstel-BP-StijnCoppens-2324.toc)
 \tf@toc=\write5
@@ -1485,28 +1485,34 @@ File: ./img//HOGENT_Logo_Pos_rgb.png Graphic file (type bmp)
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 89--92
+Underfull \hbox (badness 10000) in paragraph at lines 84--87
 
  []
 
 
-Overfull \hbox (0.58237pt too wide) in paragraph at lines 96--97
+Overfull \hbox (16.13235pt too wide) in paragraph at lines 88--90
+\TU/Montserrat(2)/m/n/10 stel met de domeinnaam \TU/Montserrat(2)/m/it/10 serve
+r1.voorbeeld.com
+ []
+
+
+Overfull \hbox (0.58237pt too wide) in paragraph at lines 91--92
 []\TU/Montserrat(2)/b/n/10 MX\TU/Montserrat(2)/m/n/10 : Dit resource record is 
 een \TU/Montserrat(2)/m/it/10 mail exchange
  []
 
 
-Overfull \hbox (3.21568pt too wide) in paragraph at lines 105--106
+Overfull \hbox (3.21568pt too wide) in paragraph at lines 100--101
 []\TU/Montserrat(2)/m/n/10 IP-netwerken worden door netwerkbeheerders
  []
 
 
-Overfull \hbox (6.76237pt too wide) in paragraph at lines 107--108
+Overfull \hbox (6.76237pt too wide) in paragraph at lines 102--103
 \TU/Montserrat(2)/m/n/10 (of pools van IP-adressen) aanbieden aan de DHCP-
  []
 
 
-Overfull \hbox (0.53233pt too wide) in paragraph at lines 111--112
+Overfull \hbox (0.53233pt too wide) in paragraph at lines 106--107
 []\TU/Montserrat(2)/b/n/10 Automatisch\TU/Montserrat(2)/m/n/10 : Permanent toew
 ijzen van een
  []
@@ -1514,13 +1520,12 @@ ijzen van een
 File: ./img//HOGENT_Logo_Pos_rgb.png Graphic file (type bmp)
 <./img//HOGENT_Logo_Pos_rgb.png>
 [2]
-Overfull \hbox (3.239pt too wide) in paragraph at lines 132--133
-[]\TU/Montserrat(2)/b/n/10 Schaalbaarheid\TU/Montserrat(2)/m/n/10 : Er is weini
-g historische data
+Overfull \hbox (4.53368pt too wide) in paragraph at lines 127--128
+\TU/Montserrat(2)/m/n/10 herkennen, ook wikipedia pagina’s moet men
  []
 
 
-Overfull \hbox (1.99902pt too wide) in paragraph at lines 154--155
+Overfull \hbox (1.99902pt too wide) in paragraph at lines 149--150
 \TU/Montserrat(2)/m/n/10 eerst gerichte testen gedaan waarbij commando’s
  []
 
@@ -1530,24 +1535,24 @@ File: ./img//HOGENT_Logo_Pos_rgb.png Graphic file (type bmp)
 File: ./img//Gantt.png Graphic file (type bmp)
 <./img//Gantt.png>
 
-Overfull \hbox (5.45483pt too wide) in paragraph at lines 191--192
+Overfull \hbox (5.45483pt too wide) in paragraph at lines 186--187
 \TU/Montserrat(2)/m/n/10 interacties met EIP mogelijk zijn via Python-scripts.
  []
 
 LaTeX Font Info:    Font shape `TU/FiraMath(2)/m/n' will be
-(Font)              scaled to size 10.00107pt on input line 206.
+(Font)              scaled to size 10.00107pt on input line 201.
 LaTeX Font Info:    Font shape `TU/FiraMath(2)/m/n' will be
-(Font)              scaled to size 7.20076pt on input line 206.
+(Font)              scaled to size 7.20076pt on input line 201.
 LaTeX Font Info:    Font shape `TU/FiraMath(2)/m/n' will be
-(Font)              scaled to size 5.80061pt on input line 206.
+(Font)              scaled to size 5.80061pt on input line 201.
 LaTeX Font Info:    Font shape `TU/FiraMath(3)/m/n' will be
-(Font)              scaled to size 9.99893pt on input line 206.
+(Font)              scaled to size 9.99893pt on input line 201.
 LaTeX Font Info:    Font shape `TU/FiraMath(3)/m/n' will be
-(Font)              scaled to size 7.19922pt on input line 206.
+(Font)              scaled to size 7.19922pt on input line 201.
 LaTeX Font Info:    Font shape `TU/FiraMath(3)/m/n' will be
-(Font)              scaled to size 5.79938pt on input line 206.
+(Font)              scaled to size 5.79938pt on input line 201.
 
-Overfull \hbox (1.53877pt too wide) in paragraph at lines 206--206
+Overfull \hbox (1.53877pt too wide) in paragraph at lines 201--201
 [][]\TU/Montserrat(2)/m/n/10 Droms, R. (1997). \TU/Montserrat(2)/m/it/10 Dynami
 c Host Configuration Pro-
  []
@@ -1567,7 +1572,7 @@ Package logreq Info: Writing requests to 'Voorstel-BP-StijnCoppens-2324.run.xml
  ) 
 Here is how much of TeX's memory you used:
  28337 strings out of 476660
- 539558 string characters out of 5806780
+ 539564 string characters out of 5806780
  1875698 words of memory out of 5000000
  48194 multiletter control sequences out of 15000+600000
  515767 words of font info for 92 fonts, out of 8000000 for 9000

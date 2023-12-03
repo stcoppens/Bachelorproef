@@ -41,19 +41,14 @@
 \keywords{DNS, DHCP, IPAM, Python}
 
 \begin{document}
-    
+
 \begin{abstract}
-Deze bachelorproef richt zich op het ontwikkelen van een innovatieve benadering voor netwerkbeheer door middel van Python-scripts.
- 
-Het hoofddoel is het creëren van een abstractielaag boven een bestaande netwerkbeheertool voor DNS en DHCP, waarbij de API van een IP Address Management (IPAM)-tool wordt aangestuurd. 
-
-Deze abstractielaag maakt interactie met de IPAM-tool mogelijk via Python-scripts en wordt geoptimaliseerd door API-aanroepen vanuit een intuïtief webportaal. 
-Door handmatig beheer van netwerkconfiguraties, waaronder IP-adresallocatie, te verminderen, wordt de efficiëntie en gebruiksvriendelijkheid verbeterd.
-Hierdoor zal de complexiteit van het handmatig beheren van netwerkconfiguraties, inclusief IP-adresallocatie, verminderen.
-Dit zal 
-Het doel is om de complexiteit van het handmatig beheren van netwerkconfiguraties, inclusief IP-adresallocatie, te verminderen, waardoor efficiëntie en gebruiksvriendelijkheid worden verbeterd.    
+Netwerkconfiguraties worden momenteel grotendeels handmatig beheerd, wat inefficiënt is als proces, en tevens gevoelig is voor menselijke fouten. Het minimaliseren van handmatig beheer van netwerkconfiguraties zou leiden tot efficiëntiewinsten, tijdswinsten en verminderde complexiteit.
+Deze bachelorproef richt zich op het ontwikkelen van een innovatieve, geautomatiseerde benadering voor netwerkbeheer (en IP-adresallocatie), door
+middel van Python-scripts.
+Het hoofddoel is het creëren van een abstractielaag boven een bestaande netwerkbeheertool voor DNS en DHCP,
+waarbij de API van een IP Address Management (IPAM)-tool wordt aangestuurd. Deze abstractielaag maakt interactie met de IPAM-tool mogelijk via Python-scripts en wordt toegepast door API-aanroepen vanuit een intuïtief webportaal.
 \end{abstract}
-
 \tableofcontents
 
 \bigskip
@@ -70,7 +65,7 @@ Dit onderzoek zal een antwoord bieden op de vraag hoe je via python scripts een 
 
 Uit dit project worden volgende voordelen verwacht:
 \begin{itemize}
-    \item Verminderde complexiteit voor \\veelgebruikte acties.
+    \item Verminderde complexiteit voor \\veelgebruikte acties zoals het reserveren van IP-adressen.
     \item Tijdwinst door het uitsluiten van handmatig beheer.
     \item Efficiëntie door het vermijden van menselijke fouten.
     \item Verbetering van gebruiksvriendelijkheid
@@ -91,10 +86,10 @@ Internet Protocol (IP) is het fundament van elk gestructureerd, goed functionere
 Zoals beschreven door \textcite{Mockapetris1987} voorziet DNS meerdere types resource records die netwerkbeheerders kunnen meegeven: 
 \begin{itemize}
     \item \textbf{A}: Dit resource record beschrijft een host adres. 
-    Vb. \textit{"server1.voorbeeld.com IN A \\192.168.1.1"} maakt de vertaling zodat het toestel met de naam server1.voorbeeld.com bereikbaar is zowel via het IP-adres 192.168.1.1 als via de domeinnaam. 
-    \item \textbf{CNAME}: Dit resource record beschrijft de kanonieke naam van een host, het wordt gebruikt om een alias of subdomein naar het hoofddomein door te verwijzen. Vb.\\ \textit{"www.voorbeeld.com. IN CNAME \\server1.voorbeeld.com"} zorgt dat server1 ook bereikbaar is via "www.voorbeeld.com".
+    Vb. \textit{”server1.voorbeeld.com IN A \\192.168.1.1”} maakt de vertaling zodat het toestel met de domeinnaam \textit{server1.voorbeeld.com} bereikbaar is zowel via het IP-adres \textit{192.168.1.1} als via de domeinnaam. 
+    \item \textbf{CNAME}: Dit resource record beschrijft de kanonieke naam van een host, het wordt gebruikt om een alias of subdomein naar het hoofddomein door te verwijzen. Vb.\\ \textit{"www.voorbeeld.com. IN CNAME \\server1.voorbeeld.com"} zorgt dat server1 ook bereikbaar is via "\textit{www.voorbeeld.com}".
     \item \textbf{MX}: Dit resource record is een \textit{mail exchange} record en wordt gebruikt om aan te geven welke mailservers verantwoordelijk zijn voor het ontvangen van mails binnen een domein. vb. \textit{"voorbeeld.com. IN MX 10 mailserver.voorbeeld.com"} geeft de DNS server mee welke server de mailserver is.
-    \item \textbf{NS}: Dit resource record is een \textit{name server} record, het beschrijft welke DNS-servers verantwoordelijk zijn voor het beheren van DNS-informatie voor een domein. Vb. \textit{"voorbeeld.com IN NS dns1.voorbeeld.com"} verwijst naar dns1 als DNS-server voor het domein voorbeeld.com.
+    \item \textbf{NS}: Dit resource record is een \textit{name server} record, het beschrijft welke DNS-servers verantwoordelijk zijn voor het beheren van DNS-informatie voor een domein. Vb. \textit{"voorbeeld.com IN NS dns1.voorbeeld.com"} verwijst naar \textit{dns1} als DNS-server voor het domein “\textit{voorbeeld.com}”.
     \item \textbf{PTR}: Dit resource record is een \textit{Pointer} record, het wordt gebruikt om via IP een vertaling te vragen aan de DNS-server in plaats van via de naam.
     \item \textbf{SOA}: Dit resource record is een \textit{Start of Authority} record die belangrijke informatie bevat over de zone, zoals welke de primaire DNS-server, contactpersonen, etc.
 \end{itemize}
@@ -110,7 +105,7 @@ Voor DHCP zullen netwerkbeheerders subnets (of pools van IP-adressen) aanbieden 
 \begin{itemize}
     \item \textbf{Automatisch}: Permanent toewijzen van een IP-adres.
     \item \textbf{Dynamisch}: IP-adres voor een bepaalde tijd toewijzen.
-    \item \textbf{Manueel}: Een (door de netwerkbeheerder) vooraf bepaald IP-adres toewijzen, in vakjargon noemt met dit een IP reservatie.
+    \item \textbf{Manueel}: Een (door de netwerkbeheerder) vooraf bepaald IP-adres toewijzen, in vakjargon noemt met dit een IP-reservatie.
 \end{itemize}
 
 \subsection{IPAM}
@@ -120,26 +115,26 @@ IPAM laat toe IP-adressen efficiënt te beheren in een netwerk, het leidt tot ee
 
 \section{Probleemstelling}
 \label{sec:probleemstelling}
-Deze bachelorproef zal uitgevoerd worden bij Universiteit Gent (UGent) dienst ICT. Momenteel werkt UGent met scripts die op basis van zo genaamde subnetbestanden de nodige acties uitvoeren op de DHCP en DNS servers. 
+Deze bachelorproef zal uitgevoerd worden bij Universiteit Gent (UGent), dienst ICT. Momenteel werkt UGent met scripts die op basis van zo genaamde subnetbestanden de nodige acties uitvoeren op de DHCP en DNS servers. 
 
 Deze subnetbestanden stellen elk een subnet voor en beschrijven cruciale informatie zoals DNS-servers, welk \textit{Virtual Local Area Network (VLAN)} nummer, gateway, etc. Hiernaast bevatten deze zowel alle beschikbare als gereserveerde IP-adressen met daarbij eventueel enkele regels voor DNS en beveiliging.
 
-Voor elke IP reservatie die moet gebeuren \\krijgt het netwerkteam via een webportaal van intern UGent-personeel een mail met daarin de nodige hostinformatie die ze in het daarvoor bestemde subnetbestand plakken. Indien hier nog extra DNS of beveiligingsregels bij horen, moet de netwerkbeheerder deze er zelf nog bijschrijven.
+Voor elke IP reservatie die moet gebeuren, \\krijgt het netwerkteam via een webportaal van intern UGent-personeel een mail met daarin de nodige hostinformatie die ze in het daarvoor bestemde subnetbestand plakken. Indien hier nog extra DNS- of beveiligingsregels bij horen, moet de netwerkbeheerder deze er zelf nog bij schrijven.
 
 Het overzicht van de beschikbare IP ranges is beschreven in een interne wikipediapagina met daarbij de beschrijving van elke range. Dit \\brengt meerdere uitdagingen met zich mee:
 \begin{itemize}
     \item \textbf{Tijd}: Het onderhouden van de scripts, subnetbestanden, IP reservaties (maken en opkuisen) kan veel tijd vragen.
-    \item \textbf{Schaalbaarheid}: Er is weinig historische data waardoor men moeilijk trends kan herkennen, ook wikipedia pagina's moet men manueel bijwerken bij wijzigingen.
+    \item \textbf{Schaalbaarheid}: Doordat elke wijziging het bestaande bestand wijzigt en er dus geen historische data is kan men moeilijk trends herkennen, ook wikipedia pagina's moet men manueel bijwerken bij grote wijzigingen in de structuur.
     \item \textbf{Consistentie}: De huidige aanpak vraagt \\meerdere manuele acties, wat deze aanpak vatbaar maakt voor menselijke fouten of vergissingen.  
-    \item \textbf{Beveiliging}: Het bewaren van IP gegevens in ongecrypteerde bestanden kan leiden tot misbruik.
+    \item \textbf{Beveiliging}: Het bewaren van IP-gegevens in ongecrypteerde bestanden kan leiden tot misbruik.
 \end{itemize}
 
-UGent is stappen aan het ondernemen voor het implementeren van \textit{Efficiënt IP (EIP)}, een \\IPAM-softwarepakket, in hun opzet. Dankzij deze implementatie is de verwachting dat de hierboven beschreven indicatoren zullen verbeteren.
+UGent is momenteel stappen aan het ondernemen voor het implementeren van \textit{Efficiënt IP (EIP)}, een \\IPAM-softwarepakket, in hun opzet. Dankzij deze implementatie is de verwachting dat de hierboven beschreven indicatoren zullen verbeteren.
 
 \section{Doelstelling}
 \label{sec:doelstelling}
 Deze bachelorproef zal een abstractielaag maken boven EIP waarbij python scripts via de \textit{Application Programming Interface (API)} van EIP commando's zullen uitvoeren op EIP.
-Door de omvang van het EIP-project is het niet haalbaar om UGent volledig over te zetten op de werking van EIP. Aangezien dit kritische componenten zijn zal alles eerst uitvoerig getest worden waarbij elke stap weloverwogen is.
+Door de omvang van het EIP-project is het niet haalbaar om UGent volledig over te zetten op de werking van EIP. Aangezien dit kritische componenten zijn, zal alles eerst uitvoerig getest worden waarbij elke stap in de migratie naar EIP weloverwogen is.
 Daarom stel ik als doel om een eerste versie op te leveren van een webportaal waarop men reeds meerdere IP-reservaties kan aanmaken, wijzigen of verwijderen. Netwerkbeheerders zullen op deze eerste versie de mogelijkheid hebben om een overzicht te krijgen van alle openstaande aanvragen en deze al dan niet goed te keuren.
 
 \section{Methodologie}
@@ -151,10 +146,10 @@ Alle scripts worden geschreven in \textbf{Visual studio code} in de programmeert
 Voor de testen om rechtstreeks op maat gemaakte commando's te sturen wordt er gebruik gemaakt van \textbf{Postman}.
 
 \subsection{Methodiek scripts}
-Voordat een script wordt geschreven worden eerst gerichte testen gedaan waarbij commando's met parameters naar de API van EIP worden verzonden. Hierbij wordt er zowel naar de resultaten van de API gekeken als naar wat er op EIP zelf gebeurt via de webpagina. Eens deze testen voor een commando afgelopen zijn wordt er pas overgegaan tot het schrijven de python scripts waarbij de parameters omgezet worden volgens de voorwaarden van de API.
+Voordat een script wordt geschreven, worden eerst gerichte testen gedaan waarbij commando's met parameters naar de API van EIP worden verzonden. Hierbij wordt er zowel naar de resultaten van de API gekeken als naar wat er op EIP zelf gebeurt via de webpagina. Eens deze testen voor een commando afgelopen zijn, wordt er pas overgegaan tot het schrijven de python script. Hierbij worden de parameters omgezet volgens de voorwaarden van de API.
 
 \subsection{Fase 1. Literatuurstudie}
-In deze eerste fase die veertien dagen zal duren wordt er gezocht naar documentatie en literatuur van gelijkaardige projecten waarbij een webpagina met formulieren en logins gebruiken om scripts aan te roepen. Daarnaast wordt er ook uitgebreid aandacht gegeven aan de literatuur van Efficiënt IP zelf om na te gaan welke eisen deze stelt voor het aanmaken, wijzigen en verwijderen van IP-adressen.
+Voor deze eerste fase worden veertien dagen uitgerokken. In deze fase wordt gezocht naar documentatie en literatuur van gelijkaardige projecten waarbij een webpagina met formulieren en logins gebruiken om scripts aan te roepen. Daarnaast wordt er ook uitgebreid aandacht gegeven aan de literatuur van Efficiënt IP zelf om na te gaan welke eisen deze stelt voor het aanmaken, wijzigen en verwijderen van IP-adressen.
 Op het einde van deze fase zal er een verslag geschreven zijn met alle belangrijke punten die zijn meegenomen uit de literatuur.
 
 \subsection{Fase 2. Scripts schrijven}
