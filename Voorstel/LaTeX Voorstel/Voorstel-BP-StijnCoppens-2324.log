@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.4.22)  2 DEC 2023 16:08
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.4.22)  11 DEC 2023 21:29
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1479,20 +1479,19 @@ Package mdframed Info: mdframed inside a box
 \tf@toc=\write5
 \openout5 = `Voorstel-BP-StijnCoppens-2324.toc'.
 
+
+Overfull \hbox (8.6657pt too wide) in paragraph at lines 73--74
+\TU/Montserrat(2)/m/n/10 Deze voordelen zullen bijdragen aan een gestroom-
+ []
+
 File: ./img//HOGENT_Logo_Pos_rgb.png Graphic file (type bmp)
 <./img//HOGENT_Logo_Pos_rgb.png>
- [1
+[1
 
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 84--87
 
- []
-
-
-Overfull \hbox (16.13235pt too wide) in paragraph at lines 88--90
-\TU/Montserrat(2)/m/n/10 stel met de domeinnaam \TU/Montserrat(2)/m/it/10 serve
-r1.voorbeeld.com
  []
 
 
