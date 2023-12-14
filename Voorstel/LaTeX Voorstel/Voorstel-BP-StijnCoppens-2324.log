@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.4.22)  11 DEC 2023 22:19
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.4.22)  14 DEC 2023 21:10
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1460,28 +1460,32 @@ Package hyperref Info: Link coloring ON on input line 43.
 \@outlinefile=\write4
 \openout4 = `Voorstel-BP-StijnCoppens-2324.out'.
 
-LaTeX Font Info:    Font shape `TU/FiraMath(2)/m/n' will be
-(Font)              scaled to size 9.00096pt on input line 51.
-LaTeX Font Info:    Font shape `TU/FiraMath(2)/m/n' will be
-(Font)              scaled to size 6.00064pt on input line 51.
-LaTeX Font Info:    Font shape `TU/FiraMath(2)/m/n' will be
-(Font)              scaled to size 5.00053pt on input line 51.
-LaTeX Font Info:    Font shape `TU/FiraMath(3)/m/n' will be
-(Font)              scaled to size 8.99904pt on input line 51.
-LaTeX Font Info:    Font shape `TU/FiraMath(3)/m/n' will be
-(Font)              scaled to size 5.99936pt on input line 51.
-LaTeX Font Info:    Font shape `TU/FiraMath(3)/m/n' will be
-(Font)              scaled to size 4.99947pt on input line 51.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 51.
 
+Underfull \hbox (badness 5563) in paragraph at lines 60--60
+[]\TU/Montserrat(0)/b/n/17.28 Scripting voor netwerkbeheer: een geautomati-
+ []
+
+LaTeX Font Info:    Font shape `TU/FiraMath(2)/m/n' will be
+(Font)              scaled to size 9.00096pt on input line 60.
+LaTeX Font Info:    Font shape `TU/FiraMath(2)/m/n' will be
+(Font)              scaled to size 6.00064pt on input line 60.
+LaTeX Font Info:    Font shape `TU/FiraMath(2)/m/n' will be
+(Font)              scaled to size 5.00053pt on input line 60.
+LaTeX Font Info:    Font shape `TU/FiraMath(3)/m/n' will be
+(Font)              scaled to size 8.99904pt on input line 60.
+LaTeX Font Info:    Font shape `TU/FiraMath(3)/m/n' will be
+(Font)              scaled to size 5.99936pt on input line 60.
+LaTeX Font Info:    Font shape `TU/FiraMath(3)/m/n' will be
+(Font)              scaled to size 4.99947pt on input line 60.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 60.
 (./Voorstel-BP-StijnCoppens-2324.toc)
 \tf@toc=\write5
 \openout5 = `Voorstel-BP-StijnCoppens-2324.toc'.
 
 
-Overfull \hbox (8.6657pt too wide) in paragraph at lines 73--74
-\TU/Montserrat(2)/m/n/10 Deze voordelen zullen bijdragen aan een gestroom-
+Overfull \hbox (3.31236pt too wide) in paragraph at lines 75--76
+\TU/Montserrat(2)/m/n/10 gereserveerde netwerkadressen met daarbij even-
  []
 
 File: ./img//HOGENT_Logo_Pos_rgb.png Graphic file (type bmp)
@@ -1490,92 +1494,116 @@ File: ./img//HOGENT_Logo_Pos_rgb.png Graphic file (type bmp)
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 84--87
+Underfull \hbox (badness 1009) in paragraph at lines 91--93
+\TU/Montserrat(2)/m/n/10 commando’s zullen uitvoeren op EIP. Door de
+ []
+
+
+Overfull \hbox (3.2437pt too wide) in paragraph at lines 99--100
+\TU/Montserrat(2)/m/n/10 taken, zoals het reserveren van internetadres-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 131--134
 
  []
 
 
-Overfull \hbox (0.58237pt too wide) in paragraph at lines 91--92
+Overfull \hbox (0.58237pt too wide) in paragraph at lines 138--139
 []\TU/Montserrat(2)/b/n/10 MX\TU/Montserrat(2)/m/n/10 : Dit resource record is 
 een \TU/Montserrat(2)/m/it/10 mail exchange
- []
-
-
-Overfull \hbox (3.21568pt too wide) in paragraph at lines 100--101
-[]\TU/Montserrat(2)/m/n/10 IP-netwerken worden door netwerkbeheerders
- []
-
-
-Overfull \hbox (6.76237pt too wide) in paragraph at lines 102--103
-\TU/Montserrat(2)/m/n/10 (of pools van IP-adressen) aanbieden aan de DHCP-
- []
-
-
-Overfull \hbox (0.53233pt too wide) in paragraph at lines 106--107
-[]\TU/Montserrat(2)/b/n/10 Automatisch\TU/Montserrat(2)/m/n/10 : Permanent toew
-ijzen van een
  []
 
 File: ./img//HOGENT_Logo_Pos_rgb.png Graphic file (type bmp)
 <./img//HOGENT_Logo_Pos_rgb.png>
 [2]
-Overfull \hbox (4.53368pt too wide) in paragraph at lines 127--128
-\TU/Montserrat(2)/m/n/10 herkennen, ook wikipedia pagina’s moet men
+Overfull \hbox (3.21568pt too wide) in paragraph at lines 147--148
+[]\TU/Montserrat(2)/m/n/10 IP-netwerken worden door netwerkbeheerders
  []
 
 
-Overfull \hbox (1.99902pt too wide) in paragraph at lines 149--150
-\TU/Montserrat(2)/m/n/10 eerst gerichte testen gedaan waarbij commando’s
+Overfull \hbox (0.53233pt too wide) in paragraph at lines 153--154
+[]\TU/Montserrat(2)/b/n/10 Automatisch\TU/Montserrat(2)/m/n/10 : Permanent toew
+ijzen van een
+ []
+
+
+Overfull \hbox (5.38367pt too wide) in paragraph at lines 174--175
+\TU/Montserrat(2)/m/n/10 scripttalen, geïntegreerde Git-ondersteuning,
+ []
+
+
+Overfull \hbox (2.479pt too wide) in paragraph at lines 174--175
+\TU/Montserrat(2)/m/n/10 debug- en extensie mogelijkheden wordt ge-
+ []
+
+
+Overfull \hbox (13.04236pt too wide) in paragraph at lines 175--176
+\TU/Montserrat(2)/m/n/10 baarheid van Python-pakketten zoals ’requests’
+ []
+
+
+Overfull \hbox (0.41924pt too wide) in paragraph at lines 175--176
+\TU/Montserrat(2)/m/n/10 compilatie. Python is ook uitbreidbaar, waar-
  []
 
 File: ./img//HOGENT_Logo_Pos_rgb.png Graphic file (type bmp)
 <./img//HOGENT_Logo_Pos_rgb.png>
 [3]
-File: ./img//Gantt.png Graphic file (type bmp)
-<./img//Gantt.png>
-
-Overfull \hbox (5.45483pt too wide) in paragraph at lines 186--187
-\TU/Montserrat(2)/m/n/10 interacties met EIP mogelijk zijn via Python-scripts.
+Overfull \hbox (1.99902pt too wide) in paragraph at lines 180--181
+\TU/Montserrat(2)/m/n/10 eerst gerichte testen gedaan waarbij commando’s
  []
 
-LaTeX Font Info:    Font shape `TU/FiraMath(2)/m/n' will be
-(Font)              scaled to size 10.00107pt on input line 201.
-LaTeX Font Info:    Font shape `TU/FiraMath(2)/m/n' will be
-(Font)              scaled to size 7.20076pt on input line 201.
-LaTeX Font Info:    Font shape `TU/FiraMath(2)/m/n' will be
-(Font)              scaled to size 5.80061pt on input line 201.
-LaTeX Font Info:    Font shape `TU/FiraMath(3)/m/n' will be
-(Font)              scaled to size 9.99893pt on input line 201.
-LaTeX Font Info:    Font shape `TU/FiraMath(3)/m/n' will be
-(Font)              scaled to size 7.19922pt on input line 201.
-LaTeX Font Info:    Font shape `TU/FiraMath(3)/m/n' will be
-(Font)              scaled to size 5.79938pt on input line 201.
 
-Overfull \hbox (1.53877pt too wide) in paragraph at lines 201--201
+Overfull \hbox (1.62125pt too wide) in paragraph at lines 187--188
+\TU/Montserrat(2)/m/n/10 van de Python-scripts geschreven. Deze fase voor-
+ []
+
+File: ./img//Gantt.png Graphic file (type bmp)
+<./img//Gantt.png>
+File: ./img//HOGENT_Logo_Pos_rgb.png Graphic file (type bmp)
+<./img//HOGENT_Logo_Pos_rgb.png>
+[4]
+LaTeX Font Info:    Font shape `TU/FiraMath(2)/m/n' will be
+(Font)              scaled to size 10.00107pt on input line 232.
+LaTeX Font Info:    Font shape `TU/FiraMath(2)/m/n' will be
+(Font)              scaled to size 7.20076pt on input line 232.
+LaTeX Font Info:    Font shape `TU/FiraMath(2)/m/n' will be
+(Font)              scaled to size 5.80061pt on input line 232.
+LaTeX Font Info:    Font shape `TU/FiraMath(3)/m/n' will be
+(Font)              scaled to size 9.99893pt on input line 232.
+LaTeX Font Info:    Font shape `TU/FiraMath(3)/m/n' will be
+(Font)              scaled to size 7.19922pt on input line 232.
+LaTeX Font Info:    Font shape `TU/FiraMath(3)/m/n' will be
+(Font)              scaled to size 5.79938pt on input line 232.
+
+Overfull \hbox (1.53877pt too wide) in paragraph at lines 232--232
 [][]\TU/Montserrat(2)/m/n/10 Droms, R. (1997). \TU/Montserrat(2)/m/it/10 Dynami
 c Host Configuration Pro-
  []
 
 File: ./img//HOGENT_Logo_Pos_rgb.png Graphic file (type bmp)
 <./img//HOGENT_Logo_Pos_rgb.png>
-[4] 
+[5
+
+] 
 enddocument/afterlastpage: lastpage setting LastPage.
 (./Voorstel-BP-StijnCoppens-2324.aux)
 Package rerunfilecheck Info: File `Voorstel-BP-StijnCoppens-2324.out' has not c
 hanged.
-(rerunfilecheck)             Checksum: A28FBEF8D502A207B8C75D3B5AACF905;2235.
+(rerunfilecheck)             Checksum: 963A8BAFDEEAAB4754E7A8BE13D3F86E;2376.
 Package logreq Info: Writing requests to 'Voorstel-BP-StijnCoppens-2324.run.xml
 '.
 \openout1 = `Voorstel-BP-StijnCoppens-2324.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 28337 strings out of 476660
- 539564 string characters out of 5806780
- 1874698 words of memory out of 5000000
- 48194 multiletter control sequences out of 15000+600000
+ 28352 strings out of 476660
+ 540025 string characters out of 5806780
+ 1876698 words of memory out of 5000000
+ 48209 multiletter control sequences out of 15000+600000
  515767 words of font info for 92 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 99i,12n,128p,698b,5479s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,12n,128p,861b,5479s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Voorstel-BP-StijnCoppens-2324.pdf (4 pages).
+Output written on Voorstel-BP-StijnCoppens-2324.pdf (5 pages).

@@ -58,6 +58,56 @@
       \verb https://www.rfc-editor.org/info/rfc2131
       \endverb
     \endentry
+    \entry{Fielding2014}{misc}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=489e3655cdca151facfb40953b9759f8}{%
+           family={Fielding},
+           familyi={F\bibinitperiod},
+           given={Roy\bibnamedelima T.},
+           giveni={R\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c07b881ce18f1c139ec16860aa2c8dad}{%
+           family={Reschke},
+           familyi={R\bibinitperiod},
+           given={Julian},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {RFC Editor}%
+      }
+      \strng{namehash}{e36d22e28042d10636f5bf539992fb02}
+      \strng{fullhash}{e36d22e28042d10636f5bf539992fb02}
+      \strng{bibnamehash}{e36d22e28042d10636f5bf539992fb02}
+      \strng{authorbibnamehash}{e36d22e28042d10636f5bf539992fb02}
+      \strng{authornamehash}{e36d22e28042d10636f5bf539992fb02}
+      \strng{authorfullhash}{e36d22e28042d10636f5bf539992fb02}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The Hypertext Transfer Protocol (HTTP) is a stateless \textbackslash{}\%application- level protocol for distributed, collaborative, hypertext information systems. This document defines the semantics of HTTP/1.1 messages, as expressed by request methods, request header fields, response status codes, and response header fields, along with the payload of messages (metadata and body content) and mechanisms for content negotiation.}
+      \field{howpublished}{RFC 7231}
+      \field{month}{6}
+      \field{number}{7231}
+      \field{pagetotal}{101}
+      \field{series}{Request for Comments}
+      \field{title}{{Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content}}
+      \field{year}{2014}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.17487/RFC7231
+      \endverb
+      \verb{urlraw}
+      \verb https://www.rfc-editor.org/info/rfc7231
+      \endverb
+      \verb{url}
+      \verb https://www.rfc-editor.org/info/rfc7231
+      \endverb
+    \endentry
     \entry{Mockapetris1987}{report}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=a44b90ef653ba684badd93d3f7acb017}{%
@@ -172,6 +222,49 @@
       \endverb
       \verb{url}
       \verb https://books.google.com/books?hl=en&lr=&id=rE0PEAAAQBAJ&oi=fnd&pg=PP1&dq=ip+address+management&ots=tAZF_0cNKd&sig=S1A-IQS4P0hJ0MCpkv6TLex3SBc
+      \endverb
+    \endentry
+    \entry{VanRossum2011}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=e504145eff12cd8803c227c919ccfacd}{%
+           family={Van\bibnamedelima Rossum},
+           familyi={V\bibinitperiod\bibinitdelim R\bibinitperiod},
+           given={Guido},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0b735fb6ad359aa95b3bac4d5567af6f}{%
+           family={Drake},
+           familyi={D\bibinitperiod},
+           given={Fred\bibnamedelima L.},
+           giveni={F\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Network Theory Ltd.}%
+      }
+      \strng{namehash}{190e2e6e0d73bf5671d8927d221674e7}
+      \strng{fullhash}{190e2e6e0d73bf5671d8927d221674e7}
+      \strng{bibnamehash}{190e2e6e0d73bf5671d8927d221674e7}
+      \strng{authorbibnamehash}{190e2e6e0d73bf5671d8927d221674e7}
+      \strng{authornamehash}{190e2e6e0d73bf5671d8927d221674e7}
+      \strng{authorfullhash}{190e2e6e0d73bf5671d8927d221674e7}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This manual is a printed edition of the official Python tutorial from the Python 3.2 distribution. It provides an introduction to Python, an easy to learn object-oriented programming language. This revised edition describes Python 3. Python has modules, classes, exceptions, very high level data types, and dynamic typing. It can link directly to libraries written in C or C++ and can be embedded as an extension language for applications that need a programmable interface. For each copy of this manual sold USD 1 is donated to the Python Software Foundation by the publisher, Network Theory Ltd.}
+      \field{isbn}{1906966133}
+      \field{title}{An Introduction to Python}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb http://atk.fam.free.fr/fichiers/stage/Python/JF/site/pytut.pdf
+      \endverb
+      \verb{url}
+      \verb http://atk.fam.free.fr/fichiers/stage/Python/JF/site/pytut.pdf
       \endverb
     \endentry
   \enddatalist
@@ -215,6 +308,56 @@
       \verb https://www.rfc-editor.org/info/rfc2131
       \endverb
     \endentry
+    \entry{Fielding2014}{misc}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=489e3655cdca151facfb40953b9759f8}{%
+           family={Fielding},
+           familyi={F\bibinitperiod},
+           given={Roy\bibnamedelima T.},
+           giveni={R\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c07b881ce18f1c139ec16860aa2c8dad}{%
+           family={Reschke},
+           familyi={R\bibinitperiod},
+           given={Julian},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {RFC Editor}%
+      }
+      \strng{namehash}{e36d22e28042d10636f5bf539992fb02}
+      \strng{fullhash}{e36d22e28042d10636f5bf539992fb02}
+      \strng{bibnamehash}{e36d22e28042d10636f5bf539992fb02}
+      \strng{authorbibnamehash}{e36d22e28042d10636f5bf539992fb02}
+      \strng{authornamehash}{e36d22e28042d10636f5bf539992fb02}
+      \strng{authorfullhash}{e36d22e28042d10636f5bf539992fb02}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The Hypertext Transfer Protocol (HTTP) is a stateless \textbackslash{}\%application- level protocol for distributed, collaborative, hypertext information systems. This document defines the semantics of HTTP/1.1 messages, as expressed by request methods, request header fields, response status codes, and response header fields, along with the payload of messages (metadata and body content) and mechanisms for content negotiation.}
+      \field{howpublished}{RFC 7231}
+      \field{month}{6}
+      \field{number}{7231}
+      \field{pagetotal}{101}
+      \field{series}{Request for Comments}
+      \field{title}{{Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content}}
+      \field{year}{2014}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.17487/RFC7231
+      \endverb
+      \verb{urlraw}
+      \verb https://www.rfc-editor.org/info/rfc7231
+      \endverb
+      \verb{url}
+      \verb https://www.rfc-editor.org/info/rfc7231
+      \endverb
+    \endentry
     \entry{Mockapetris1987}{report}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=a44b90ef653ba684badd93d3f7acb017}{%
@@ -329,6 +472,49 @@
       \endverb
       \verb{url}
       \verb https://books.google.com/books?hl=en&lr=&id=rE0PEAAAQBAJ&oi=fnd&pg=PP1&dq=ip+address+management&ots=tAZF_0cNKd&sig=S1A-IQS4P0hJ0MCpkv6TLex3SBc
+      \endverb
+    \endentry
+    \entry{VanRossum2011}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=e504145eff12cd8803c227c919ccfacd}{%
+           family={Van\bibnamedelima Rossum},
+           familyi={V\bibinitperiod\bibinitdelim R\bibinitperiod},
+           given={Guido},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0b735fb6ad359aa95b3bac4d5567af6f}{%
+           family={Drake},
+           familyi={D\bibinitperiod},
+           given={Fred\bibnamedelima L.},
+           giveni={F\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Network Theory Ltd.}%
+      }
+      \strng{namehash}{190e2e6e0d73bf5671d8927d221674e7}
+      \strng{fullhash}{190e2e6e0d73bf5671d8927d221674e7}
+      \strng{bibnamehash}{190e2e6e0d73bf5671d8927d221674e7}
+      \strng{authorbibnamehash}{190e2e6e0d73bf5671d8927d221674e7}
+      \strng{authornamehash}{190e2e6e0d73bf5671d8927d221674e7}
+      \strng{authorfullhash}{190e2e6e0d73bf5671d8927d221674e7}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This manual is a printed edition of the official Python tutorial from the Python 3.2 distribution. It provides an introduction to Python, an easy to learn object-oriented programming language. This revised edition describes Python 3. Python has modules, classes, exceptions, very high level data types, and dynamic typing. It can link directly to libraries written in C or C++ and can be embedded as an extension language for applications that need a programmable interface. For each copy of this manual sold USD 1 is donated to the Python Software Foundation by the publisher, Network Theory Ltd.}
+      \field{isbn}{1906966133}
+      \field{title}{An Introduction to Python}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb http://atk.fam.free.fr/fichiers/stage/Python/JF/site/pytut.pdf
+      \endverb
+      \verb{url}
+      \verb http://atk.fam.free.fr/fichiers/stage/Python/JF/site/pytut.pdf
       \endverb
     \endentry
   \enddatalist
