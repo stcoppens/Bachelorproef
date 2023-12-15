@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.4.22)  14 DEC 2023 21:10
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.4.22)  15 DEC 2023 01:02
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1484,8 +1484,8 @@ Package mdframed Info: mdframed inside a box
 \openout5 = `Voorstel-BP-StijnCoppens-2324.toc'.
 
 
-Overfull \hbox (3.31236pt too wide) in paragraph at lines 75--76
-\TU/Montserrat(2)/m/n/10 gereserveerde netwerkadressen met daarbij even-
+Overfull \hbox (5.85571pt too wide) in paragraph at lines 75--76
+\TU/Montserrat(2)/m/n/10 len elk een subnetwerk (een aantal opeenvolgende
  []
 
 File: ./img//HOGENT_Logo_Pos_rgb.png Graphic file (type bmp)
@@ -1494,6 +1494,12 @@ File: ./img//HOGENT_Logo_Pos_rgb.png Graphic file (type bmp)
 
 
 ]
+Overfull \hbox (2.86234pt too wide) in paragraph at lines 84--85
+[]\TU/Montserrat(2)/b/n/10 Beveiliging\TU/Montserrat(2)/m/n/10 : Het bewaren va
+n netwerkadres-
+ []
+
+
 Underfull \hbox (badness 1009) in paragraph at lines 91--93
 \TU/Montserrat(2)/m/n/10 commando’s zullen uitvoeren op EIP. Door de
  []
@@ -1538,13 +1544,8 @@ Overfull \hbox (2.479pt too wide) in paragraph at lines 174--175
  []
 
 
-Overfull \hbox (13.04236pt too wide) in paragraph at lines 175--176
-\TU/Montserrat(2)/m/n/10 baarheid van Python-pakketten zoals ’requests’
- []
-
-
-Overfull \hbox (0.41924pt too wide) in paragraph at lines 175--176
-\TU/Montserrat(2)/m/n/10 compilatie. Python is ook uitbreidbaar, waar-
+Overfull \hbox (4.3112pt too wide) in paragraph at lines 175--176
+\TU/Montserrat(2)/m/n/10 krachtige programmeertaal. De beschikbaar-
  []
 
 File: ./img//HOGENT_Logo_Pos_rgb.png Graphic file (type bmp)
@@ -1598,12 +1599,12 @@ Package logreq Info: Writing requests to 'Voorstel-BP-StijnCoppens-2324.run.xml
 
  ) 
 Here is how much of TeX's memory you used:
- 28352 strings out of 476660
- 540025 string characters out of 5806780
+ 28353 strings out of 476660
+ 540036 string characters out of 5806780
  1876698 words of memory out of 5000000
- 48209 multiletter control sequences out of 15000+600000
+ 48210 multiletter control sequences out of 15000+600000
  515767 words of font info for 92 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 99i,12n,128p,861b,5479s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,12n,128p,863b,5549s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on Voorstel-BP-StijnCoppens-2324.pdf (5 pages).
