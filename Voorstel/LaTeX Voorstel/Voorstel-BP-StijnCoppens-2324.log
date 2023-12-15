@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.4.22)  15 DEC 2023 01:02
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.4.22)  15 DEC 2023 08:51
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1562,9 +1562,6 @@ Overfull \hbox (1.62125pt too wide) in paragraph at lines 187--188
 
 File: ./img//Gantt.png Graphic file (type bmp)
 <./img//Gantt.png>
-File: ./img//HOGENT_Logo_Pos_rgb.png Graphic file (type bmp)
-<./img//HOGENT_Logo_Pos_rgb.png>
-[4]
 LaTeX Font Info:    Font shape `TU/FiraMath(2)/m/n' will be
 (Font)              scaled to size 10.00107pt on input line 232.
 LaTeX Font Info:    Font shape `TU/FiraMath(2)/m/n' will be
@@ -1585,7 +1582,10 @@ c Host Configuration Pro-
 
 File: ./img//HOGENT_Logo_Pos_rgb.png Graphic file (type bmp)
 <./img//HOGENT_Logo_Pos_rgb.png>
-[5
+[4]
+File: ./img//HOGENT_Logo_Pos_rgb.png Graphic file (type bmp)
+<./img//HOGENT_Logo_Pos_rgb.png>
+ [5
 
 ] 
 enddocument/afterlastpage: lastpage setting LastPage.
@@ -1599,12 +1599,12 @@ Package logreq Info: Writing requests to 'Voorstel-BP-StijnCoppens-2324.run.xml
 
  ) 
 Here is how much of TeX's memory you used:
- 28353 strings out of 476660
- 540036 string characters out of 5806780
+ 28354 strings out of 476660
+ 540050 string characters out of 5806780
  1876698 words of memory out of 5000000
- 48210 multiletter control sequences out of 15000+600000
+ 48211 multiletter control sequences out of 15000+600000
  515767 words of font info for 92 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 99i,12n,128p,863b,5549s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,12n,128p,864b,5549s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on Voorstel-BP-StijnCoppens-2324.pdf (5 pages).

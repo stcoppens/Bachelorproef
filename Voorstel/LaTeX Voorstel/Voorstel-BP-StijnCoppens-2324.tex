@@ -84,7 +84,7 @@ Het overzicht van de beschikbare subnetwerken is beschreven in een interne wikip
     \item \textbf{Beveiliging}: Het bewaren van netwerkadresgegevens in ongecrypteerde bestanden kan leiden tot misbruik.
 \end{itemize}
 
-UGent is momenteel stappen aan het ondernemen voor het implementeren van \textit{Efficiënt IP (EIP)}, een \\IPAM-softwarepakket, in hun opzet. Dankzij deze implementatie is de verwachting dat de hierboven beschreven indicatoren zullen verbeteren.
+UGent is momenteel stappen aan het ondernemen voor het implementeren van \textit{Efficiënt IP (EIP)}, een IPAM-softwarepakket. Dankzij deze implementatie is de verwachting dat de hierboven beschreven indicatoren zullen verbeteren.
 
 \subsection{Doelstelling}
 \label{sec:doelstelling}
@@ -161,7 +161,7 @@ Een mogelijke oplossing hiervoor is het gebruiken van IP Address Management (IPA
 IPAM laat toe IP-adressen efficiënt te beheren in een netwerk, het leidt tot een gestructureerde aanpak waardoor conflicten tussen subnetten worden vermeden. Het geeft een compleet overzicht van het netwerk met percentages van hoeveel adressen beschikbaar en in gebruik zijn. IPAM geeft eveneens de mogelijkheid om de historiek bij te houden waardoor het van pas komt voor schaalbaarheid en beveiliging van het netwerk \autocite{Rooney2020}.
 
 \subsection{HTTP}
-Om communicatie met de API van EIP mogelijk te maken wordt er gebruik gemaakt van \textit{Hypertext Transfer Protocol (HTTP)}. Dit is een client-serverprotocol die communicatie mogelijk maakt op het Internet. Zoals beschreven door \textcite{Fielding2014} maakt HTTP gebruik van \textit{Uniform Resource Identifiers (URI's)} om unieke web-resources te identificeren en biedt het verschillende methoden \textit{(GET, POST, PUT, DELETE)} waarmee clients acties kunnen uitvoeren op serverresources. HTTP is \textit{stateless}, elke aanvraag is onafhankelijk, en statuscodes zoals "200 OK" en \textit{headers} worden gebruikt om de resultaten en aanvullende informatie van serververzoeken aan te geven, waardoor een gestandaardiseerde communicatie tussen clients en servers mogelijk is.
+Om communicatie met de API van EIP mogelijk te maken wordt er gebruik gemaakt van \textit{Hypertext Transfer Protocol (HTTP)}. Dit is een client-serverprotocol die communicatie mogelijk maakt op het Internet. Zoals beschreven door \textcite{Fielding2014} maakt HTTP gebruik van \textit{Uniform Resource Identifiers (URI's)} om unieke web-resources te identificeren en biedt het verschillende methoden \textit{(GET, POST, PUT, DELETE)} waarmee clients acties kunnen uitvoeren op serverresources. HTTP is \textit{stateless}, elke aanvraag is onafhankelijk, en statuscodes zoals "200 OK"\ en \textit{headers} worden gebruikt om de resultaten en aanvullende informatie van serververzoeken aan te geven, waardoor een gestandaardiseerde communicatie tussen clients en servers mogelijk is.
 
 \section{Methodologie}
 \label{sec:methodologie}
@@ -217,7 +217,7 @@ Een overzicht van alle fases worden weergegeven in dit Gantt stappenplan
 De verwachte resultaten omvatten een succesvolle eerste implementatie van een webportaal waarop men reeds één of meerdere netwerkadresreservaties kan aanmaken, wijzigen of verwijderen. Deze eerste versie van het intuïtieve webportaal zou een verbeterde gebruikerservaring moeten bieden door middel van geoptimaliseerde API-aanroepen. Verder zou de automatisering van netwerkconfiguraties, \\met name IP-adresallocatie, moeten leiden tot verminderde complexiteit, verbeterde efficiëntie en algemene gebruiksvriendelijkheid in het netwerkbeheerproces. Dit zal een belangrijke stap zijn om na het project op voort te bouwen om uiteindelijk een product op te leveren.
 
 
-\section{Discussie, conclusie}
+\section{Verwachte conclusie}
 \label{sec:discussie-conclusie}
 Dankzij het implementeren van deze webpagina met de onderliggende scripts, kunnen medewerkers van Universiteit Gent eenvoudig, consistent, en snel IP-reservaties maken, wijzigen en verwijderen. De netwerkbeheerders kunnen al deze wijzigingen dan op hun eigen webpagina controleren, aanpassen en beoordelen.
 Na dit onderzoek zullen er nog voldoende mogelijkheden zijn om de webpagina aan te vullen met extra functies, in die mate dat netwerkbeheerders zelf geen wijzigingen meer dienen te maken binnen de IPAM tool zelf.
