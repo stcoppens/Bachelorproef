@@ -75,23 +75,28 @@ Voor het uitvoeren van de bachelorproef wordt er eerst een literatuurstudie uitg
 
 ```mermaid
 gantt
+    todayMarker off
     title Bachelorproef
     dateFormat YYYY-MM-DD
+    axisFormat %d/%m/%y
+    weekday monday
+    section pre-analyse
+        Dagelijkse meting: a1, 2024-02-07, 2024-02-23
     section Literatuurstudie
-        Literatuur zoeken: a1, 2024-03-01, 5d
-        Literatuurstudie schrijven: after a1, 9d
-    section Scripts
-        Schrijven script "IP reservatie maken": b1,2024-03-15, 1w
-        Script testen: b2, after b1, 1w
-        Schrijven script "IP reservatie wijzigen": b3, after b2, 1w
-        Script testen: b4, after b3, 1w
-        Schrijven script "IP reservatie verwijderen": b5, after b4, 1w
-        Script testen: after b5, 1w
+        Literatuur zoeken: b1, 2024-02-25, 7d
+        Literatuurstudie schrijven: after b1, 14d
+    section Programmeren
+        Schrijven script "IP reservatie maken": c1,2024-03-17, 1w
+        Script testen: c2, after c1, 1w
+        Schrijven script "IP reservatie wijzigen": c3, after c2, 1w
+        Script testen: c4, after c3, 1w
+        Schrijven script "IP reservatie verwijderen": c5, after c4, 1w
+        Script testen: after c5, 1w
     section Webpagina
-        Schrijven hoofdpagina: c1, 2024-04-01, 3w
-        Schrijven netadmin pagina: after c1, 3w
-    section Scriptie
-        Schrijven scriptie: 2024-05-10, 2024-05-24
+        Schrijven hoofdpagina: d1, 2024-03-31, 3w
+        Schrijven netadmin pagina: d2, after d1, 3w
+    section post-analyse
+        Dagelijkse meting: after d2, 2024-05-24
 ```
 
 ## 6. Conclusie

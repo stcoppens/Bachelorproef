@@ -108,6 +108,75 @@
       \verb https://www.rfc-editor.org/info/rfc7231
       \endverb
     \endentry
+    \entry{Liao2020}{article}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=00bad3dc0d4979c4e354fea74a8930d6}{%
+           family={Liao},
+           familyi={L\bibinitperiod},
+           given={Si},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f65f88d5e9db049eb20057d3b9b7862b}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Chenming},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=eebaa53b23423c440bd67c6b729bb715}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Yonghui},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=751cbe8b31adace0aaba586229808118}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Zhiyu},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=47d1c27fd1ebd251222da3ba5c5d6395}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Chengwei},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7ea8e7f76cce0b37cf3a140eaf5c0dfd}{%
+           family={Gao},
+           familyi={G\bibinitperiod},
+           given={Yayu},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f76de2a2e46b885f5382bd56fc51b892}{%
+           family={Zhong},
+           familyi={Z\bibinitperiod},
+           given={Guohui},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7e54490b6133bfd498bcf89813bb3182}
+      \strng{fullhash}{799dacd374453472cff334829f443387}
+      \strng{bibnamehash}{799dacd374453472cff334829f443387}
+      \strng{authorbibnamehash}{799dacd374453472cff334829f443387}
+      \strng{authornamehash}{7e54490b6133bfd498bcf89813bb3182}
+      \strng{authorfullhash}{799dacd374453472cff334829f443387}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{2020 International Conference on Cyber-Enabled Distributed Computing and Knowledge Discovery (CyberC)}
+      \field{title}{A Comprehensive Detection Approach of Nmap: Principles, Rules and Experiments}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{pages}{64\bibrangedash 71}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/CyberC49757.2020.00020
+      \endverb
+      \keyw{Operating systems;Intrusion detection;Telecommunication traffic;Tools;Reconnaissance;Knowledge discovery;Software;Nmap;ET OPEN;CNDR;Intrusion detection}
+    \endentry
     \entry{Mockapetris1987}{report}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=a44b90ef653ba684badd93d3f7acb017}{%
@@ -357,6 +426,75 @@
       \verb{url}
       \verb https://www.rfc-editor.org/info/rfc7231
       \endverb
+    \endentry
+    \entry{Liao2020}{article}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=00bad3dc0d4979c4e354fea74a8930d6}{%
+           family={Liao},
+           familyi={L\bibinitperiod},
+           given={Si},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f65f88d5e9db049eb20057d3b9b7862b}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Chenming},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=eebaa53b23423c440bd67c6b729bb715}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Yonghui},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=751cbe8b31adace0aaba586229808118}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Zhiyu},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=47d1c27fd1ebd251222da3ba5c5d6395}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Chengwei},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7ea8e7f76cce0b37cf3a140eaf5c0dfd}{%
+           family={Gao},
+           familyi={G\bibinitperiod},
+           given={Yayu},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f76de2a2e46b885f5382bd56fc51b892}{%
+           family={Zhong},
+           familyi={Z\bibinitperiod},
+           given={Guohui},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7e54490b6133bfd498bcf89813bb3182}
+      \strng{fullhash}{799dacd374453472cff334829f443387}
+      \strng{bibnamehash}{799dacd374453472cff334829f443387}
+      \strng{authorbibnamehash}{799dacd374453472cff334829f443387}
+      \strng{authornamehash}{7e54490b6133bfd498bcf89813bb3182}
+      \strng{authorfullhash}{799dacd374453472cff334829f443387}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{2020 International Conference on Cyber-Enabled Distributed Computing and Knowledge Discovery (CyberC)}
+      \field{title}{A Comprehensive Detection Approach of Nmap: Principles, Rules and Experiments}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{pages}{64\bibrangedash 71}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/CyberC49757.2020.00020
+      \endverb
+      \keyw{Operating systems;Intrusion detection;Telecommunication traffic;Tools;Reconnaissance;Knowledge discovery;Software;Nmap;ET OPEN;CNDR;Intrusion detection}
     \endentry
     \entry{Mockapetris1987}{report}{}
       \name{author}{1}{}{%

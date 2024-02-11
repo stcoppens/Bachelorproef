@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.4.22)  15 DEC 2023 08:51
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.4.22)  11 FEB 2024 21:13
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1460,11 +1460,6 @@ Package hyperref Info: Link coloring ON on input line 43.
 \@outlinefile=\write4
 \openout4 = `Voorstel-BP-StijnCoppens-2324.out'.
 
-
-Underfull \hbox (badness 5563) in paragraph at lines 60--60
-[]\TU/Montserrat(0)/b/n/17.28 Scripting voor netwerkbeheer: een geautomati-
- []
-
 LaTeX Font Info:    Font shape `TU/FiraMath(2)/m/n' will be
 (Font)              scaled to size 9.00096pt on input line 60.
 LaTeX Font Info:    Font shape `TU/FiraMath(2)/m/n' will be
@@ -1479,13 +1474,24 @@ LaTeX Font Info:    Font shape `TU/FiraMath(3)/m/n' will be
 (Font)              scaled to size 4.99947pt on input line 60.
 Package mdframed Info: mdframed inside a box 
  mdframed uses option nobreak mdframed on input line 60.
+
 (./Voorstel-BP-StijnCoppens-2324.toc)
 \tf@toc=\write5
 \openout5 = `Voorstel-BP-StijnCoppens-2324.toc'.
 
 
-Overfull \hbox (5.85571pt too wide) in paragraph at lines 75--76
-\TU/Montserrat(2)/m/n/10 len elk een subnetwerk (een aantal opeenvolgende
+Overfull \hbox (2.07234pt too wide) in paragraph at lines 69--70
+\TU/Montserrat(2)/m/n/10 onder andere geautomatiseerde oplossingen voor
+ []
+
+
+Overfull \hbox (8.9737pt too wide) in paragraph at lines 71--72
+\TU/Montserrat(2)/m/n/10 werkbeheerders, gebruikers zullen toelaten te com-
+ []
+
+
+Overfull \hbox (13.24237pt too wide) in paragraph at lines 73--74
+\TU/Montserrat(2)/m/n/10 beïnvloedt de implementatie van geautomatiseerde
  []
 
 File: ./img//HOGENT_Logo_Pos_rgb.png Graphic file (type bmp)
@@ -1494,115 +1500,131 @@ File: ./img//HOGENT_Logo_Pos_rgb.png Graphic file (type bmp)
 
 
 ]
-Overfull \hbox (2.86234pt too wide) in paragraph at lines 84--85
-[]\TU/Montserrat(2)/b/n/10 Beveiliging\TU/Montserrat(2)/m/n/10 : Het bewaren va
-n netwerkadres-
+Overfull \hbox (5.85571pt too wide) in paragraph at lines 79--80
+\TU/Montserrat(2)/m/n/10 len elk een subnetwerk (een aantal opeenvolgende
  []
 
 
-Underfull \hbox (badness 1009) in paragraph at lines 91--93
+Overfull \hbox (0.8924pt too wide) in paragraph at lines 83--84
+\TU/Montserrat(2)/m/n/10 teksten om de gevraagde wijzigingen aan te bren-
+ []
+
+
+Underfull \hbox (badness 1009) in paragraph at lines 97--99
 \TU/Montserrat(2)/m/n/10 commando’s zullen uitvoeren op EIP. Door de
  []
 
 
-Overfull \hbox (3.2437pt too wide) in paragraph at lines 99--100
-\TU/Montserrat(2)/m/n/10 taken, zoals het reserveren van internetadres-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 131--134
-
- []
-
-
-Overfull \hbox (0.58237pt too wide) in paragraph at lines 138--139
-[]\TU/Montserrat(2)/b/n/10 MX\TU/Montserrat(2)/m/n/10 : Dit resource record is 
-een \TU/Montserrat(2)/m/it/10 mail exchange
+Overfull \hbox (3.31123pt too wide) in paragraph at lines 100--101
+\TU/Montserrat(2)/m/n/10 ten de aanvrager wijzigingen kan aanvragen.[] Deze
  []
 
 File: ./img//HOGENT_Logo_Pos_rgb.png Graphic file (type bmp)
 <./img//HOGENT_Logo_Pos_rgb.png>
 [2]
-Overfull \hbox (3.21568pt too wide) in paragraph at lines 147--148
+Overfull \hbox (3.2437pt too wide) in paragraph at lines 105--106
+\TU/Montserrat(2)/m/n/10 taken, zoals het reserveren van internetadres-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 137--140
+
+ []
+
+
+Overfull \hbox (0.58237pt too wide) in paragraph at lines 144--145
+[]\TU/Montserrat(2)/b/n/10 MX\TU/Montserrat(2)/m/n/10 : Dit resource record is 
+een \TU/Montserrat(2)/m/it/10 mail exchange
+ []
+
+
+Overfull \hbox (3.21568pt too wide) in paragraph at lines 153--154
 []\TU/Montserrat(2)/m/n/10 IP-netwerken worden door netwerkbeheerders
  []
 
 
-Overfull \hbox (0.53233pt too wide) in paragraph at lines 153--154
+Overfull \hbox (0.53233pt too wide) in paragraph at lines 159--160
 []\TU/Montserrat(2)/b/n/10 Automatisch\TU/Montserrat(2)/m/n/10 : Permanent toew
 ijzen van een
- []
-
-
-Overfull \hbox (5.38367pt too wide) in paragraph at lines 174--175
-\TU/Montserrat(2)/m/n/10 scripttalen, geïntegreerde Git-ondersteuning,
- []
-
-
-Overfull \hbox (2.479pt too wide) in paragraph at lines 174--175
-\TU/Montserrat(2)/m/n/10 debug- en extensie mogelijkheden wordt ge-
- []
-
-
-Overfull \hbox (4.3112pt too wide) in paragraph at lines 175--176
-\TU/Montserrat(2)/m/n/10 krachtige programmeertaal. De beschikbaar-
  []
 
 File: ./img//HOGENT_Logo_Pos_rgb.png Graphic file (type bmp)
 <./img//HOGENT_Logo_Pos_rgb.png>
 [3]
-Overfull \hbox (1.99902pt too wide) in paragraph at lines 180--181
+Overfull \hbox (5.38367pt too wide) in paragraph at lines 180--181
+\TU/Montserrat(2)/m/n/10 scripttalen, geïntegreerde Git-ondersteuning,
+ []
+
+
+Overfull \hbox (2.479pt too wide) in paragraph at lines 180--181
+\TU/Montserrat(2)/m/n/10 debug- en extensie mogelijkheden wordt ge-
+ []
+
+
+Overfull \hbox (4.3112pt too wide) in paragraph at lines 181--182
+\TU/Montserrat(2)/m/n/10 krachtige programmeertaal. De beschikbaar-
+ []
+
+
+Overfull \hbox (1.99902pt too wide) in paragraph at lines 186--187
 \TU/Montserrat(2)/m/n/10 eerst gerichte testen gedaan waarbij commando’s
  []
 
 
-Overfull \hbox (1.62125pt too wide) in paragraph at lines 187--188
+Overfull \hbox (4.1277pt too wide) in paragraph at lines 188--188
+|[][]\TU/Montserrat(0)/b/n/12 Fase 1. Analyse pre-implementatie[]| 
+ []
+
+
+Overfull \hbox (1.62125pt too wide) in paragraph at lines 196--197
 \TU/Montserrat(2)/m/n/10 van de Python-scripts geschreven. Deze fase voor-
+ []
+
+File: ./img//HOGENT_Logo_Pos_rgb.png Graphic file (type bmp)
+<./img//HOGENT_Logo_Pos_rgb.png>
+[4]
+Overfull \hbox (12.9597pt too wide) in paragraph at lines 207--207
+|[][]\TU/Montserrat(0)/b/n/12 Fase 5. Analyse post-implementatie[]| 
  []
 
 File: ./img//Gantt.png Graphic file (type bmp)
 <./img//Gantt.png>
 LaTeX Font Info:    Font shape `TU/FiraMath(2)/m/n' will be
-(Font)              scaled to size 10.00107pt on input line 232.
+(Font)              scaled to size 10.00107pt on input line 241.
 LaTeX Font Info:    Font shape `TU/FiraMath(2)/m/n' will be
-(Font)              scaled to size 7.20076pt on input line 232.
+(Font)              scaled to size 7.20076pt on input line 241.
 LaTeX Font Info:    Font shape `TU/FiraMath(2)/m/n' will be
-(Font)              scaled to size 5.80061pt on input line 232.
+(Font)              scaled to size 5.80061pt on input line 241.
 LaTeX Font Info:    Font shape `TU/FiraMath(3)/m/n' will be
-(Font)              scaled to size 9.99893pt on input line 232.
+(Font)              scaled to size 9.99893pt on input line 241.
 LaTeX Font Info:    Font shape `TU/FiraMath(3)/m/n' will be
-(Font)              scaled to size 7.19922pt on input line 232.
+(Font)              scaled to size 7.19922pt on input line 241.
 LaTeX Font Info:    Font shape `TU/FiraMath(3)/m/n' will be
-(Font)              scaled to size 5.79938pt on input line 232.
+(Font)              scaled to size 5.79938pt on input line 241.
 
-Overfull \hbox (1.53877pt too wide) in paragraph at lines 232--232
+Overfull \hbox (1.53877pt too wide) in paragraph at lines 241--241
 [][]\TU/Montserrat(2)/m/n/10 Droms, R. (1997). \TU/Montserrat(2)/m/it/10 Dynami
 c Host Configuration Pro-
  []
 
 File: ./img//HOGENT_Logo_Pos_rgb.png Graphic file (type bmp)
 <./img//HOGENT_Logo_Pos_rgb.png>
-[4]
-File: ./img//HOGENT_Logo_Pos_rgb.png Graphic file (type bmp)
-<./img//HOGENT_Logo_Pos_rgb.png>
- [5
-
-] 
+[5] 
 enddocument/afterlastpage: lastpage setting LastPage.
 (./Voorstel-BP-StijnCoppens-2324.aux)
 Package rerunfilecheck Info: File `Voorstel-BP-StijnCoppens-2324.out' has not c
 hanged.
-(rerunfilecheck)             Checksum: 963A8BAFDEEAAB4754E7A8BE13D3F86E;2376.
+(rerunfilecheck)             Checksum: 616A39A829428199F31254D97202D82E;2696.
 Package logreq Info: Writing requests to 'Voorstel-BP-StijnCoppens-2324.run.xml
 '.
 \openout1 = `Voorstel-BP-StijnCoppens-2324.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 28354 strings out of 476660
- 540050 string characters out of 5806780
- 1876698 words of memory out of 5000000
- 48211 multiletter control sequences out of 15000+600000
+ 28363 strings out of 476660
+ 540439 string characters out of 5806780
+ 1877698 words of memory out of 5000000
+ 48220 multiletter control sequences out of 15000+600000
  515767 words of font info for 92 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  99i,12n,128p,864b,5549s stack positions out of 10000i,1000n,20000p,200000b,200000s
