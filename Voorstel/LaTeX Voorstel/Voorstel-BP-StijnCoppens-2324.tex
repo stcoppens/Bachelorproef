@@ -19,7 +19,7 @@
 \academicyear{2023-2024}
 
 
-\title{\textcolor{purple}{Netwerkautomatisering aan de Universiteit Gent: Een Scriptmatige Aanpak voor Efficiënt Beheer van IP-Adressen}}
+\title{Netwerkautomatisering aan de Universiteit Gent: Een Scriptmatige Aanpak voor Efficiënt Beheer van IP-Adressen}
 \author{Stijn Coppens}
 \email{stijn.coppens@student.hogent.be}
 
@@ -47,10 +47,10 @@ Het beheren van netwerken en het reserveren van netwerkadressen gebeurt momentee
 
 Deze bachelorproef richt zich op het uitwerken van een innovatieve, geautomatiseerde aanpak voor het beheren van netwerken en het
 toewijzen van netwerkadressen met behulp van scripts. 
-\textcolor{purple}{Het doel van deze bachelorproef is tweeledig, namelijk (1) het creëren van een tussenlaag van scripts boven een bestaand beheerprogramma voor netwerken, en (2) het nagaan van de impact van hiervan op het tijdverbruik voor het toevoegen, wijzigen en verwijderen van nieuwe IP-reserveringen in vergelijking met het huidige handmatige beheerproces.} Als resultaat van de bachelorproef kan men via een webpagina die beschikbaar is binnen het bedrijfsnetwerk, mits toestemming van de netwerkbeheerder, eenvoudig netwerkadresreservaties aanmaken, wijzigen of verwijderen.
+Het doel van deze bachelorproef is tweeledig, namelijk (1) het creëren van een tussenlaag van scripts boven een bestaand beheerprogramma voor netwerken, en (2) het nagaan van de impact hiervan op het tijdverbruik voor het toevoegen, wijzigen en verwijderen van nieuwe IP-reserveringen in vergelijking met het huidige handmatige beheerproces. Als resultaat van de bachelorproef kan men via een webpagina die beschikbaar is binnen het bedrijfsnetwerk, mits toestemming van de netwerkbeheerder, eenvoudig netwerkadresreservaties aanmaken, wijzigen of verwijderen.
 De webpagina zal de scripts, die binnen het project geschreven worden, aanroepen om de nodige gegevens op de juiste manier aan te leveren aan het beheerprogramma. 
 
-Het verminderen van handmatig beheer van netwerkconfiguraties als resultaat van deze bachelorproef, zal leiden tot efficiëntiewinsten, tijdsbesparingen en een vereenvoudigde aanpak. 
+Het verminderen van handmatig beheer van netwerkconfiguraties als resultaat van deze bachelorproef, zal leiden tot efficiëntiewinsten, tijdsbesparingen, een vereenvoudigde aanpak en minder fouten. 
 
 % Deze bachelorproef concentreert zich op het ontwikkelen van een vernieuwende, geautomatiseerde aanpak voor netwerkbeheer en adresallocatie met behulp van scripts. Het hoofddoel is om een abstractielaag te creëren boven een bestaande tool voor netwerkbeheer. Hierbij wordt de  van een IP Address Management (IPAM)-tool aangestuurd. Deze abstractielaag maakt interactie met de IPAM-tool mogelijk via Python-scripts en wordt toegepast via eenvoudige handelingen in een gebruiksvriendelijk webportaal. 
 % Netwerkconfiguraties worden momenteel grotendeels handmatig beheerd, wat inefficiënt is als proces, en tevens gevoelig is voor menselijke fouten. Het minimaliseren van handmatig beheer van netwerkconfiguraties zou leiden tot efficiëntiewinsten, tijdswinsten en verminderde complexiteit.
@@ -64,13 +64,13 @@ Het verminderen van handmatig beheer van netwerkconfiguraties als resultaat van 
 
 \section{Inleiding}%
 \label{sec:inleiding}
-\textcolor{purple}{In de snel evoluerende wereld van technologie is het doeltreffend beheren van netwerken cruciaal geworden voor het succes van organisaties. Echter, het handmatig beheren van netwerkconfiguraties, waaronder het toewijzen van specifieke netwerkadressen, blijft een tijdrovend en foutgevoelig proces.}
+In de snel evoluerende wereld van technologie is het doeltreffend beheren van netwerken cruciaal geworden voor het succes van organisaties. Echter, het handmatig beheren van netwerkconfiguraties, waaronder het toewijzen van specifieke netwerkadressen, blijft een tijdrovend en foutgevoelig proces.
 
-\textcolor{purple}{Om deze uitdagingen aan te pakken, zijn er onder andere geautomatiseerde oplossingen voor Internet Protocol Address Management (IPAM) ontwikkeld. Een goed uitgewerkte IPAM-tool kan een grote meerwaarde bieden voor elk netwerk doordat deze o.a. een overzicht kan geven van alle IP adressen die in gebruik zijn en hoeveel IP adressen er nog beschikbaar zijn per subnet.}
+Om deze uitdagingen aan te pakken, zijn er onder andere geautomatiseerde oplossingen voor Internet Protocol Address Management (IPAM) ontwikkeld. Een goed uitgewerkte IPAM-tool kan een grote meerwaarde bieden voor elk netwerk doordat deze o.a. een overzicht kan geven van alle IP adressen die in gebruik zijn en hoeveel IP adressen er nog beschikbaar zijn per subnet.
 
-\textcolor{purple}{Dit onderzoek zal enerzijds scripts voorzien die, via een webportaal en de goedkeuring van netwerkbeheerders, gebruikers zullen toelaten te communiceren met de IPAM-tool om IP reservaties te maken, wijzigen of verwijderen. Dankzij autorisatie zullen gebruikers op het webportaal enkel wijzigingen kunnen aanbrengen voor de netwerken waarvoor de gebruiker is gemachtigd dit te doen. Nadat de netwerkbeheerder die wijzigingen via hetzelfde webportaal toelaat, zullen de scripts in werking treden waarbij de nodige aanpassingen gemaakt worden binnen de gebruikte IPAM-tool. Tenslotte wordt de huidige werking vergeleken met die uit dit voorstel met een focus op eventuele tijds- en efficiëntiewinst.}
+Dit onderzoek zal scripts voorzien die, via een webportaal en de goedkeuring van netwerkbeheerders, gebruikers zullen toelaten te communiceren met de IPAM-tool om IP reservaties te maken, wijzigen of verwijderen. Dankzij autorisatie zullen gebruikers op het webportaal enkel wijzigingen kunnen aanbrengen voor de netwerken waarvoor de gebruiker gemachtigd is dit te doen. Nadat de netwerkbeheerder die wijzigingen via hetzelfde webportaal goedkeurt, zullen de scripts in werking treden waarbij de nodige aanpassingen gemaakt worden binnen de gebruikte IPAM-tool.
 
-\textcolor{purple}{Het automatisch beheren van IPAM via scripts beoogt niet alleen de efficiëntie van het netwerkbeheer te verhogen, maar ook tijdsbesparingen te realiseren en een meer gestroomlijnde aanpak te bieden. Deze tijdsbesparingen zijn de focus van ons onderzoek, waarbij we de volgende onderzoeksvraag trachten te beantwoorden: Hoe beïnvloedt de implementatie van geautomatiseerde scripts het tijdverbruik voor het toevoegen, wijzigen en verwijderen van nieuwe IP-reserveringen in vergelijking met het huidige handmatige beheerproces?}
+Het automatisch beheren van IPAM via scripts beoogt niet alleen de efficiëntie van het netwerkbeheer te verhogen, maar ook tijdsbesparingen te realiseren en een meer gestroomlijnde aanpak te bieden. Deze tijdsbesparingen zijn de focus van het onderzoek, waarbij we de volgende onderzoeksvraag trachten te beantwoorden: Hoe beïnvloedt de implementatie van geautomatiseerde scripts het tijdverbruik voor het toevoegen, wijzigen en verwijderen van nieuwe IP-reserveringen in vergelijking met het huidige handmatige beheerproces?
 
 \subsection{Probleemstelling}
 \label{sec:probleemstelling}
@@ -78,26 +78,26 @@ Deze bachelorproef zal uitgevoerd worden bij Universiteit Gent (UGent), directie
 
 Deze ongecrypteerde subnetbestanden stellen elk een subnetwerk (een aantal opeenvolgende netwerkadressen) voor en beschrijven cruciale informatie zoals belangrijke naamservers, welk \textit{Virtual Local Area Network (VLAN)} nummer, gateway, etc. Hiernaast bevatten deze zowel alle beschikbare als gereserveerde netwerkadressen met daarbij eventueel enkele regels voor domeinnamen en beveiliging.
 
-\textcolor{purple}{Voor elke netwerkadresreservatie die moet gebeuren, vullen geautoriseerde gebruikers via een webportaal alle nodige info in.
+Voor elke netwerkadresreservatie die moet gebeuren, vullen geautoriseerde gebruikers via een webportaal alle nodige info in.
 Nadat ze deze inzenden stuurt het webportaal een mail naar de groep mailbox van de netwerkbeheerders.
-In deze mail zitten dan alle nodige commando's en teksten om de gevraagde wijzigingen aan te brengen aan de relevante subnetbestanden.} In sommige gevallen dient de netwerkbeheerder eerst zelf nog uit te zoeken welk subnetbestand nodig is op basis van de documentatie en opzoekwerk. Indien de aanvrager van de reservatie dit heeft meegegeven in een veld voorzien voor commentaar, moet de netwerkbeheerder de eventuele domeinnaam- of beveiligingsregels handmatig toevoegen aan de reservatie.
+In deze mail zitten dan alle nodige commando's en teksten om de gevraagde wijzigingen aan te brengen aan de relevante subnetbestanden. In sommige gevallen dient de netwerkbeheerder eerst zelf nog uit te zoeken welk subnetbestand nodig is op basis van de documentatie en opzoekwerk. Indien de aanvrager van de reservatie dit heeft meegegeven in een veld voorzien voor commentaar, moet de netwerkbeheerder de eventuele domeinnaam- of beveiligingsregels handmatig toevoegen aan de reservatie.
 
 Het overzicht van de beschikbare subnetwerken is beschreven in een interne wikipediapagina met daarbij de beschrijving van elk subnetwerk. Deze huidige aanpak brengt meerdere uitdagingen met zich mee:
 \begin{itemize}
-    \item \textbf{Tijd}: Het manueel onderhouden van de \\scripts, subnetbestanden, netwerkadresreservaties (maken en opkuisen) kan veel tijd vragen. \textcolor{purple}{Alle mails met IP registraties moeten elk afzonderlijk bekeken en verwerkt worden.}
+    \item \textbf{Tijd}: Het manueel onderhouden van de \\scripts, subnetbestanden, netwerkadresreservaties (maken en opkuisen) kan veel tijd vragen. Alle mails met IP registraties moeten elk afzonderlijk bekeken en verwerkt worden.
     \item \textbf{Schaalbaarheid}: Doordat elke wijziging het bestaande bestand overschrijft en er dus \\geen historische data is kan men moeilijk trends herkennen. Ook wikipediapagina's moet men manueel bijwerken bij grote wijzigingen in de structuur.
-    \item \textbf{Consistentie}: De huidige aanpak vraagt \\meerdere manuele acties, waardoor die vatbaar is voor menselijke fouten of vergissingen. \textcolor{purple}{Ook het manueel opzoeken van de relevante subnetbestanden als de aanvrager niet weet in welk subnet de aanvraag terecht moet komen, dit kan leiden tot registraties in verkeerde subnetten.}  
-    \item \textbf{Beveiliging}: \textcolor{purple}{Zoals beschreven door \textcite{Liao2020} is een van de eerste stappen in een cybersecurity aanval het verzamelen van netwerk informatie via netwerk scan tools zoals Nmap. Het bewaren van alle IP registraties van het volledige domein centraal in cleartext bestanden, zoals nu het geval is, is dan ook een schat aan informatie voor elke individu met al dan niet slechte bedoelingen.}
+    \item \textbf{Consistentie}: De huidige aanpak vraagt \\meerdere manuele acties, waardoor die vatbaar is voor menselijke fouten of vergissingen. Ook het manueel opzoeken van de relevante subnetbestanden als de aanvrager niet weet in welk subnet de aanvraag terecht moet komen, kan leiden tot registraties in verkeerde subnetten.  
+    \item \textbf{Beveiliging}: Zoals beschreven door \textcite{Liao2020} is een van de eerste stappen in een cybersecurity aanval het verzamelen van netwerk informatie via netwerk scan tools zoals Nmap. Het bewaren van alle IP registraties van het volledige domein centraal in cleartext bestanden, zoals nu het geval is, is dan ook een schat aan informatie voor elke individu met al dan niet slechte bedoelingen.
 \end{itemize}
 
-UGent is momenteel stappen aan het ondernemen voor het implementeren van \textit{Efficiënt IP (EIP)}, een IPAM-softwarepakket. Dankzij deze implementatie is de verwachting dat de hierboven beschreven indicatoren zullen verbeteren. \textcolor{purple}{Om de onderzoeksvraag te beantwoorden zullen er metingen gedaan worden betreffende tijdverbruik. Hierbij zal de huidige manier van werken in tijdsgebruik vergeleken worden met die na de implementatie van het webportaal.}
+UGent is momenteel stappen aan het ondernemen voor het implementeren van \textit{Efficiënt IP (EIP)}, een IPAM-softwarepakket. Dankzij deze implementatie is de verwachting dat de hierboven beschreven indicatoren zullen verbeteren. Om de onderzoeksvraag te beantwoorden zullen er metingen gedaan worden betreffende tijdverbruik. Hierbij zal de huidige manier van werken in tijdsgebruik vergeleken worden met die na de implementatie van het webportaal.
 
 \subsection{Doelstelling}
 \label{sec:doelstelling}
 Deze bachelorproef zal een abstractielaag maken boven EIP waarbij scripts via de \textit{Application Programming Interface (API)} van EIP \\commando's zullen uitvoeren op EIP.
 Door de omvang van het EIP-project is het binnen de voorziene tijd van de bachelorproef niet haalbaar om UGent volledig over te zetten op de werking van EIP. Aangezien dit kritische componenten zijn, zal alles eerst uitvoerig getest worden waarbij elke stap in de migratie naar EIP weloverwogen is.
 
-Daarom stel ik als doel om een eerste versie op te leveren van een webportaal waarop men reeds één of meerdere netwerkadresreservaties kan aanmaken, wijzigen of verwijderen. \textcolor{purple}{Aangezien elk subnet specifiek is voor bepaalde verdiepingen, gebouwen en/of vakgroepen, en elke medewerker binnen UGent tot een specifieke vakgroep behoort, zullen we deze informatie gebruiken om te bepalen voor welke relevante subnetten de aanvrager wijzigingen kan aanvragen.} Deze aanvragen komen in een duidelijk overzicht terecht waar de netwerkbeheerders al dan niet \\openstaande reservaties kunnen wijzigen, goedkeuren of weigeren. Na goedkeuring worden de scripts gebruikt om de reservaties toe te passen in EIP.
+Daarom stel ik als doel om een eerste versie op te leveren van een webportaal waarop men reeds één of meerdere netwerkadresreservaties kan aanmaken, wijzigen of verwijderen. Aangezien elk subnet specifiek is voor bepaalde verdiepingen, gebouwen en/of vakgroepen, en elke medewerker binnen UGent tot een specifieke vakgroep behoort, zullen we deze informatie gebruiken om te bepalen voor welke relevante subnetten de aanvrager wijzigingen kan aanvragen. Deze aanvragen komen in een duidelijk overzicht terecht waar de netwerkbeheerders al dan niet \\openstaande reservaties kunnen wijzigen, goedkeuren of weigeren. Na goedkeuring worden de scripts gebruikt om de reservaties toe te passen in EIP.
 
 Dit project geeft een antwoord op de vraag: Hoe kunnen netwerkbeheerders hun werk vereenvoudigen door het gebruik van scripts?
 Het beoogde resultaat is:
@@ -134,7 +134,7 @@ Deze verbeteringen zullen helpen bij het optimaliseren van de netwerkinfrastruct
 Internet Protocol (IP) is het fundament van elk gestructureerd, goed functionerend en veilig netwerk. Het geeft de mogelijkheid efficiënt gegevens te routeren, netwerken te verdelen in meer beheersbare eenheden, toegang te beperken tot gevoelige data of systemen, services te identificeren en het oplossen van netwerkproblemen \autocite{Postel1981}. Dit hoofdstuk legt uit wat \textit{Domain Name System (DNS)} en \textit{Dynamic Host Configuration Protocol (DHCP)} is, waarom IPAM helpt bij het beheren van IP netwerken en waarom HTTP nodig is om te communiceren met EIP. 
 
 \subsection{DNS}
-\textcite{Mockapetris1987} schrijft dat DNS een systeem is dat \textit{resource records} gebruikt om onder andere vertalingen te voorzien tussen domeinnamen en IP-adressen. Als voorbeeld kan je via de browser naar google surfen via het IP-adres \textit{142.251.36.35} of via het domeinnaam\\ \textit{www.google.be}.
+\textcite{Mockapetris1987} schrijft dat DNS een systeem is dat \textit{resource records} gebruikt om onder andere vertalingen te voorzien tussen domeinnamen en IP-adressen. Als voorbeeld kan je via de browser naar google surfen via het IP-adres \textit{142.251.36.35} of via domeinnaam\\ \textit{www.google.be}.
 \\ \\
 Zoals beschreven door \textcite{Mockapetris1987} voorziet DNS meerdere types resource records die netwerkbeheerders kunnen meegeven: 
 \begin{itemize}
@@ -166,12 +166,13 @@ Naast de vele uitdagingen die zowel DNS als DHCP met zich meebrengen, is het beh
 Een mogelijke oplossing hiervoor is het gebruiken van IP Address Management (IPAM) via softwarepakketten die IPAM aanbieden.
 IPAM laat toe IP-adressen efficiënt te beheren in een netwerk, het leidt tot een gestructureerde aanpak waardoor conflicten tussen subnetten worden vermeden. Het geeft een compleet overzicht van het netwerk met percentages van hoeveel adressen beschikbaar en in gebruik zijn. IPAM geeft eveneens de mogelijkheid om de historiek bij te houden waardoor het van pas komt voor schaalbaarheid en beveiliging van het netwerk \autocite{Rooney2020}.
 
-\subsection{HTTP}
+\subsection{HTTP/HTTPS}
 Om communicatie met de API van EIP mogelijk te maken wordt er gebruik gemaakt van \textit{Hypertext Transfer Protocol (HTTP)}. Dit is een client-serverprotocol die communicatie mogelijk maakt op het Internet. Zoals beschreven door \textcite{Fielding2014} maakt HTTP gebruik van \textit{Uniform Resource Identifiers (URI's)} om unieke web-resources te identificeren en biedt het verschillende methoden \textit{(GET, POST, PUT, DELETE)} waarmee clients acties kunnen uitvoeren op serverresources. HTTP is \textit{stateless}, elke aanvraag is onafhankelijk, en statuscodes zoals "200 OK"\ en \textit{headers} worden gebruikt om de resultaten en aanvullende informatie van serververzoeken aan te geven, waardoor een gestandaardiseerde communicatie tussen clients en servers mogelijk is.
+Om dit te beveiligen, wordt \textit{Hypertext Transfer Protocol Secure (HTTPS)} gebruikt. HTTPS bouwt voort op HTTP, maar voegt een extra beveiligingslaag toe door middel van \textit{Secure Sockets Layer (SSL)/Transport Layer Security (TLS)}-encryptie, \\waardoor de uitwisseling van gegevens tussen client en server wordt versleuteld. Hierdoor worden alle IP-registraties en andere gegevens beter beschermd tegen potentiële aanvallen.
 
 \section{Methodologie}
 \label{sec:methodologie}
-In dit hoofdstuk wordt beschreven \textcolor{purple}{hoe lang en hoe de nodige metrics voor de onderzoeksvraag worden opgemeten,} welke software het project gebruikt, hoe deze worden toegepast, en welke fases het project zal doorlopen.
+In dit hoofdstuk wordt beschreven hoe lang en hoe de nodige metrics voor de onderzoeksvraag worden opgemeten, welke software het project gebruikt, hoe deze worden toegepast, en welke fases het project zal doorlopen.
 
 \subsection{Software}
 Alle scripts worden geschreven in \textbf{Visual studio code} in de programmeertaal \textbf{Python}.
@@ -185,8 +186,8 @@ Om de HTTP methodes naar de API van EIP te testen, wordt er gebruik gemaakt van 
 \subsection{Methodiek scripts}
 Voordat een script wordt geschreven, worden eerst gerichte testen gedaan waarbij commando's met parameters naar de API van EIP worden verzonden. Hierbij wordt er zowel naar de resultaten van de API gekeken als naar wat er op EIP zelf gebeurt via de webpagina. Eens deze testen voor een commando afgelopen zijn, wordt er pas overgegaan tot het schrijven van het Python-script. Hierbij worden telkens de parameters binnen elk script opgezet volgens de voorwaarden van de API.
 
-\subsection{\textcolor{purple}{Fase 1. Analyse pre-implementatie}}
-\textcolor{purple}{In de eerste fase van de bachelorproef worden er dagelijks metingen gedaan om na te gaan hoeveel tijd een netwerkbeheerder van UGent gebruikt om IP reservaties aan te maken, te wijzigen en/of te verwijderen. Hierbij wordt voor elk type actie de tijd afzonderlijk gemeten en beschreven in een spreadsheet die als bijlage aan het onderzoek wordt toegevoegd.}
+\subsection{Fase 1. Analyse pre-implementatie}
+In de eerste fase van de bachelorproef worden er dagelijks metingen gedaan om na te gaan hoeveel tijd een netwerkbeheerder van UGent gebruikt om IP reservaties aan te maken, te wijzigen en/of te verwijderen. Hierbij wordt voor elk type actie de tijd afzonderlijk gemeten en beschreven in een spreadsheet die als bijlage aan het onderzoek wordt toegevoegd.
 
 \subsection{Fase 2. Literatuurstudie}
 Voor deze tweede fase worden veertien dagen uitgetrokken. In deze fase wordt gezocht naar documentatie en literatuur van gelijkaardige projecten waarbij een webpagina met formulieren en logins gebruiken om scripts aan te roepen. Daarnaast wordt er ook uitgebreid aandacht gegeven aan de literatuur van Efficiënt IP zelf om na te gaan welke eisen deze stelt voor het aanmaken, wijzigen en verwijderen van IP-adressen.
@@ -204,8 +205,8 @@ Binnen de derde fase wordt het grootste stuk van de Python-scripts geschreven. D
 Het schrijven van de webpagina begint halverwege fase twee aangezien deze nauw op elkaar aansluiten.
 Voor het schrijven van de hoofdpagina van waar de drie scripts kunnen worden aangeroepen, worden drie weken voorzien. Hierna zijn er nog drie weken voorzien voor het schrijven van de netwerkbeheerderspagina. Op deze pagina kan de netwerkbeheerder de gevraagde wijzigingen nakijken, aanpassen en goed- of afkeuren. 
 
-\subsection{\textcolor{purple}{Fase 5. Analyse post-implementatie}}
-\textcolor{purple}{Tijdens deze laatste fase worden er opnieuw metingen gedaan om na te gaan hoeveel tijd de netwerkbeheerders van UGent nodig hebben voor elke afzonderlijke registratie. Ook in deze fase zullen de metingen in een spreadsheet komen om de nodige vergelijkingen te maken met de data uit de eerste fase van de bachelorproef.}
+\subsection{Fase 5. Analyse post-implementatie}
+Tijdens deze laatste fase worden er opnieuw metingen gedaan om na te gaan hoeveel tijd de netwerkbeheerders van UGent nodig hebben voor elke afzonderlijke registratie. Ook in deze fase zullen de metingen in een spreadsheet komen om de nodige vergelijkingen te maken met de data uit de eerste fase van de bachelorproef.
 
 \subsection{Gantt stappenplan}
 Een overzicht van alle fases worden weergegeven in dit Gantt stappenplan

@@ -5,16 +5,16 @@
 \contentsline {section}{\numberline {2}Literatuurstudie}{3}{section.2}%
 \contentsline {subsection}{\numberline {2.1}DNS}{3}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}DHCP}{3}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}IPAM}{4}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}HTTP}{4}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.3}IPAM}{3}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}HTTP/HTTPS}{4}{subsection.2.4}%
 \contentsline {section}{\numberline {3}Methodologie}{4}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Software}{4}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Methodiek scripts}{4}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}\textcolor {purple}{Fase 1. Analyse pre-implementatie}}{4}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.3}Fase 1. Analyse pre-implementatie}{4}{subsection.3.3}%
 \contentsline {subsection}{\numberline {3.4}Fase 2. Literatuurstudie}{4}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}Fase 3. Scripts schrijven}{4}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.5}Fase 3. Scripts schrijven}{5}{subsection.3.5}%
 \contentsline {subsection}{\numberline {3.6}Fase 4. Webpagina schrijven}{5}{subsection.3.6}%
-\contentsline {subsection}{\numberline {3.7}\textcolor {purple}{Fase 5. Analyse post-implementatie}}{5}{subsection.3.7}%
+\contentsline {subsection}{\numberline {3.7}Fase 5. Analyse post-implementatie}{5}{subsection.3.7}%
 \contentsline {subsection}{\numberline {3.8}Gantt stappenplan}{5}{subsection.3.8}%
 \contentsline {section}{\numberline {4}Verwachte resultaten}{5}{section.4}%
 \contentsline {section}{\numberline {5}Verwachte conclusie}{5}{section.5}%
