@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.4.22)  16 FEB 2024 10:47
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.4.22)  16 FEB 2024 11:49
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1485,8 +1485,8 @@ Overfull \hbox (2.07234pt too wide) in paragraph at lines 69--70
  []
 
 
-Overfull \hbox (13.24237pt too wide) in paragraph at lines 73--74
-\TU/Montserrat(2)/m/n/10 beïnvloedt de implementatie van geautomatiseerde
+Overfull \hbox (1.959pt too wide) in paragraph at lines 73--74
+\TU/Montserrat(2)/m/n/10 geautomatiseerde scripts het tijdverbruik voor het
  []
 
 File: ./img//HOGENT_Logo_Pos_rgb.png Graphic file (type bmp)
@@ -1546,6 +1546,11 @@ ijzen van een
 File: ./img//HOGENT_Logo_Pos_rgb.png Graphic file (type bmp)
 <./img//HOGENT_Logo_Pos_rgb.png>
 [3]
+Overfull \hbox (2.23705pt too wide) in paragraph at lines 170--172
+\TU/Montserrat(2)/m/n/10 gebruikt. HTTPS bouwt voort op HTTP, maar voegt
+ []
+
+
 Overfull \hbox (5.38367pt too wide) in paragraph at lines 181--182
 \TU/Montserrat(2)/m/n/10 scripttalen, geïntegreerde Git-ondersteuning,
  []
@@ -1565,21 +1570,11 @@ Overfull \hbox (1.99902pt too wide) in paragraph at lines 187--188
 \TU/Montserrat(2)/m/n/10 eerst gerichte testen gedaan waarbij commando’s
  []
 
-
-Overfull \hbox (4.1277pt too wide) in paragraph at lines 189--189
-|[]\TU/Montserrat(0)/b/n/12 Fase 1. Analyse pre-implementatie| 
- []
-
-
-Overfull \hbox (1.62125pt too wide) in paragraph at lines 197--198
-\TU/Montserrat(2)/m/n/10 van de Python-scripts geschreven. Deze fase voor-
- []
-
 File: ./img//HOGENT_Logo_Pos_rgb.png Graphic file (type bmp)
 <./img//HOGENT_Logo_Pos_rgb.png>
 [4]
-Overfull \hbox (12.9597pt too wide) in paragraph at lines 208--208
-|[]\TU/Montserrat(0)/b/n/12 Fase 5. Analyse post-implementatie| 
+Overfull \hbox (1.62125pt too wide) in paragraph at lines 197--198
+\TU/Montserrat(2)/m/n/10 van de Python-scripts geschreven. Deze fase voor-
  []
 
 File: ./img//Gantt.png Graphic file (type bmp)
@@ -1609,7 +1604,7 @@ enddocument/afterlastpage: lastpage setting LastPage.
 (./Voorstel-BP-StijnCoppens-2324.aux)
 Package rerunfilecheck Info: File `Voorstel-BP-StijnCoppens-2324.out' has not c
 hanged.
-(rerunfilecheck)             Checksum: 05C3176DD1984387F3873BC99C27DDF7;2726.
+(rerunfilecheck)             Checksum: 2B6622E5CA371CFEBBF2E2924E8D7253;2580.
 Package logreq Info: Writing requests to 'Voorstel-BP-StijnCoppens-2324.run.xml
 '.
 \openout1 = `Voorstel-BP-StijnCoppens-2324.run.xml'.
