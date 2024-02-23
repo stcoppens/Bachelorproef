@@ -1,0 +1,2 @@
+# Opzetten omgeving en gebruiken van flask
+https://code.visualstudio.com/docs/python/tutorial-flask
