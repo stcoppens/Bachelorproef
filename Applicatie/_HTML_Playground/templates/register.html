@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registratie voor {{ gebruiker }}</title>
+</head>
+<body>
+    <h1>Registratie voor gebruiker {{ gebruiker }} van {{ vakgroep }}</h1>
+    <form action="" method="post">
+        {{ csrf_token() }}
+        <label for="ip_address">IP-adres:</label><br>
+        <input type="text" id="ip_address" name="ip_address" required><br>
+        <label for="host_name">Hostnaam:</label><br>
+        <input type="text" id="host_name" name="host_name" required><br>
+        <label for="sub_domain">Subdomein (optioneel):</label><br>
+        <input type="text" id="sub_domain" name="sub_domain"><br>
+        <!-- Voeg hier de radioknoppen toe voor verschillende acties -->
+        <input type="submit" value="Registreer">
+    </form>
+</body>
+</html>

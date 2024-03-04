@@ -1,0 +1,404 @@
+/*
+Title:		Master styles for screen media
+Author:		Jurgen.Lust@UGent.be, based on Handcrafted CSS, by Dan Cederholm and HTML5 Boilerplate
+*/
+
+body {
+	font-family: Verdana, Arial, sans-serif;
+	color: #444;
+	font-size: 1em;
+	background: #e9ebf0;
+}
+
+/* links */
+
+a {
+	text-decoration: none;
+}
+
+a:link, a:visited {
+	color: #369;
+	outline: none;
+}
+
+a:hover, a:focus {
+	color: #39c;
+	text-decoration: underline;
+}
+
+/* page structure
+------------------------------------------------------------------------------------------------- */
+
+#wrap {
+	margin: 0 auto;
+	max-width: 60.75em;
+}
+
+#header {
+	position: relative;
+}
+
+#body {
+	padding: 0 .75em 2.25em .75em;  
+}
+
+#main {
+	width: 35.25em;
+	padding: 0 .75em;
+	float: left;
+}
+
+#main.wide {
+	width: 46.375em;
+}
+
+#subnavigation {
+	width: 11.25em;
+	float: left;
+	padding-bottom: 2em;
+}
+
+#aspect {
+	width: 11.25em;
+	float: right;
+	padding-bottom: 2em;
+	background: green;
+}
+
+footer {
+	height: 4em;
+	padding: 0 .75em;
+}
+
+
+/* wrap 
+------------------------------------------------------------------------------------------------- */
+#wrap {
+	background-color: #ffffff;
+	box-shadow: 0px 0px 7px rgba(68,84,97,.3);
+	-webkit-box-shadow: 0px 0px 7px rgba(68,84,97,.3);
+	-moz-box-shadow: 0px 0px 7px rgba(68,84,97,.3);
+}
+
+/* header
+------------------------------------------------------------------------------------------------- */
+#header {
+	height: 9.25em;
+	background: rgb(255,255,255);
+}
+
+#header h1 {
+	position: absolute;
+	top: 3.125em;
+	left: 0em;
+	right: 0em;
+	padding-left: 13.75em;
+	height: 1.875em;
+	line-height: 1.875em;
+	background: transparent url(../images/sprieten_s.gif) no-repeat;
+}
+
+#header h1 a {
+	text-decoration: none;
+	font-size: .875em;
+}
+
+#header h1 a:focus, header h1 a:hover {
+	text-decoration: underline;
+	color: rgb(255,255,255);
+}
+
+#header h2 {
+	position: absolute;
+	top: 2.375em;
+	left: 3.6875em;
+	width: 5.9375em;
+	height: 4.25em;
+	background: transparent url(../images/universiteit_gent.gif) no-repeat;
+	overflow: hidden;
+}
+
+#header h2 a {
+	display: block;
+	text-indent: -9999px;
+	overflow: hidden;
+	width: 5.9375em;
+	height: 4.25em;
+}
+
+#header nav {
+	position: absolute;
+	height: 4.25em;
+	top: 5em;
+	left: 12em;
+	right: 0em;
+}
+
+#header nav ul {
+	padding: 0 .75em 0 .25em; 
+	height: 1.5em;
+	line-height: 1.5em;
+}
+
+#header nav ul li {
+	float: left;
+}
+
+#header nav ul.mainmenu {
+	background-color: rgb(204,204,204);
+}
+
+#header nav ul.mainmenu li {
+	font-size: .75em;
+	margin-right: 1em;
+	padding: 0 .5em;
+}
+
+#header nav a {
+	text-decoration: none;
+}
+
+#header nav ul.mainmenu a:focus, header nav ul.mainmenu a:hover {
+	text-decoration: underline;
+}
+
+#header nav ul.mainmenu li.active {
+	background-color: rgb(51,102,153);
+}
+
+#header nav ul.mainmenu li.active a {
+	color: rgb(255,255,255);
+}
+
+#header nav ul.breadcrumbs {
+	padding-left: .5em;
+}
+
+#header nav ul.breadcrumbs li {
+	font-size: .75em;
+}
+
+#header nav ul.breadcrumbs li a, header nav ul.breadcrumbs li span {
+	font-size: .875em;
+}
+
+#header nav ul.breadcrumbs li a:hover, header nav ul.breadcrumbs li a:focus {
+	text-decoration: none;
+}
+
+#header nav ul.breadcrumbs li span {
+	color: rgb(153,153,153);
+}
+
+#header nav ul.breadcrumbs li a:after {
+	content: ">";
+	padding: 0 .5em;
+	color: rgb(153,153,153);
+}
+
+#header aside.login {
+	position: absolute;
+	right: .75em;
+	top: 1.75em;
+}
+
+#header aside.login ul {
+	float: right;
+	font-size: .75em;
+	height: 1.5em;
+	line-height: 1.5em;
+}
+
+#header aside.login ul li {
+	float: left;
+}
+
+#header aside.login li.name {
+    padding-left: 1.5em;
+	background: url(../images/usericon.png) no-repeat left center;
+}
+
+#header aside.login li.name:after {
+	content: "|";
+	padding: 0 .5em;
+	color: rgb(153,153,153);
+}
+
+#header form.search {
+	position: absolute;
+	right: .75em;
+	top: 3.125em;
+	height: 1.875em;
+	line-height: 1.875em;
+}
+
+#header form.search input {
+	font-size: .75em;
+}
+
+/* body
+------------------------------------------------------------------------------------------------- */
+
+#body {
+}
+
+/* main content
+------------------------------------------------------------------------------------------------- */
+#main {
+	line-height: 1.4em;
+}
+
+#body article {
+	font-size: .75em;
+	padding-bottom: .75em;
+	margin-bottom: 1em;
+}
+
+article h1 {
+	font-size: 1.67em;
+	line-height: 1em;
+	padding-bottom: .75em;
+}
+
+article h2 {
+	font-size: 1.67em;
+	font-weight: normal;
+	color: rgb(68, 84, 97);
+	border-bottom: 1px solid rgb(204, 204, 204);
+	margin-bottom: 0.4em;
+	margin-top: 0.6em;
+	padding-bottom: 0.3em;
+	padding-top: 0.5em;
+}
+
+article h3 {
+	font-size: 1.3em;
+	color: rgb(51, 51, 51);
+	margin-bottom: 0.3em;
+	margin-top: 0.5em;
+	font-weight: bold;
+}
+
+/* secondary content
+------------------------------------------------------------------------------------------------- */
+#subnavigation {
+}
+
+#subnavigation ul {
+	display: block;
+}
+
+#subnavigation ul li a {
+	display: block;
+	background: rgb(220, 223, 228) url(../images/plus.gif) no-repeat 7px 10px;
+	font-weight: 700;
+	padding: .4em 1.67em;
+	border-bottom: 1px solid white;
+	text-decoration: none;
+	font-size: .75em;
+	line-height: 1.5em;
+	letter-spacing: -0.05em;
+}
+
+#subnavigation ul li.open {
+	border: 1px solid rgb(253, 184, 18);
+}
+
+#subnavigation ul li.open a {
+	background: rgb(220, 223, 228) url(../images/min_blue.gif) no-repeat 7px 10px;
+}
+
+#subnavigation ul li.active a {
+	background-color: rgb(253, 184, 18);
+	color: white;
+}
+
+#subnavigation ul li.open li a {
+	background: rgb(245, 245, 245) url(../images/square.gif) no-repeat 7px 8px;
+	font-weight: 300;
+	padding: .25em 1.67em;
+	margin: 0;
+	color: rgb(51, 102, 153);
+	border: none;
+	border-bottom: 1px solid rgb(220, 223, 228);
+}
+
+#subnavigation ul li.open li a:hover, #subnavigation ul li.open li a:focus {
+	color: rgb(32, 74, 94);
+}
+/* footer
+------------------------------------------------------------------------------------------------- */
+footer {
+	background-color: #104b7d;
+	color: #ffffff;
+	font-size: 0.6875em;
+	padding-top: 1em;
+}
+
+footer small {
+	font-size: 100%;
+}
+
+footer ul {
+}
+
+footer ul li {
+	padding: 0 .3215em 0 .1875em;
+}
+
+footer small {
+	float: left;
+	padding: 0 .25em 0 0;
+}
+
+footer small ul li {
+	float: left;
+}
+
+footer nav {
+	float: right;
+	padding: 0 0 0 .25em;
+}
+
+footer nav li {
+	float: left;
+	border-right: 1px solid #ffffff;
+	padding: 0 1em;
+}
+
+footer nav li.last-child {
+	border-right: none;
+} 
+
+footer a:link, footer a:visited, footer a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+footer a:hover {
+	text-decoration: underline;
+}
+
+/* misc.
+------------------------------------------------------------------------------------------------- */
+
+hr, .hide {
+	display: none;
+}
+
+a img {
+	border: none;
+}
+
+img,
+object {
+	max-width: 100%;
+}
+
+.group:after, section:after, article:after, header:after, footer:after, aside:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}

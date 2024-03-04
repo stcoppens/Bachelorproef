@@ -1,0 +1,18 @@
+.git
+
+# No Eclipse internal files
+.settings
+.classpath
+.project
+
+# No IntelliJ internal files
+.idea
+**.iml
+
+# No buildable files
+target
+node_modules
+dist
+.tmp
+.sass-cache
+bower_components

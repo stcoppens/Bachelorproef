@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP Registratie</title>
+</head>
+<body>
+    <h1>Kies een gebruiker om een IP-adres te registreren</h1>
+    <ul>
+        {% for vakgroep, gebruikers in vakgroepen.items() %}
+            <h2>{{ vakgroep }}</h2>
+            {% for gebruiker in gebruikers %}
+                <li><a href="{{ url_for('register', vakgroep=vakgroep, gebruiker=gebruiker) }}">{{ gebruiker }}</a></li>
+            {% endfor %}
+        {% endfor %}
+    </ul>
+</body>
+</html>

@@ -1,0 +1,18 @@
+/*
+Title:		WE styles for screen media
+Author:		Jurgen.Lust@UGent.be, based on Handcrafted CSS, by Dan Cederholm and HTML5 Boilerplate
+*/
+
+
+#header h1 {
+	background-image: url(../images/sprieten_we.gif);
+}
+
+#subnavigation ul li.open {
+	border-color: rgb(153, 204, 204);
+}
+
+#subnavigation ul li.active a {
+	background-color: rgb(153, 204, 204);
+	color: white;
+}

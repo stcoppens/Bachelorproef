@@ -1,0 +1,31 @@
+/*
+Title:		UGent webapp screen styles
+Author:		jurgen.lust@ugent.be, based on Handcrafted CSS, by Dan Cederholm
+Copyright:	2011, Ghent University. All right reserved. Don't reuse without permission.
+                                                                                                                                                                                                                      
+                                 . NDD..DDD..                                   
+                              .NDN .NNNNNN  DND                                 
+                         ..7DD  7NNNNNNNNNNNNN. DDN..                           
+                      .DDN  DNNNNNNNNNNNNNNNNNNNND..DDD.                        
+                   +ND .+NNNNNNNNNNNNNNNNNNNNNNNNNNNND. NDD                     
+                                                          .                     
+                    ......................................                      
+                     DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDN                       
+                       .NN    NN   DN   .NN   ~NN   DN                          
+                       .NN   .ND   NN   .NN   NND   NN.                         
+                        NN   $ND   NN.  .NN   NND   DN                          
+                       .NN   NNN.  DN+   NN   NNN.  DN                          
+                       .NN   DNN   DNN  .NN   NNN.  DN?                         
+                       .NN   DNN.  NND  .NN   NNN   NND                         
+                       ~NN   DNN.  NND  .NN   NNN. .NND                         
+                       NNN   NNN. .NND  $NN.  NNN   NND                         
+                       DNN?  DNN  .NND  DNN.  NNN. .NND                         
+                     DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDN                       
+                                                                                
+*/
+
+/* import stylesheets and hide from IE/Mac \*/
+@import url("reset.css");
+@import url("master.css");
+@import url("ie.css");
+/* end import/hide */
