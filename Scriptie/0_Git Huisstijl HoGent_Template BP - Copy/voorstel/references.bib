@@ -71,22 +71,4 @@
   keywords  = {Operating systems;Intrusion detection;Telecommunication traffic;Tools;Reconnaissance;Knowledge discovery;Software;Nmap;ET OPEN;CNDR;Intrusion detection},
 }
 
-@Misc{Fontein2023,
-  author   = {R.L.H. {Fontein}},
-  date     = {2023-06},
-  title    = {Investigating DNS Information Flow In Corporate Networks},
-  url      = {http://essay.utwente.nl/95121/},
-  abstract = {The reverse DNS in corporate networks holds sensitive information, including hostnames that may reveal personal details of devices or users. This thesis aims to uncover and describe the information flows involved.
-
-First, we examine the reverse DNS of the University of Twente, finding names indicating network separation by location and function. Some blocks exhibit dynamic behaviour, hinting at DHCP and AD involvement in record management.
-
-Next, we conduct a literature study on network protocols potentially leaking user and device information. DHCP, AD, LLDP, and SNMP protocols are identified, along with their communication methods.
-
-We then investigate networking management appliances integrating DNS, DHCP, and IPAM services. Case studies on four DDI appliances reveal their role in the identified information flows. DHCP emerges as the primary contributor to device-to-DNS information transfer.
-
-Subsequently, we analyse DHCP and device leakage in practice. Examining user device traffic, we find nearly all devices in our dataset leak identifying information.
-
-We discuss the abuse of dynamic DNS names and its problematic nature. The scale of the issue is alarming, with 134,451 /24 prefixes exhibiting dynamic behaviour and 4% of globally reachable DNS servers returning private address results. We propose mitigation strategies for operators, vendors, and end users.},
-}
-
 @Comment{jabref-meta: databaseType:biblatex;}
