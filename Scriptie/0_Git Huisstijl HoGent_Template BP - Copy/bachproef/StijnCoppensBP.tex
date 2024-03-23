@@ -4,15 +4,9 @@
 %===============================================================================
 
 \documentclass[dutch,dit,thesis]{hogentreport}
-
-% TODO:
-% - If necessary, replace the option `dit`' with your own department!
-%   Valid entries are dbo, dbt, dgz, dit, dlo, dog, dsa, soa
-% - If you write your thesis in English (remark: only possible after getting
-%   explicit approval!), remove the option "dutch," or replace with "english".
-
 \usepackage{lipsum} % For blind text, can be removed after adding actual content
-
+\usepackage[toc]{glossaries}
+\usepackage{tocbibind}
 %% Pictures to include in the text can be put in the graphics/ folder
 \graphicspath{{../graphics/}}
 
@@ -51,14 +45,12 @@
 % Other packages not already included can be imported here
 
 %%---------- Document metadata -------------------------------------------------
-% TODO: Replace this with your own information
-\author{Ernst Aarden}
-\supervisor{Dhr. F. Van Houte}
-\cosupervisor{Mevr. S. Beeckman}
-\title[Optionele ondertitel]%
-    {Titel van de bachelorproef}
+\author{Stijn Coppens}
+\supervisor{Dhr. S. Verschraege}
+\cosupervisor{Mevr. A. Vandermeeren}
+\title{Netwerkautomatisering aan de Universiteit Gent: Een Scriptmatige Aanpak voor Efficiënt Beheer van IP-Adressen}
 \academicyear{\advance\year by -1 \the\year--\advance\year by 1 \the\year}
-\examperiod{1}
+\examperiod{2}
 \degreesought{\IfLanguageName{dutch}{Professionele bachelor in de toegepaste informatica}{Bachelor of applied computer science}}
 \partialthesis{false} %% To display 'in partial fulfilment'
 %\institution{Internshipcompany BVBA.}
@@ -75,6 +67,15 @@
 \renewcommand{\cleardoublepage}{\clearpage}
 
 \renewcommand{\arraystretch}{1.2}
+
+%% Acronyms
+\makeglossaries
+\newacronym{dns}{DNS}{Domain Name System}
+\newacronym{ip}{IP}{Internet Protocol}
+\newacronym{dhcp}{DHCP}{Dynamic Host Configuration Protocol}
+\newacronym{ipam}{IPAM}{Internet Protocol Address Management}
+\newacronym{http}{HTTP}{Hypertext Transfer Protocol}
+\newacronym{https}{HTTPS}{Hypertext Transfer Protocol Secure}
 
 %% Content starts here.
 \begin{document}
@@ -121,6 +122,7 @@
 % Als je een lijst van afkortingen of termen wil toevoegen, dan hoort die
 % hier thuis. Gebruik bijvoorbeeld de ``glossaries'' package.
 % https://www.overleaf.com/learn/latex/Glossaries
+\printglossary[title=Lijst van afkortingen, toctitle=Lijst van afkortingen]
 
 %---------- Kern ---------------------------------------------------------------
 
@@ -155,8 +157,15 @@
 Het onderwerp van deze bachelorproef is gebaseerd op een onderzoeksvoorstel dat vooraf werd beoordeeld door de promotor. Dat voorstel is opgenomen in deze bijlage.
 
 %% TODO: 
-%\section*{Samenvatting}
+\section*{Samenvatting}
+Het beheren van netwerken en het reserveren van netwerkadressen gebeurt momenteel grotendeels handmatig, wat inefficiënt is als proces, en tevens gevoelig voor menselijke fouten. 
 
+Deze bachelorproef richt zich op het uitwerken van een innovatieve, geautomatiseerde aanpak voor het beheren van netwerken en het
+toewijzen van netwerkadressen met behulp van scripts. 
+Het doel van deze bachelorproef is tweeledig, namelijk (1) het creëren van een tussenlaag van scripts boven een bestaand beheerprogramma voor netwerken, en (2) het nagaan van de impact hiervan op het tijdverbruik voor het toevoegen, wijzigen en verwijderen van nieuwe IP-reserveringen in vergelijking met het huidige handmatige beheerproces. Als resultaat van de bachelorproef kan men via een webpagina die beschikbaar is binnen het bedrijfsnetwerk, mits toestemming van de netwerkbeheerder, eenvoudig netwerkadresreservaties aanmaken, wijzigen of verwijderen.
+De webpagina zal de scripts, die binnen het project geschreven worden, aanroepen om de nodige gegevens op de juiste manier aan te leveren aan het beheerprogramma. 
+
+Het verminderen van handmatig beheer van netwerkconfiguraties als resultaat van deze bachelorproef, zal leiden tot efficiëntiewinsten, tijdsbesparingen, een vereenvoudigde aanpak en minder fouten.
 % Kopieer en plak hier de samenvatting (abstract) van je onderzoeksvoorstel.
 
 % Verwijzing naar het bestand met de inhoud van het onderzoeksvoorstel
