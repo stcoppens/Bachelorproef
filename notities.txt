@@ -1,0 +1,117 @@
+Zaken waarover nog te schrijven:
+- nakijken of er nog iets te vinden is over eff. IP?
+- Universiteit Gent - vakgroepen
+- Waarom python?
+
+Inleiding Literatuurstudie 
+------
+In deze literatuurstudie wordt een diepgaande verkenning gemaakt van verschillende aspecten die verband houden met het beheer van netwerken en de toewijzing van netwerkadressen. 
+Centraal staat de transitie van handmatige processen naar een geautomatiseerde aanpak, met een focus op het gebruik van scripts om efficiëntie te verhogen en menselijke fouten te minimaliseren.
+
+Allereerst wordt de huidige stand van zaken in netwerkbeheer besproken, waarbij de nadruk ligt op de uitdagingen en inefficiënties die gepaard gaan met handmatige processen voor het beheren en reserveren van netwerkadressen. 
+Vervolgens wordt ingegaan op de concepten van automatisering en scriptgebruik in het kader van netwerkbeheer, waarbij verschillende benaderingen en technologieën worden geanalyseerd.
+
+Daarna wordt de methodologie en technische aspecten van het ontwikkelde systeem belicht, met nadruk op de implementatie van scripts als een tussenlaag bovenop bestaande beheerprogramma's voor netwerken. 
+De literatuurstudie zal ook de principes en best practices van scriptontwikkeling in de context van netwerkbeheer behandelen, inclusief onderwerpen als scriptingtalen, API-integratie en beveiligingsimplicaties.
+
+Verder zal worden ingegaan op de potentiële voordelen van de voorgestelde geautomatiseerde aanpak, zoals efficiëntiewinsten, tijdsbesparingen en een verminderd risico op fouten. 
+Deze voordelen zullen worden geïllustreerd aan de hand van relevante case studies en praktijkvoorbeelden uit het werkveld.
+
+Tot slot zal de literatuurstudie de beperkingen en mogelijke uitdagingen van de voorgestelde aanpak bespreken, evenals mogelijke richtingen voor toekomstig onderzoek op dit gebied. 
+De conclusies van deze studie zullen bijdragen aan een dieper begrip van de rol van automatisering en scriptgebruik in het optimaliseren van netwerkbeheerprocessen en het verbeteren van operationele efficiëntie.
+-------
+
+
+Oplijsting TODO
+Stand van zaken:
+1) Beschrijven wat DNS, DHCP en IPAM is 
+	-> literatuurstudie voorstel + Extra uitleg DDI
+	
+2) Beschrijven hoe UGent dit momenteel toepast.
+
+	- Registratie maken op huidige netadmin webpagina
+	- kopie mail van registratie
+	- korte beschrijving wat dan moet gebeuren met de mail
+	- Beschrijving subnetbestanden
+		- beschrijving header
+			- Zowel /24 als andere
+		- beschrijving host entry
+			- default
+			- Optioneel: CA, AA, S, SI
+	- Beschrijven nadelen: 
+		- Manuele opkuisacties: Beschrijven procedure
+		
+3) Punt schrijven over DDI opties, met nadruk op EIP.
+	DDI appliances often only supply one core function itself, the IPAM part. DNS and
+	DHCP might be integrated into the DDI appliances, however typically it does not pro-
+	vide this functionality itself. Instead, its role is to aggregate and manage information
+	for these components from a centralised place. Example vendors of these software
+	packages are SolarWinds1, BlueCat2, Infoblox3, and EfficientIP4.
+	-> https://essay.utwente.nl/95121/1/Fontein_MA_EEMCS.pdf
+	
+4) Beschrijven wat tot nu toe gedaan werd:
+	a) Manuele testen in EIP -> Anne-Mie
+	b) Testen API calls via Postman -> Screenshots
+	c) Upload-script -> Uitleg van scriptflow, eventueel verwijzen naar flows in wiki
+	d) Download-script -> Uitleg van scriptflow, eventueel verwijzen naar flows in wiki
+	e) CompareAndUpdate-script -> Uitleg van scriptflow, eventueel verwijzen naar flows in wiki
+	
+5) Beschrijven hoe UGent hiermee in de toekomst aan de slag kan: webpagina
+6) Verdere opties na bachelorproef
+
+    Inefficiënties in Handmatig Netwerkbeheer
+		Problemen met handmatige processen voor het beheren en toewijzen van netwerkadressen.        
+		Risico's van menselijke fouten en inconsistenties.
+		
+			Thesis over de migratie van excels naar DDI : https://www.theseus.fi/bitstream/handle/10024/790910/Karaoui_Amin.pdf?sequence=2
+				Beschrijft nadelen aan werken met Excel en voordelen van DDI
+			@article{karaoui2023automating,
+			  title={Automating VLAN management with Infoblox},
+			  author={Karaoui, Amin},
+			  year={2023}
+			}
+        
+
+    Automatisering in Netwerkbeheer
+        Belang en voordelen van automatisering in netwerkbeheer.
+        Overzicht van geautomatiseerde oplossingen en benaderingen.
+		
+			Artikel die voordelen en noodzaak beschrijft van DDI : https://www.globalsecuritymag.com/Importance-of-Modern-DDI-services,20201216,106280.html
+			@article{al2024importance,
+			  title={Importance of Modern DDI services in the New Era of Distributed Networking--Global Security Mag Online},
+			  author={Al-Moneer, Mohammed and East, Middle and others},
+			  year={2024},
+			  publisher={Global Security Mag Online}
+			}
+
+    Scripting voor Netwerkautomatisering
+        Introductie van scripting als middel voor automatisering.
+        Verschillende scriptingtalen en hun toepassingen in netwerkbeheer.
+
+    API-Integratie en Beheerprogramma's voor Netwerken
+        Rol van API's bij het integreren van scripts met bestaande beheerprogramma's.
+        Overzicht van populaire beheerprogramma's en hun ondersteuning voor automatisering.
+
+    Methodologie voor Scriptontwikkeling
+        Stappen en benaderingen voor het ontwikkelen van scripts voor netwerkbeheer.
+        Best practices voor scriptontwikkeling in een netwerkomgeving.
+
+    Beveiligingsimplicaties van Geautomatiseerd Netwerkbeheer
+        Risico's en uitdagingen met betrekking tot beveiliging in geautomatiseerd netwerkbeheer.
+        Maatregelen voor het beveiligen van scripts en geautomatiseerde processen.
+
+    Potentiële Voordelen van Geautomatiseerd Netwerkbeheer
+        Efficiëntiewinsten en tijdsbesparingen door automatisering.
+        Verbeterde nauwkeurigheid en consistentie in netwerkconfiguraties.
+
+    Case Studies en Praktijkvoorbeelden
+        Voorbeelden uit de praktijk van succesvolle implementaties van geautomatiseerd netwerkbeheer.
+        Lessen die kunnen worden geleerd van real-world scenario's.
+
+    Beperkingen en Uitdagingen
+        Mogelijke beperkingen en uitdagingen van geautomatiseerd netwerkbeheer.
+        Risico's van overmatige afhankelijkheid van automatisering.
+
+    Toekomstige Richtingen voor Onderzoek
+        Potentiële gebieden voor verder onderzoek en innovatie in geautomatiseerd netwerkbeheer.
+        Voorspellingen voor toekomstige ontwikkelingen op dit gebied.
