@@ -115,3 +115,8 @@ Stand van zaken:
     Toekomstige Richtingen voor Onderzoek
         Potentiële gebieden voor verder onderzoek en innovatie in geautomatiseerd netwerkbeheer.
         Voorspellingen voor toekomstige ontwikkelingen op dit gebied.
+		
+		
+		
+		
+migcname: cname verhuizen tussen hosts
