@@ -63,8 +63,8 @@
 \hyphenation{back-slash}
 
 %% The bibliography (style and settings are  found in hogentthesis.cls)
-\addbibresource{bachproef.bib}            %% Bibliography file
 \addbibresource{../voorstel/voorstel.bib} %% Bibliography research proposal
+\addbibresource{bachproef.bib}            %% Bibliography file
 \defbibheading{bibempty}{}
 
 %% Prevent empty pages for right-handed chapter starts in twoside mode
@@ -74,15 +74,25 @@
 
 %% Acronyms
 \makeglossaries
+\newacronym{acl}{ACL}{Access Control List}
+\newacronym{api}{API}{Application Programming Interface}
 \newacronym{dns}{DNS}{Domain Name System}
+\newacronym{eip}{EIP}{Efficient IP}
 \newacronym{ip}{IP}{Internet Protocol}
 \newacronym{mac}{MAC}{Medium Access Control}
 \newacronym{dhcp}{DHCP}{Dynamic Host Configuration Protocol}
 \newacronym{ipam}{IPAM}{Internet Protocol Address Management}
-\newacronym{ddi}{DDI}{DNS, DHCP & IPAM}
+\newacronym{ddi}{DDI}{DNS, DHCP en IPAM}
 \newacronym{http}{HTTP}{Hypertext Transfer Protocol}
 \newacronym{https}{HTTPS}{Hypertext Transfer Protocol Secure}
+\newacronym{scp}{SCP}{Secure Copy Protocol}
+\newacronym{ssh}{SSH}{Secure Shell}
+\newacronym{ssl}{SSL}{Secure Sockets Layer}
+\newacronym{tls}{TLS}{Transport Layer Security}
+\newacronym{ugent}{UGent}{Universiteit Gent}
+\newacronym{uri}{URI}{Uniform Resource Identifiers}
 
+\textit{Secure Sockets Layer (SSL)/Transport Layer Security (TLS)}
 %% Content starts here.
 \begin{document}
 
@@ -142,6 +152,7 @@
 
 \input{inleiding}
 \input{standvanzaken}
+\input{Voorgeschiedenis}
 \input{methodologie}
 
 % Voeg hier je eigen hoofdstukken toe die de ``corpus'' van je bachelorproef
