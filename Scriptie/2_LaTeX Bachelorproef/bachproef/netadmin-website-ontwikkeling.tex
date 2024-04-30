@@ -1,0 +1,35 @@
+%%=============================================================================
+%% netadmin-website-ontwikkeling
+%%=============================================================================
+
+\chapter{Netadmin - Website ontwikkeling}%
+\label{ch:netadmin-website-ontwikkeling}
+
+\section{Databank}
+\label{databank}
+
+\section{Pagina: Zoek registraties}
+\label{zoek-registraties}
+\subsection{Front-end}
+\subsection{Back-end}
+%- getHosts: 1 of meerdere hostregistraties ophalen van EIP en deze beschikbaar stellen voor frontend, al dan niet met vakgroep filter
+
+
+\section{Pagina: Nieuwe registratie}
+\label{nieuwe-registratie}
+\subsection{Front-end}
+\subsection{Back-end}
+%- getSubnets: De gebruiker van de frontend kan een campus en gebouw uit de lijst van alle UGent campussen en gebouwen kiezen, op basis van deze 2 parameters wordt de unieke FI-code van het gebouw opgehaald. Elk subnet is gelinkt aan 1 of meerdere FI-codes, op basis van deze FI-code halen we de nodige informatie op van alle subnetten die de gevraagde FI-code bevatten.
+%- getAvailableIP: Dit script gebruikt het unieke subnet-ID van EfficientIP (deze kennen we dankzij getSubnets) om alle vrije, beschikbare IP-adressen op te halen van het gevraagde subnet.
+
+\section{Wijzigingen verwerken}
+\label{wijzigingen-verwerken}
+%- processChanges: Dit script haalt in de MySQL-database die voor dit project is opgezet alle hosts op die voldoen aan volgende criteria: netadmin_handled = 0 (neen), EN netadmin_approved = 1 (ja). Dit betekent dat we enkel de hosts uitlezen die nog niet verwerkt zijn maar die wel reeds goedgekeurd zijn door de netadmin. De nodige API-URL's worden gemaakt om de aanpassingen te maken in EIP, indien de failsave niet is overschreden, worden aangemaakte URL's gebruikt om de aanpassingen live te maken. Als elke API-call gelukt is (dit weten we dankzij het antwoord die EIP stuurt bij elke call), update het script het netadmin_handled veld van die host in de MySQL database.
+
+% TODO: subsectie per pagina
+% TODO: subsubsectie bespreking frontend en backend van elke subsectie
+% TODO: bij bespreking backend duidelijke uitleg geven over de werking van elk script
+% TODO: bespreking databank en interactie
+\lipsum[76-80]
+
+

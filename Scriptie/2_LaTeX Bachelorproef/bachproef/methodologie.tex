@@ -4,27 +4,24 @@
 
 \chapter{\IfLanguageName{dutch}{Methodologie}{Methodology}}%
 \label{ch:methodologie}
+Zoals de meeste onderzoeken start dit onderzoek met een literatuurstudie, deze is terug te vinden in hoofdstuk \ref{ch:stand-van-zaken}.
 
-%% TODO: In dit hoofstuk geef je een korte toelichting over hoe je te werk bent
-%% gegaan. Verdeel je onderzoek in grote fasen, en licht in elke fase toe wat
-%% de doelstelling was, welke deliverables daar uit gekomen zijn, en welke
-%% onderzoeksmethoden je daarbij toegepast hebt. Verantwoord waarom je
-%% op deze manier te werk gegaan bent.
-%% 
-%% Voorbeelden van zulke fasen zijn: literatuurstudie, opstellen van een
-%% requirements-analyse, opstellen long-list (bij vergelijkende studie),
-%% selectie van geschikte tools (bij vergelijkende studie, "short-list"),
-%% opzetten testopstelling/PoC, uitvoeren testen en verzamelen
-%% van resultaten, analyse van resultaten, ...
-%%
-%% !!!!! LET OP !!!!!
-%%
-%% Het is uitdrukkelijk NIET de bedoeling dat je het grootste deel van de corpus
-%% van je bachelorproef in dit hoofstuk verwerkt! Dit hoofdstuk is eerder een
-%% kort overzicht van je plan van aanpak.
-%%
-%% Maak voor elke fase (behalve het literatuuronderzoek) een NIEUW HOOFDSTUK aan
-%% en geef het een gepaste titel.
+Na deze literatuurstudie werden enkele voorbereidingen getroffen voordat er werd overgegaan tot het maken van de nieuwe website.
+Deze voorbereidingen zijn het maken van de nodige flowcharts afhankelijk van acties die gebruikers ondernemen op de website, het uitzoeken hoe de nieuwe website geïmplementeerd kan worden binnen de infrastructuur van UGent en welke collega kan helpen met het ontwikkelen van de front-end.
+Meer informatie hierover is te vinden in hoofdstuk \ref{ch:netadmin-voorbereidingen}.
 
-\lipsum[21-25]
+Na deze voorbereidingen worden er wekelijkse statusvergaderingen opgezet met S. Coppens die de back-end schrijft en het project overziet, A. De Keyzer die de front-end maakt, en eventuele stakeholders zoals Mevr. A. Vandermeeren die de leiding heeft over EfficientIP.
+Naast deze vergaderingen is er tussentijds ook veel informele communicatie om ideeën uit te wisselen en eventuele wijzigingen aan de voorgestelde plannen te bespreken.
 
+Er wordt een eerste versie voor de front-end van de website zowel lokaal opgezet als op een apache server in de testomgeving van UGent. 
+Deze eerste versie is gemaakt op basis van de besproken ideeën uit de voorbereidingen, de huidige netadmin pagina en de huidige UGent huisstijl.
+Deze versie bestaat initieel uit twee pagina's: een pagina om bestaande registraties op te vragen uit EfficientIP, en een pagina om een nieuwe registratie te maken.
+\begin{itemize}
+    \item Zoek registraties: Deze pagina geeft de ingelogde gebruiker de mogelijkheid om bestaande registraties op te vragen uit EfficientIP, en deze eventueel ook te wijzigen of verwijderen.
+    \item nieuwe registraties: Deze pagina laat de ingelogde gebruiker toe om een nieuwe registratie aan te maken.
+\end{itemize}
+
+Daarnaast is er ook in de testomgeving een MySQL-databank opgezet waarin zowel de nieuwe registraties, als de gewijzigde en de verwijderde registraties terecht komen. 
+Op de apache server wordt het script processChanges.py om de zoveel uur automatisch opgestart zodat alle goedgekeurde, onverwerkte, wijzigingen geüpload worden naar EfficientIP.
+
+Verdere informatie over de versies van de website en de bijhorende scripts zijn terug te vinden in hoofdstuk \ref{ch:netadmin-website-ontwikkeling}.
