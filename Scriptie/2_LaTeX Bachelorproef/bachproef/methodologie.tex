@@ -4,24 +4,19 @@
 
 \chapter{\IfLanguageName{dutch}{Methodologie}{Methodology}}%
 \label{ch:methodologie}
-Zoals de meeste onderzoeken start dit onderzoek met een literatuurstudie, deze is terug te vinden in hoofdstuk \ref{ch:stand-van-zaken}.
 
-Na deze literatuurstudie werden enkele voorbereidingen getroffen voordat er werd overgegaan tot het maken van de nieuwe website.
-Deze voorbereidingen zijn het maken van de nodige flowcharts afhankelijk van acties die gebruikers ondernemen op de website, het uitzoeken hoe de nieuwe website geïmplementeerd kan worden binnen de infrastructuur van UGent en welke collega kan helpen met het ontwikkelen van de front-end.
-Meer informatie hierover is te vinden in hoofdstuk \ref{ch:netadmin-voorbereidingen}.
+Net als de meeste onderzoeken begint dit onderzoek met een literatuurstudie, die te vinden is in hoofdstuk \ref{ch:stand-van-zaken}.
 
-Na deze voorbereidingen worden er wekelijkse statusvergaderingen opgezet met S. Coppens die de back-end schrijft en het project overziet, A. De Keyzer die de front-end maakt, en eventuele stakeholders zoals Mevr. A. Vandermeeren die de leiding heeft over EfficientIP.
-Naast deze vergaderingen is er tussentijds ook veel informele communicatie om ideeën uit te wisselen en eventuele wijzigingen aan de voorgestelde plannen te bespreken.
+Na deze literatuurstudie werden enkele voorbereidingen getroffen voordat het ontwikkelen van de nieuwe website van start ging. Deze voorbereidingen omvatten het maken van de nodige flowcharts die gebaseerd zijn op de acties die gebruikers op de website ondernemen, het onderzoeken van de implementatiemogelijkheden van de nieuwe website binnen de infrastructuur van UGent, en het identificeren van collega's die kunnen helpen bij de ontwikkeling van de front-end. Meer informatie hierover is te vinden in hoofdstuk \ref{ch:netadmin-voorbereidingen}.
 
-Er wordt een eerste versie voor de front-end van de website zowel lokaal opgezet als op een apache server in de testomgeving van UGent. 
-Deze eerste versie is gemaakt op basis van de besproken ideeën uit de voorbereidingen, de huidige netadmin pagina en de huidige UGent huisstijl.
-Deze versie bestaat initieel uit twee pagina's: een pagina om bestaande registraties op te vragen uit EfficientIP, en een pagina om een nieuwe registratie te maken.
+Na deze voorbereidingen zijn er wekelijkse statusvergaderingen opgezet met S. Coppens, die verantwoordelijk is voor het schrijven van de back-end en het overzien van het project, A. De Keyzer, die de front-end ontwikkelt, en eventuele stakeholders zoals Mevr. A. Vandermeeren, die leiding geeft aan EfficientIP. Naast deze vergaderingen is er ook regelmatig informeel contact om ideeën uit te wisselen en eventuele wijzigingen aan de voorgestelde plannen te bespreken.
+
+Er is een eerste versie van de front-end van de website zowel lokaal als op een Apache-server in de testomgeving van UGent opgezet. Deze eerste versie is gebaseerd op de besproken ideeën uit de voorbereidingsfase, de huidige netadmin-pagina en de bestaande huisstijl van UGent. De initiële versie omvat twee pagina's: een pagina om bestaande registraties op te vragen uit EfficientIP en een pagina om een nieuwe registratie aan te maken.
 \begin{itemize}
-    \item Zoek registraties: Deze pagina geeft de ingelogde gebruiker de mogelijkheid om bestaande registraties op te vragen uit EfficientIP, en deze eventueel ook te wijzigen of verwijderen.
-    \item nieuwe registraties: Deze pagina laat de ingelogde gebruiker toe om een nieuwe registratie aan te maken.
+    \item Registraties opzoeken: Deze pagina biedt de ingelogde gebruiker de mogelijkheid om bestaande registraties op te vragen uit EfficientIP en deze eventueel te wijzigen of te verwijderen.
+    \item Nieuwe registratie: Deze pagina stelt de ingelogde gebruiker in staat om een nieuwe registratie aan te maken.
 \end{itemize}
 
-Daarnaast is er ook in de testomgeving een MySQL-databank opgezet waarin zowel de nieuwe registraties, als de gewijzigde en de verwijderde registraties terecht komen. 
-Op de apache server wordt het script processChanges.py om de zoveel uur automatisch opgestart zodat alle goedgekeurde, onverwerkte, wijzigingen geüpload worden naar EfficientIP.
+Daarnaast is er ook een MySQL-database opgezet in de testomgeving waarin zowel nieuwe registraties als gewijzigde en verwijderde registraties worden opgeslagen. Op de Apache-server wordt het script processChanges.py om de zoveel uur automatisch gestart, zodat alle goedgekeurde, onverwerkte wijzigingen worden geüpload naar EfficientIP.
 
-Verdere informatie over de versies van de website en de bijhorende scripts zijn terug te vinden in hoofdstuk \ref{ch:netadmin-website-ontwikkeling}.
+Meer informatie over de verschillende versies van de website en de bijbehorende scripts is te vinden in hoofdstuk \ref{ch:netadmin-website-ontwikkeling}.
