@@ -4,47 +4,43 @@
 
 \chapter{\IfLanguageName{dutch}{Inleiding}{Introduction}}%
 \label{ch:inleiding}
+In de snel evoluerende wereld van technologie is het doeltreffend beheren van netwerken cruciaal geworden voor het succes van organisaties. Echter, het handmatig beheren van netwerkconfiguraties, waaronder het toewijzen van specifieke netwerkadressen, blijft een tijdrovend en foutgevoelig proces.
 
-De inleiding moet de lezer net genoeg informatie verschaffen om het onderwerp te begrijpen en in te zien waarom de onderzoeksvraag de moeite waard is om te onderzoeken. In de inleiding ga je literatuurverwijzingen beperken, zodat de tekst vlot leesbaar blijft. Je kan de inleiding verder onderverdelen in secties als dit de tekst verduidelijkt. Zaken die aan bod kunnen komen in de inleiding~\autocite{Pollefliet2011}:
+Om deze uitdagingen aan te pakken, zijn er onder andere geautomatiseerde netwerkbeheersystemen om het uitdelen van specifieke netwerkadressen te beheren. Een goed uitgewerkte beheersysteem kan een grote meerwaarde bieden voor elk netwerk doordat deze o.a. een overzicht kan geven van alle netwerkadressen die in gebruik zijn en hoeveel netwerkadressen er nog beschikbaar zijn per segment van het netwerk.
 
-\begin{itemize}
-  \item context, achtergrond
-  \item afbakenen van het onderwerp
-  \item verantwoording van het onderwerp, methodologie
-  \item probleemstelling
-  \item onderzoeksdoelstelling
-  \item onderzoeksvraag
-  \item \ldots
-\end{itemize}
+Dit onderzoek zal scripts voorzien die, via een webportaal en de goedkeuring van netwerkbeheerders, gebruikers zullen toelaten te communiceren met een dergelijk netwerkbeheersysteem om netwerkadres reservaties te maken, wijzigen of verwijderen. Dankzij autorisatie zullen gebruikers op het webportaal enkel wijzigingen kunnen aanbrengen voor de netwerken waarvoor de gebruiker gemachtigd is dit te doen. Nadat de netwerkbeheerder die wijzigingen via hetzelfde webportaal goedkeurt, zullen de scripts in werking treden waarbij de nodige aanpassingen gemaakt worden binnen het gebruikte beheersysteem.
 
 \section{\IfLanguageName{dutch}{Probleemstelling}{Problem Statement}}%
 \label{sec:probleemstelling}
-
-Uit je probleemstelling moet duidelijk zijn dat je onderzoek een meerwaarde heeft voor een concrete doelgroep. De doelgroep moet goed gedefinieerd en afgelijnd zijn. Doelgroepen als ``bedrijven,'' ``KMO's'', systeembeheerders, enz.~zijn nog te vaag. Als je een lijstje kan maken van de personen/organisaties die een meerwaarde zullen vinden in deze bachelorproef (dit is eigenlijk je steekproefkader), dan is dat een indicatie dat de doelgroep goed gedefinieerd is. Dit kan een enkel bedrijf zijn of zelfs één persoon (je co-promotor/opdrachtgever).
+Bij het begin van de bachelorproef worden handmatige registraties van apparaten binnen het netwerk van de Universiteit Gent bijgehouden via tekstbestanden met een vooraf bepaalde structuur. Medewerkers van de Universiteit Gent kunnen via een verouderde webpagina registraties aanmaken voor hun apparaten wanneer dit nodig is. Niet alle medewerkers weten in welk deel van het netwerk de registratie thuishoort, waardoor ze soms enkele belangrijke velden niet kunnen invullen. Indien dit voorkomt, kan het voor de netwerkbeheerder moeilijk zijn om te bepalen in welk netwerksegment de registratie hoort, wat soms tot fouten leidt. Zodra de medewerker de registratie indient, wordt deze als een e-mail naar de netwerkbeheerders gestuurd, die tijd moeten besteden om ervoor te zorgen dat de registratie correct in het juiste tekstbestand wordt geplaatst.
 
 \section{\IfLanguageName{dutch}{Onderzoeksvraag}{Research question}}%
 \label{sec:onderzoeksvraag}
-
-Wees zo concreet mogelijk bij het formuleren van je onderzoeksvraag. Een onderzoeksvraag is trouwens iets waar nog niemand op dit moment een antwoord heeft (voor zover je kan nagaan). Het opzoeken van bestaande informatie (bv. ``welke tools bestaan er voor deze toepassing?'') is dus geen onderzoeksvraag. Je kan de onderzoeksvraag verder specifiëren in deelvragen. Bv.~als je onderzoek gaat over performantiemetingen, dan 
+Dit onderzoek stelt twee onderzoeksvragen:
+\begin{enumerate}
+    \item Hoeveel tijd spenderen netwerkbeheerders van Universiteit Gent dagelijks aan het aanmaken, wijzigen en/of verwijderen van manuele netwerkregistraties van toestellen op het netwerk?
+    \item Hoe kan men via een softwareportaal van een netwerkbeheersysteem, een eenvoudig te gebruiken platform maken waarop medewerkers van Universiteit Gent netwerkregistraties kunnen aanmaken?
+    \begin{enumerate}
+        \item Hoe kunnen de netwerkbeheerders van Universiteit Gent registraties via dit platform beheren?
+    \end{enumerate}
+\end{enumerate}
 
 \section{\IfLanguageName{dutch}{Onderzoeksdoelstelling}{Research objective}}%
 \label{sec:onderzoeksdoelstelling}
-
-Wat is het beoogde resultaat van je bachelorproef? Wat zijn de criteria voor succes? Beschrijf die zo concreet mogelijk. Gaat het bv.\ om een proof-of-concept, een prototype, een verslag met aanbevelingen, een vergelijkende studie, enz.
+Deze bachelorproef heeft als doel een webpagina te ontwerpen die via scripts zal communiceren met een nieuw netwerkbeheersysteem. De website biedt medewerkers van de Universiteit Gent de mogelijkheid om informatie van bestaande registraties op te halen, deze te wijzigen of te verwijderen, en nieuwe registraties aan te maken. Na goedkeuring door de netwerkbeheerder van de Universiteit Gent zullen deze registraties op een correcte en veilige manier worden overgebracht naar het nieuwe netwerkbeheersysteem. Daarnaast zal de bachelorproef ook onderzoeken hoeveel tijd kan worden bespaard door het proces van het toevoegen van registraties aan het netwerkbeheersysteem te automatiseren.
 
 \section{\IfLanguageName{dutch}{Opzet van deze bachelorproef}{Structure of this bachelor thesis}}%
 \label{sec:opzet-bachelorproef}
-
-% Het is gebruikelijk aan het einde van de inleiding een overzicht te
-% geven van de opbouw van de rest van de tekst. Deze sectie bevat al een aanzet
-% die je kan aanvullen/aanpassen in functie van je eigen tekst.
-
 De rest van deze bachelorproef is als volgt opgebouwd:
 
 In Hoofdstuk~\ref{ch:stand-van-zaken} wordt een overzicht gegeven van de stand van zaken binnen het onderzoeksdomein, op basis van een literatuurstudie.
 
+In Hoofdstuk~\ref{ch:voorgeschiedenis} wordt het duidelijk welke stappen reeds ondernomen zijn binnen Universiteit Gent in hun migratie naar een nieuw netwerkbeheersysteem.
+
 In Hoofdstuk~\ref{ch:methodologie} wordt de methodologie toegelicht en worden de gebruikte onderzoekstechnieken besproken om een antwoord te kunnen formuleren op de onderzoeksvragen.
 
-% TODO: Vul hier aan voor je eigen hoofstukken, één of twee zinnen per hoofdstuk
+In Hoofdstuk~\ref{ch:netadmin-voorbereidingen} wordt beschreven hoe de opbouw en implementatie van de website werd voorbereid om binnen de infrastructuur van Universiteit Gent te passen.
+
+In Hoofdstuk~\ref{ch:netadmin-website-ontwikkeling} worden de belangrijkste onderdelen van de website en hun functie beschreven.
 
 In Hoofdstuk~\ref{ch:conclusie}, tenslotte, wordt de conclusie gegeven en een antwoord geformuleerd op de onderzoeksvragen. Daarbij wordt ook een aanzet gegeven voor toekomstig onderzoek binnen dit domein.
