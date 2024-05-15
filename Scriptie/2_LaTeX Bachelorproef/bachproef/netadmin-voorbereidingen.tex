@@ -12,14 +12,24 @@ Zoals beschreven in hoofdstuk \ref{ch:voorgeschiedenis}, ontvangen de netwerkbeh
 
 Na elke registratie wordt de e-mail ook verplaatst naar een aparte map in de mailbox. Deze map wordt later gebruikt om te achterhalen wie welke registratie heeft behandeld en wie die heeft aangemaakt. Dit wordt gedaan om een duidelijk traceerbaarheidssysteem te handhaven voor alle registratieactiviteiten.
 
-Om het dagelijkse tijdsverbruik te meten, is besloten om gedurende 13 opeenvolgende werkdagen alle registraties dagelijks te bundelen en deze te laten uitvoeren door de waarnemer, de heer S. Coppens. Bij aanvang van de metingen is de waarnemer al ingelogd op de juiste server in de juiste map en onder de juiste gebruiker. Elke registratie wordt afzonderlijk gemeten en genoteerd in een Excel-bestand, dat zal worden gebruikt om in de conclusie van de bachelorproef te bepalen hoeveel tijd er kan worden bespaard door de registraties te automatiseren. Deze metingen zijn terug te vinden in Bijlage\_1\_metingen\_preimplementatie.xlsx.
+\subsection{Tijdmetingen - aanpak}
+Om het dagelijkse tijdsverbruik te meten, is besloten om gedurende 13 opeenvolgende werkdagen alle registraties dagelijks te bundelen en deze te laten uitvoeren door de waarnemer. Bij aanvang van de metingen is de waarnemer al ingelogd op de juiste server in de juiste map en onder de juiste gebruiker. Elke registratie wordt afzonderlijk gemeten en genoteerd in een Excel-bestand, dit zal gebruikt worden om te bepalen hoeveel tijd er kan worden bespaard door de registraties te automatiseren. Deze metingen zijn terug te vinden in Bijlage\_1\_metingen\_preimplementatie.xlsx.
+
+\subsection{Tijdmetingen - analyse}
+Op basis van de meetresultaten die terug te vinden zijn in figuur \ref{fig:tijdverbruik_metingen} blijkt dat het aanmaken, wijzigen en verwijderen van registraties aanzienlijke tijd in beslag neemt voor netwerkbeheerders. Dagelijks wordt er gemiddeld 17 minuten en 54 seconden besteed aan het exlusief uitvoeren van registratietaken, hierbij wordt geen rekening gehouden met variabelen zoals het aantal te verwerken registraties, de tijd die verloren gaat aan het verbinden met de server, het starten van de handmatige registratieprocessen of andere externe factoren. Deze bevindingen benadrukken de noodzaak om het beheer van IP-registraties te verbeteren en te automatiseren, wat een significante tijdsbesparing en efficiëntiewinst kan opleveren voor netwerkbeheerders.
+
+\begin{figure}[H]
+    \includegraphics[width=16cm]{grafiek_totaal_tijdverbruik.png}
+    \caption{Tabel en grafiek met totaal tijdverbruik tijdens metingen}
+    \label{fig:tijdverbruik_metingen}
+\end{figure}
 
 \section{Analyse van de oude registratie website}
 Voordat het ontwikkelingsproces van start gaat, wordt de bestaande website grondig geëvalueerd om te bepalen welke functionaliteiten kunnen worden overgenomen in de nieuwe website. Dit omvat een diepgaande analyse van de bestaande processen en het identificeren van de vereisten voor de nieuwe website. Flowcharts worden gemaakt om de onderliggende processen te visualiseren en een duidelijk beeld te krijgen van de vereiste functionaliteiten. Deze flowcharts zijn niet definitief en dienen slechts als leidraad om enkele belangrijke stappen weer te geven.
 
 \subsection{Flowcharts van gewenste functionaliteiten}
 Er worden vijf flowcharts gemaakt voor acties die mogelijk moeten zijn op de nieuwe website.
-De eerste functie die elke ingelogde gebruiker op de website zal moeten kunnen is het opvragen van bestaande registraties, de flowchart hiervoor is terug te vinden in figuur  \ref{fig:flowchart_hostinfo_opvragen}. Eens de gebruiker de registratie gevonden heeft die aangepast moet worden, kan de registratie aangepast worden zoals weergegeven in figuur \ref{fig:flowchart_registratie_wijzigen}. Naast het wijzigen en verwijderen van registraties zal een gebruiker ook moeten kunnen aanmaken, een mogelijke flow is terug te vinden in figuur \ref{fig:flowchart_nieuwe_registratie}.
+De eerste functie die elke ingelogde gebruiker op de website zal moeten kunnen is het opvragen van bestaande registraties, de flowchart hiervoor is terug te vinden in figuur  \ref{fig:flowchart_hostinfo_opvragen}. Eens de gebruiker de juiste registratie gevonden heeft, kan die de registratie desgewenst aanpassen zoals weergegeven in figuur \ref{fig:flowchart_registratie_wijzigen}. Naast het wijzigen en verwijderen van registraties zullen er ook registraties moeten kunnen aangemaakt worden, een mogelijke flow hiervoor is terug te vinden in figuur \ref{fig:flowchart_nieuwe_registratie}.
 De netwerkbeheerders zullen een eigen pagina nodig hebben waar ze de nieuwe/gewijzigde registraties kunnen controleren en al dan niet goed- of afkeuren. Een mogelijke methode hiervoor is weergegeven in \ref{fig:flowchart_controle_Wijzigingen}. In sommige gevallen kan het voorkomen dat een subnet vol zit, in dat geval zal de netwerkbeheerder oudere registraties moeten kunnen verwijderen. Deze flowchart is terug te vinden in \ref{fig:flowchart_subnet_opkuisen}.
 
 \begin{figure}[H]

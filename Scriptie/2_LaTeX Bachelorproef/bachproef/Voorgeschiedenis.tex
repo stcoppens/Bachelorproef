@@ -13,9 +13,9 @@ Bij de aanvang van de bachelorproef is het netwerk van UGent nog volledig beheer
 \subsection{Subnetbestanden}
 \label{subnetbestanden}
 Op basis van ARWA-standaard krijgt elk subnetbestand een naam: “subnet” + subnet klasse (A/B/C/D/G/I/N/P/T/V/W) + subnetnummer (laatste 2 octetten van het netwerkadres). Elk subnetwerk binnen UGent komt overeen met een of meerdere subnetbestanden, afhankelijk van de grootte van het subnetwerk. Een subnetwerk dat meer dan 254 beschikbare IP-adressen bevat, komt overeen met meerdere, opeenvolgende, subnetbestanden. Indien een subnetwerk minder dan 254 hostadressen bevat, bijvoorbeeld 126, zal dit subnetbestand ook maar 126 hosts bevatten.
-Zo stelt bijvoorbeeld het subnetbestand “subnetB147.000” het subnet 157.193.147.0/24 voor, en subnetbestand “subnetB050.128” het subnet 157.193.50.128/25. Deze ongeëncrypteerde tekstbestanden stellen elk een deel , of een volledig subnet voor.
+Zo stelt bijvoorbeeld het subnetbestand “subnetB147.000” het subnet 157.193.147.0/24 voor, en subnetbestand “subnetB050.128” het subnet 157.193.50.128/25. Deze ongeëncrypteerde tekstbestanden stellen elk een deel, of een volledig subnet voor. Elk subnetbestand bestaat telkens uit twee delen: 
 \begin{itemize}
-    \item Header: Elk bestand begint met een “header” waarin belangrijke metadata beschreven staat over het netwerk, een voorbeeld is terug te vinden in figuur \ref{fig:header}. Belangrijk hier nog bij op te merken is dat subnet plaats gebruik maakt van de gebouwcodes (FI-codes) die UGent gebruikt. Daarnaast staan de optionele S-lijnen voor \acrfull{acl}-lijnen (beveiligingregels die toegang geven of weigeren voor een of meerdere subnetten of hosts) om extra toegang te voorzien aan het netwerk. 
+    \item Header: Elk bestand begint met een “header” waarin belangrijke metadata beschreven staat over het netwerk, een voorbeeld is terug te vinden in figuur \ref{fig:header}. Belangrijk hier nog bij op te merken is dat het metadataveld “subnet plaats” de gebouwcodes (FI-codes) die UGent gebruikt opsomt waar dit subnet actief is. Dit is relevant om te weten aangezien dit gebruikt kan worden om een verband te leggen tussen subnetten en gebouwen. Daarnaast staan de optionele S-lijnen voor \acrfull{acl}-lijnen (beveiligingregels die toegang geven of weigeren voor een of meerdere subnetten of hosts) om extra toegang te voorzien aan het netwerk. 
     \item Hosts: Afhankelijk van de grootte van het subnet kunnen er tot 254 hosts beschreven staan in het bestand. Elk hostadres, of die nu reeds bezet is of niet, staat beschreven in het subnetbestand. Hierbij krijg je dan een opsomming van alle informatie, waarbij elk informatieveld vooraf wordt gegaan door de relevante code. Een hostadres dat niet bezet is bevat, naast het nummer (die de laatste octet weergeeft van het IP-adres), enkel lege velden zoals te zien in \ref{fig:legehost}. Naast de data voor elke host kan een netwerkbeheerder ook extra lijnen toevoegen voor DNS A en CNAME resource records “AA: en CA:”, het openzetten van de beveiliging richting de host met “S: en SI:” en ook extra mailinformatie “MD:”. Een voorbeeld van een bezette host is figuur \ref{fig:bezettehost}.
 \end{itemize}
 
@@ -116,7 +116,7 @@ Naast de drie commando's \textbf{'mkh'}, \textbf{'cch'} en \textbf{'rmhost'} voo
 
 \begin{itemize}
     \item Hosts verplaatsen: vb. \textbf{'mvh B 147 B 50 teststijn1'} zal een host verplaatsen van subnetbestand subnetB147.000 naar subnetB50.000 
-    \item Subnetten opkuisen: vb. \textbf{'unused B 147 400'} geeft alle hosts weer die 400 dagen offline zijn, \textbf{'unused\_rmhost B 147 400'} geeft alle commando's om diezelfde hosts te verwijderen. Om dit werkende te krijgen worden de \acrshort{ARP}-tabellen van alle routers binnen UGent meerdere keren per dag uitgelezen. Als een toestel verbinding maakt met het netwerk zal het MAC-adres van dit toestel steeds voorkomen in deze tabel. Als het MAC-adres van een host uit subnet B147 dus 400 dagen niet is voorgekomen in een van de ARP-tabellen, dan zal deze weergegeven worden met dit commando.
+    \item Subnetten opkuisen: vb. \textbf{'unused B 147 400'} geeft alle hosts weer die 400 dagen offline zijn, \textbf{'unused\_rmhost B 147 400'} geeft alle commando's om diezelfde hosts te verwijderen. Om dit werkende te krijgen worden de \acrshort{ARP}-tabellen van alle routers binnen UGent meerdere keren per dag uitgelezen. Wanneer een apparaat verbinding maakt met het netwerk, wordt het \acrfull{mac}-adres, een uniek adres dat door de fabrikant van het apparaat is toegewezen, altijd opgenomen in deze tabel. Als het MAC-adres van een host uit subnet B147 bijvoorbeeld gedurende 400 dagen niet is verschenen in een van de ARP-tabellen, wordt het met dit commando weergegeven.
 \end{itemize}
 
 
@@ -145,14 +145,14 @@ Het gebruiken van deze subnetbestanden brengen meerdere uitdagingen met zich mee
     \item \textbf{Tijd}: Het manueel onderhouden van de scripts, subnetbestanden, netwerkadresreservaties (maken en opkuisen) kan veel tijd vragen. Alle mails met IP registraties moeten elk afzonderlijk bekeken en verwerkt worden.
     \item \textbf{Schaalbaarheid}: Doordat elke wijziging het bestaande bestand overschrijft en er dus geen historische data is kan men moeilijk trends herkennen. Ook wikipediapagina's moet men manueel bijwerken bij grote wijzigingen in de structuur.
     \item \textbf{Consistentie}: De huidige aanpak vraagt meerdere manuele acties, waardoor die vatbaar is voor menselijke fouten of vergissingen. Ook het manueel opzoeken van de relevante subnetbestanden als de aanvrager niet weet in welk subnet de aanvraag terecht moet komen, kan leiden tot registraties in verkeerde subnetten.  
-    \item \textbf{Beveiliging}: Zoals beschreven door \textcite{Liao2020} is een van de eerste stappen in een cybersecurity aanval het verzamelen van netwerk informatie via netwerk scan tools zoals 'Nmap'. Het bewaren van alle IP-registraties van het volledige domein centraal in cleartext bestanden, zoals nu het geval is, is dan ook een schat aan informatie voor elke individu met al dan niet slechte bedoelingen.
+    \item \textbf{Beveiliging}: Zoals beschreven door \textcite{Liao2020} is een van de eerste stappen in een cybersecurity aanval het verzamelen van netwerk informatie via netwerk scan tools zoals 'Nmap'. Het bewaren van alle IP-registraties van het volledige domein centraal in cleartext bestanden, zoals nu het geval is, is dan ook een schat aan informatie voor elk individu met al dan niet slechte bedoelingen.
 \end{itemize}
 
 
 \section{Status migratie subnetbestanden naar EfficientIP}
 \label{premigratie}
 Eind 2023 werden de eerste stappen genomen in het project om EfficientIP te implementeren in de werking. Dit project wordt uitgevoerd door Mevr. A. Vandermeeren, vanwege haar uitgebreide kennis van DNS en DHCP binnen UGent en Dhr. S. Coppens die de nodige scripts schrijft.
-Dit project maakt gebruik van volgende testen, deze worden uitgevoerd zowel bij het implementeren van nieuwe functionaliteiten als bij het testen van scripts.
+Dit project maakt gebruik van volgende testen, deze worden uitgevoerd zowel bij het implementeren van nieuwe functionaliteiten als bij het testen van scripts:
 \begin{itemize}
     \item Manuele EfficientIP testen: Om na te gaan hoe EfficientIP werkt en hoe bepaalde functionaliteiten reageren op nieuwe informatie worden manuele testen gedaan via de webinterface van EfficientIP.
     \item Postman API-testen: Via het programma Postman worden manuele testen geschreven die via HTTPS verstuurd worden naar EfficientIP. Dankzij deze testen is er meer inzicht hoe EfficientIP reageert en welke informatie noodzakelijk is.
@@ -167,6 +167,6 @@ Sinds de start van het project werden de volgende drie scripts in Python geschre
 
 
 \section{Volgende stappen in de migratie}
-Eens de testen geslaagd zijn voor de drie scripts uit sectie \ref{premigratie} zal het mogelijk zijn om EfficientIP synchroon mee te laten draaien naast de productie-omgeving. Eens dit in orde is het mogelijk om de website te implementeren van waaruit registraties gemaakt kunnen worden die naar EfficientIP gaan. Hoe de implementatie van de website zal gebeuren is terug te vinden in het volgende hoofdstuk \ref{ch:methodologie}.
+Eens de testen geslaagd zijn voor de drie scripts uit sectie \ref{premigratie} zal het mogelijk zijn om EfficientIP synchroon mee te laten draaien naast de productie-omgeving. Eens dit in orde is, is het mogelijk om de website te implementeren van waaruit registraties gemaakt kunnen worden die naar EfficientIP gaan. Hoe de implementatie van de website zal gebeuren is terug te vinden in het volgende hoofdstuk \ref{ch:methodologie}.
 
 
