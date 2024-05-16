@@ -13,24 +13,24 @@ Net zoals bij de meeste onderzoeken begint dit onderzoek met een uitgebreide lit
 \section{Voorbereidingen}
 Na de literatuurstudie werden enkele cruciale voorbereidingen getroffen voordat de ontwikkeling van de nieuwe website van start ging. Deze voorbereidingen omvatten:
 \begin{itemize}
-    \item Metingen van tijdsverbruik: Er worden metingen genomen om na te gaan hoeveel tijd netwerkbeheerders van UGent gebruiken om registraties uit te voeren.
-    \item Flowcharts maken: Er worden flowcharts gemaakt die de gebruikersacties op de website in kaart brengen. Deze flowcharts helpen bij het visualiseren van de gebruikersinteractie en het structureren van de navigatie en functionaliteit van de website.
-    \item Infrastructuuronderzoek: De mogelijkheden worden onderzocht voor het implementeren van de nieuwe website binnen de bestaande infrastructuur van UGent.
-    \item Samenstellen van teamleden: Er worden collega's aangesproken die kunnen bijdragen aan de ontwikkeling van de front-end. Deze stap zorgt voor een efficiënte verdeling van taken en expertise.
+    \item \textbf{Metingen van tijdsverbruik}: Er worden metingen gedaan om na te gaan hoeveel tijd netwerkbeheerders van UGent gebruiken om registraties uit te voeren.
+    \item \textbf{Flowcharts maken}: Er worden flowcharts gemaakt die de gebruikersacties op de website in kaart brengen. Deze flowcharts helpen bij het visualiseren van de gebruikersinteractie en het structureren van de navigatie en functionaliteit van de website.
+    \item \textbf{Infrastructuuronderzoek}: De mogelijkheden worden onderzocht voor het implementeren van de nieuwe website binnen de bestaande infrastructuur van UGent. Hierbij wordt duidelijk dat er een testomgeving met eenvoudig te implementeren apache- en MySQL-servers ter beschikking is.
+    \item \textbf{Samenstellen van teamleden}: Er worden collega's aangesproken die kunnen bijdragen aan de ontwikkeling van de front-end. Deze stap zorgt voor een efficiënte verdeling van taken en expertise.
 \end{itemize}
 Meer gedetailleerde informatie over deze voorbereidingen is te vinden in hoofdstuk \ref{ch:netadmin-voorbereidingen}.
 
 \section{Ontwikkelingsfases}
 De ontwikkelingsfases voor het ontwerpen van de nieuwe registratie-website volgt een Agile aanpak, waarbij er gewerkt wordt in korte, iteratieve sprints. Dit zorgt ervoor dat we snel kunnen reageren op feedback en wijzigingen kunnen doorvoeren. De belangrijkste activiteiten in deze fase zijn:
 \begin{itemize}
-    \item Wekelijkse statusvergaderingen: Er zijn wekelijkse vergaderingen opgezet met S. Coppens, die verantwoordelijk is voor de back-end ontwikkeling en projectoverzicht, A. De Keyzer, die de front-end ontwikkelt, en eventuele stakeholders zoals Mevr. A. Vandermeeren van EfficientIP. Deze vergaderingen dienen om de voortgang te bespreken, problemen op te lossen en nieuwe ideeën te evalueren.
-    \item Informeel Contact: Naast de formele vergaderingen is er regelmatig informeel contact om ideeën uit te wisselen en eventuele wijzigingen in de plannen te bespreken.
+    \item \textbf{Wekelijkse statusvergaderingen}: Er zijn wekelijkse vergaderingen opgezet met S. Coppens, die verantwoordelijk is voor de back-end ontwikkeling en \\projectoverzicht, A. De Keyzer, die de front-end ontwikkelt, en eventuele stakeholders zoals Mevr. A. Vandermeeren van EfficientIP. Deze vergaderingen dienen om de voortgang te bespreken, problemen op te lossen en nieuwe ideeën te evalueren.
+    \item \textbf{Informeel Contact}: Naast de formele vergaderingen is er regelmatig informeel contact om ideeën uit te wisselen en eventuele wijzigingen in de plannen te bespreken.
 \end{itemize}
 Deze aanpak wordt gekozen om flexibel, iteratief en efficiënt te zijn, met een sterke focus op samenwerking en voortdurende verbetering. 
 
 \section{Opzetten van testomgeving}
-Na de voorbereidingen en de eerste sprint wordt in de testomgeving van UGent een Apache-server opgezet en een MySQL databank opgezet. 
-Daarnaast wordt ook een Github repository opgezet waarop de nodige teamleden toegang hebben. GitHub is een webgebaseerd platform voor versiebeheer en samenwerking, waarmee ontwikkelaars code kunnen opslaan, beheren en samen aan projecten kunnen werken met behulp van Git. Het biedt tools voor code review, projectmanagement en integratie met andere ontwikkelingshulpmiddelen.
+Na de voorbereidingen en de eerste sprint wordt gebruik gemaakt van de testomgeving van UGent, waarin een Apache-server en een MySQL databank opgezet wordt. 
+Daarnaast wordt ook in de UGent-Github een repository opgezet waarop de nodige teamleden toegang hebben. GitHub is een webgebaseerd platform voor versiebeheer en samenwerking, waarmee ontwikkelaars code kunnen opslaan, beheren en samen aan projecten kunnen werken met behulp van Git. Het biedt tools voor code review, projectmanagement en integratie met andere ontwikkelingshulpmiddelen.
 
 \section{Database en Automatisering}
 Een MySQL-database wordt opgezet in de testomgeving om zowel nieuwe als gewijzigde en verwijderde registraties op te slaan. Deze database dient als tijdelijke opslag tot de wijzigingen worden verwerkt en geüpload naar EfficientIP. Op de Apache-server wordt het script processChanges.py om de zoveel uur automatisch gestart, zodat alle goedgekeurde, onverwerkte wijzigingen worden geüpload naar EfficientIP. Hiermee wordt gestreefd naar een robuuste en gebruiksvriendelijke website die voldoet aan de behoeften van de gebruikers en de infrastructuur van UGent.
