@@ -5,36 +5,18 @@
 \chapter{\IfLanguageName{dutch}{Methodologie}{Methodology}}%
 \label{ch:methodologie}
 
-De methodologie van dit onderzoek is gebaseerd op een gestructureerde aanpak, waarbij gebruik wordt gemaakt van een Agile ontwikkelingsmethodologie. Dit proces is ontworpen om flexibel en iteratief te werken, waardoor aanpassingen en verbeteringen snel kunnen worden doorgevoerd. De verschillende stappen in dit proces worden hieronder beschreven.
+Net als de meeste onderzoeken begint dit onderzoek met een literatuurstudie, die te vinden is in hoofdstuk \ref{ch:stand-van-zaken}.
 
-\section{Literatuurstudie}
-Net zoals bij de meeste onderzoeken begint dit onderzoek met een uitgebreide literatuurstudie. Deze geeft initieel uitleg over enkele belangrijke IT-netwerkconcepten en eindigt met het onderzoeken van vergelijkbare onderzoeken. Deze studie is terug te vinden in hoofdstuk \ref{ch:stand-van-zaken}.
+Na deze literatuurstudie werden enkele voorbereidingen getroffen voordat het ontwikkelen van de nieuwe website van start ging. Deze voorbereidingen omvatten het maken van de nodige flowcharts die gebaseerd zijn op de acties die gebruikers op de website ondernemen, het onderzoeken van de implementatiemogelijkheden van de nieuwe website binnen de infrastructuur van UGent, en het identificeren van collega's die kunnen helpen bij de ontwikkeling van de front-end. Meer informatie hierover is te vinden in hoofdstuk \ref{ch:netadmin-voorbereidingen}.
 
-\section{Voorbereidingen}
-Na de literatuurstudie werden enkele cruciale voorbereidingen getroffen voordat de ontwikkeling van de nieuwe website van start ging. Deze voorbereidingen omvatten:
+Na deze voorbereidingen zijn er wekelijkse statusvergaderingen opgezet met S. Coppens, die verantwoordelijk is voor het schrijven van de back-end en het overzien van het project, A. De Keyzer, die de front-end ontwikkelt, en eventuele stakeholders zoals Mevr. A. Vandermeeren, die leiding geeft aan EfficientIP. Naast deze vergaderingen is er ook regelmatig informeel contact om ideeën uit te wisselen en eventuele wijzigingen aan de voorgestelde plannen te bespreken.
+
+Er is een eerste versie van de front-end van de website zowel lokaal als op een Apache-server in de testomgeving van UGent opgezet. Deze eerste versie is gebaseerd op de besproken ideeën uit de voorbereidingsfase, de huidige netadmin-pagina en de bestaande huisstijl van UGent. De initiële versie omvat twee pagina's: een pagina om bestaande registraties op te vragen uit EfficientIP en een pagina om een nieuwe registratie aan te maken.
 \begin{itemize}
-    \item \textbf{Metingen van tijdsverbruik}: Er worden metingen gedaan om na te gaan hoeveel tijd netwerkbeheerders van UGent gebruiken om registraties uit te voeren.
-    \item \textbf{Flowcharts maken}: Er worden flowcharts gemaakt die de gebruikersacties op de website in kaart brengen. Deze flowcharts helpen bij het visualiseren van de gebruikersinteractie en het structureren van de navigatie en functionaliteit van de website.
-    \item \textbf{Infrastructuuronderzoek}: De mogelijkheden worden onderzocht voor het implementeren van de nieuwe website binnen de bestaande infrastructuur van UGent. Hierbij wordt duidelijk dat er een testomgeving met eenvoudig te implementeren apache- en MySQL-servers ter beschikking is.
-    \item \textbf{Samenstellen van teamleden}: Er worden collega's aangesproken die kunnen bijdragen aan de ontwikkeling van de front-end. Deze stap zorgt voor een efficiënte verdeling van taken en expertise.
+    \item Registraties opzoeken: Deze pagina biedt de ingelogde gebruiker de mogelijkheid om bestaande registraties op te vragen uit EfficientIP en deze eventueel te wijzigen of te verwijderen.
+    \item Nieuwe registratie: Deze pagina stelt de ingelogde gebruiker in staat om een nieuwe registratie aan te maken.
 \end{itemize}
-Meer gedetailleerde informatie over deze voorbereidingen is te vinden in hoofdstuk \ref{ch:netadmin-voorbereidingen}.
 
-\section{Ontwikkelingsfases}
-\label{agile}
-De ontwikkelingsfases voor het ontwerpen van de nieuwe registratie-website volgen een Agile aanpak, waarbij er gewerkt wordt in korte, iteratieve sprints. Dit zorgt ervoor dat we snel kunnen reageren op feedback en wijzigingen kunnen doorvoeren. De belangrijkste activiteiten in deze fase zijn:
-\begin{itemize}
-    \item \textbf{Wekelijkse statusvergaderingen}: Er zijn wekelijkse vergaderingen opgezet met S. Coppens, die verantwoordelijk is voor de back-end ontwikkeling en \\projectoverzicht, met A. De Keyzer, die de front-end ontwikkelt, en met eventuele stakeholders zoals Mevr. A. Vandermeeren die verantwoordelijk is voor de migratie naar EfficientIP. Deze vergaderingen dienen om de voortgang te bespreken, problemen op te lossen en nieuwe ideeën te evalueren.
-    \item \textbf{Informeel Contact}: Naast de formele vergaderingen is er regelmatig informeel contact om ideeën uit te wisselen en eventuele wijzigingen in de plannen te bespreken.
-\end{itemize}
-Deze aanpak wordt gekozen om flexibel, iteratief en efficiënt te zijn, met een sterke focus op samenwerking en voortdurende verbetering. 
-
-\section{Opzetten van testomgeving}
-Na de voorbereidingen en de eerste sprint wordt gebruik gemaakt van de testomgeving van UGent, waarin een Apache-server en een MySQL databank opgezet wordt. 
-Daarnaast wordt ook in de UGent-Github een repository opgezet waarop de nodige teamleden toegang hebben. GitHub is een webgebaseerd platform voor versiebeheer en samenwerking, waarmee ontwikkelaars code kunnen opslaan, beheren en samen aan projecten kunnen werken met behulp van Git. Het biedt tools voor code review, projectmanagement en integratie met andere ontwikkelingshulpmiddelen.
-
-\section{Database en Automatisering}
-Een MySQL-database wordt opgezet in de testomgeving om zowel nieuwe als gewijzigde en verwijderde registraties op te slaan. Deze database dient als tijdelijke opslag tot de wijzigingen worden verwerkt en geüpload naar EfficientIP. Op de Apache-server wordt het script processChanges.py om de zoveel uur automatisch gestart, zodat alle goedgekeurde, onverwerkte wijzigingen worden geüpload naar EfficientIP. Hiermee wordt gestreefd naar een robuuste en gebruiksvriendelijke website die voldoet aan de behoeften van de gebruikers en de infrastructuur van UGent.
+Daarnaast is er ook een MySQL-database opgezet in de testomgeving waarin zowel nieuwe registraties als gewijzigde en verwijderde registraties worden opgeslagen. Op de Apache-server wordt het script processChanges.py om de zoveel uur automatisch gestart, zodat alle goedgekeurde, onverwerkte wijzigingen worden geüpload naar EfficientIP.
 
 Meer informatie over de verschillende versies van de website en de bijbehorende scripts is te vinden in hoofdstuk \ref{ch:netadmin-website-ontwikkeling}.
-
