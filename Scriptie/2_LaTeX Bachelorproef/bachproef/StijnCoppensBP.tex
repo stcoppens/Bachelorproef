@@ -12,6 +12,8 @@
 \usepackage{mwe}
 \usepackage{float}
 \usepackage{attachfile}
+\usepackage{hyphenat}
+\usepackage[dutch]{babel}
 %% Pictures to include in the text can be put in the graphics/ folder
 \graphicspath{{../graphics/}}
 
@@ -78,15 +80,16 @@
 \newacronym{acl}{ACL}{Access Control List}
 \newacronym{api}{API}{Application Programming Interface}
 \newacronym{arp}{ARP}{Address Resolution Protocol}
+\newacronym{ddi}{DDI}{DNS, DHCP en IPAM}
+\newacronym{dhcp}{DHCP}{Dynamic Host Configuration Protocol}
 \newacronym{dns}{DNS}{Domain Name System}
 \newacronym{eip}{EIP}{Efficient IP}
-\newacronym{ip}{IP}{Internet Protocol}
-\newacronym{mac}{MAC}{Media Access Control}
-\newacronym{dhcp}{DHCP}{Dynamic Host Configuration Protocol}
-\newacronym{ipam}{IPAM}{Internet Protocol Address Management}
-\newacronym{ddi}{DDI}{DNS, DHCP en IPAM}
 \newacronym{http}{HTTP}{Hypertext Transfer Protocol}
 \newacronym{https}{HTTPS}{Hypertext Transfer Protocol Secure}
+\newacronym{fqdn}{FQDN}{Fully Qualified Domain Name}
+\newacronym{ip}{IP}{Internet Protocol}
+\newacronym{ipam}{IPAM}{Internet Protocol Address Management}
+\newacronym{mac}{MAC}{Media Access Control}
 \newacronym{scp}{SCP}{Secure Copy Protocol}
 \newacronym{ssh}{SSH}{Secure Shell}
 \newacronym{ssl}{SSL}{Secure Sockets Layer}
@@ -193,18 +196,16 @@ Het verminderen van handmatig beheer van netwerkconfiguraties als resultaat van 
 \input{../voorstel/voorstel-inhoud}
 
 %%---------- Andere bijlagen --------------------------------------------------
-% TODO: Voeg hier eventuele andere bijlagen toe. Bv. als je deze BP voor de
-% tweede keer indient, een overzicht van de verbeteringen t.o.v. het origineel.
-\chapter{Bijlagen}
+\chapter{Andere bijlagen}
 \label{appendix:bijlagen}
-
+De overige bijlagen zijn hier terug te vinden.
 \begin{itemize}
-    \item \textattachfile{../Bijlagen/metingen\_preimplementatie.xlsx}{Bijlage: Metingen preimplementatie}
-    \item \textattachfile{../Bijlagen/Flowchart\_Hostinfo\_opvragen.jpg}{Bijlage: Flowchart hostinfo opvragen}
-    \item \textattachfile{../Bijlagen/Flowchart\_Nieuwe\_registratie.jpg}{Bijlage: Flowchart nieuwe registraties}
-    \item \textattachfile{../Bijlagen/Flowchart\_Registratie\_verwijderen\_of\_wijzigen.jpg}{Bijlage: Flowchart registratie verwijderen of wijzigen}
-    \item \textattachfile{../Bijlagen/Flowchart\_Controle\_IPAM\_wijzigingen.jpg}{Bijlage: Flowchart controle IPAM wijzigingen}
-    \item \textattachfile{../Bijlagen/Flowchart\_Subnet\_opkuis.jpg}{Bijlage: Flowchart Subnet opkuisen}
+    \item \href{run:../Bijlagen/metingen\_preimplementatie.xlsx}{Bijlage 1: Metingen preimplementatie}\label{att:metingen}
+    \item \href{run:../Bijlagen/Flowchart\_Hostinfo\_opvragen.jpg}{Bijlage 2: Flowchart hostinfo opvragen}\label{att:flow_info}
+    \item \href{run:../Bijlagen/Flowchart\_Nieuwe\_registratie.jpg}{Bijlage 3: Flowchart nieuwe registraties}\label{att:flow_nieuw}
+    \item \href{run:../Bijlagen/Flowchart\_Registratie\_verwijderen\_of\_wijzigen.jpg}{Bijlage 4: Flowchart registratie verwijderen of wijzigen}\label{att:flow_wijzig}
+    \item \href{run:../Bijlagen/Flowchart\_Controle\_IPAM\_wijzigingen.jpg}{Bijlage 5: Flowchart controle IPAM wijzigingen}\label{att:flow_controle_ipam}
+    \item \href{run:../Bijlagen/Flowchart\_Subnet\_opkuis.jpg}{Bijlage 6: Flowchart Subnet opkuisen}\label{att:flow_subnet_kuisen}
 \end{itemize}
 
 %%---------- Backmatter, referentielijst ---------------------------------------

@@ -8,8 +8,8 @@ Dit hoofdstuk beschrijft enkele belangrijke componenten van de website. Het begi
 
 \section{Databank}
 \label{databank}
-Tijdens de ontwikkelingsfase van de website wordt gebruikt gemaakt van een MySQL-databank in de testomgeving van UGent. Er wordt beslist om binnen deze databank drie tabellen aan te maken: \textit{new\_hosts}, \textit{change\_hosts} en \textit{remove\_hosts}. Elke tabel zal door de front-end gevuld worden op basis van de door de gebruiker ingevulde velden en data die meegegeven wordt door scripts.
-De tabel \textit{change\_hosts} zal steeds twee versies van elke registratie bevatten, de originele versie van de host zoals die in EfficientIP staat, en de gewijzigde versie van de host uit de webinterface.
+Tijdens de ontwikkelingsfase van de website wordt gebruikt gemaakt van een \\MySQL-databank in de testomgeving van UGent. Er wordt beslist om binnen deze databank drie tabellen aan te maken: \textit{new\_hosts}, \textit{change\_hosts} en \textit{remove\_hosts}. Elke tabel zal door de front-end gevuld worden op basis van de door de gebruiker ingevulde velden en data die meegegeven wordt door scripts.
+De tabel \\\textit{change\_hosts} zal steeds twee versies van elke registratie bevatten, de originele versie van de host zoals die in EfficientIP staat, en de gewijzigde versie van de host uit de webinterface.
 
 \section{Toegangsregels}
 \label{toegangsregels}
@@ -44,7 +44,7 @@ De PHP-webpagina bevat een zoekveld waarin ingelogde UGent medewerkers één of 
     \item \textbf{Campus}: Hiermee kan men alle registraties die tot een bepaalde campus behoren opvragen.
     \item \textbf{Gebouw}: alle registraties die tot dit gebouw behoren.
     \item \textbf{Contactpersoon}: Dit kan op basis van “voornaam naam” of op basis van e-mail. Hiermee kan je alle registraties opvragen die deze persoon als contactpersoon bevatten.
-    \item \textbf{FQDN}: FQDN staat voor Fully Qualified Domain Name. Indien een gebruiker dit gebruikt zal die de registratie met deze FQDN als resultaat te zien krijgen.
+    \item \textbf{FQDN}: \acrshort{fqdn} staat voor Fully Qualified Domain Name. Indien een gebruiker dit gebruikt zal die de registratie met deze FQDN als resultaat te zien krijgen.
     \item \textbf{Hostnaam}: Dit geeft hetzelfde resultaat als bij het zoeken op basis van FQDN.
 \end{itemize}
 Of een gebruiker nu één of meerdere registraties opzoekt, elk resultaat wordt, zoals weergegeven in figuur \ref{fig:netadmin_ZoekHost_MeerdereHosts}, onder elkaar samengevat weergegeven. Indien men op een resultaat klikt, kan men dit openklappen en zal men alle informatie van deze registratie kunnen inkijken. Een voorbeeld hiervan is terug te vinden in \ref{fig:netadmin_ZoekHost_1host}. Naast de informatie van de registratie zullen er ook twee knoppen beschikbaar zijn: één knop om de registratie te bewerken, en één om de registratie te verwijderen.
@@ -61,14 +61,14 @@ Zoals weergegeven in figuur \ref{fig:netadmin_ZoekHost_BewerkHost} zal elke knop
 \end{figure}
 \begin{figure}[H]
     \includegraphics[width=15cm]{netadmin_ZoekHost_BewerkHost.png}
-    \caption{Meerdere resultaten}
+    \caption{Registratie bewerken}
     \label{fig:netadmin_ZoekHost_BewerkHost}
 \end{figure}
 \subsection{Back-end}
-Voor de back-end van deze pagina is het python-script \textit{getHosts.py} geschreven. Nadat alle nodige logging-acties genomen zijn, zal het script de meegegeven argumenten controleren  op aantallen en weggeschrijven naar een variabele. Hierna zal het script een configuratiebestand op de webserver uitlezen waarin onder andere de inloggegevens voor EfficientIP staan. Als dit allemaal correct verloopt, worden de inloggegevens voor EfficientIP opgehaald. Daarna wordt op basis van enkele functies beslist wat voor zoekterm is meegegeven als argument. Op basis van deze beslissing wordt dan contact gemaakt met EfficientIP via de juiste API-call. Naast de zoekterm kan het script ook één of meerdere vakgroepen als argument ontvangen. Als dit het geval is, worden deze vakgroepen gebruikt om de resultaten te filteren die de gebruiker kan opvragen. Op deze manier krijgt de gebruiker alleen resultaten te zien waarvoor die geautoriseerd is.
+Voor de back-end van deze pagina is het python-script \textit{getHosts.py} geschreven. Nadat alle nodige logging-acties genomen zijn, zal het script de meegegeven argumenten controleren  op aantallen en weggeschrijven naar een variabele. Hierna zal het script een configuratiebestand op de webserver uitlezen waarin onder andere de inloggegevens voor EfficientIP staan. Als dit allemaal correct verloopt, worden de inloggegevens voor EfficientIP opgehaald. Daarna wordt op basis van enkele functies beslist wat voor zoekterm is meegegeven als argument. Op basis van deze beslissing wordt dan contact gemaakt met EfficientIP via de juiste API-oproep. Naast de zoekterm kan het script ook één of meerdere vakgroepen als argument ontvangen. Als dit het geval is, worden deze vakgroepen gebruikt om de resultaten te filteren die de gebruiker kan opvragen. Op deze manier krijgt de gebruiker alleen resultaten te zien waarvoor die geautoriseerd is.
 
 Indien EfficientIP antwoordt dat er geen registraties zijn op basis van de zoekterm, wordt dit weggeschreven in de log en eindigt het script. Indien EfficientIP wel registraties teruggeeft, wordt een onderscheid gemaakt op basis van het aantal registraties.
-Indien er meer dan 1 registratie wordt weergegeven, wordt enkel de FQDN, IP, MAC en IP-ID van elke registratie in een lijst weggeschreven naar de output van het script. Als er maar 1 registratie is, wordt de host volledig verwerkt. Deze verwerking zal nog extra API-calls naar EfficientIP sturen om bijvoorbeeld de aliasen die tot de registratie behoren op te halen.
+Indien er meer dan 1 registratie wordt weergegeven, wordt enkel de FQDN, IP, MAC en IP-ID van elke registratie in een lijst weggeschreven naar de output van het script. Als er maar 1 registratie is, wordt de host volledig verwerkt. Deze verwerking zal nog extra API-oproepen naar EfficientIP sturen om bijvoorbeeld de aliasen die tot de registratie behoren op te halen.
 
 Deze aanpak is gekozen omdat sommige zoektermen, zoals vakgroep of campus, een groot aantal registraties kunnen opleveren, wat kan resulteren in een langere wachttijd voordat de gebruiker zijn resultaten te zien krijgt. Indien een gebruiker dan een registatie openklikt, zal het script nogmaals de host opzoeken op basis van IP-ID, waardoor die maar 1 resultaat zal moeten verwerken en weergeven.
 
@@ -80,27 +80,27 @@ Deze pagina laat ingelogde gebruikers toe om nieuwe registraties te maken. De ve
 Zoals weergegeven in figuur \ref{fig:netadmin_NieuweHost} wordt een formulier weergegeven waarbij bij sommige velden een keuze gemaakt moet worden op basis van een oplijsting. Indien meer informatie over een veld nodig is kan de gebruiker dit terugvinden door met de cursor over het veldnaam te zweven. Ook deze functie is zichtbaar in figuur \ref{fig:netadmin_NieuweHost}.
 Een voorbeeld daarvan is locatie, waarbij de gebruiker een campus en gebouw moet kiezen. Eens deze gekozen zijn, zal achterliggend een script worden uitgevoerd dat op basis van de FI-code van het gebouw alle subnetnamen van subnetten ophaalt die in dat gebouw worden gebruikt. Deze lijst van subnetnamen wordt vervolgens gefilterd op basis van de gebruikersgroep waartoe de gebruiker behoort. Zo zal een gewone gebruiker enkel subnetnamen te zien krijgen met “data” of “colo” in de naam. De gebruiker kan dan het juiste subnet kiezen uit de gepresenteerde lijst zoals terug te vinden in figuur \ref{fig:netadmin_NieuweHost_oplijstingSubnets}. Indien de hostnaam reeds in gebruik is als hostnaam of alias, zal een gepaste foutmelding weergeven worden zoals in figuur \ref{fig:netadmin_NieuweHost_Foutmelding}. Als de vereiste velden ingevuld zijn en de hostnaam niet in gebruik is zal ook hier een gepaste melding weergegeven worden zoals te zien in figuur \ref{fig:netadmin_NieuweHost_SuccessRequest}.
 \begin{figure}[H]
-    \includegraphics[width=15cm]{netadmin_NieuweHost.png}
-    \caption{Meerdere resultaten}
+    \includegraphics[width=15cm]{netadmin\_NieuweHost.png}
+    \caption{Formulier nieuwe registratie}
     \label{fig:netadmin_NieuweHost}
 \end{figure}
 \begin{figure}[H]
-    \includegraphics[width=10cm]{netadmin_NieuweHost_oplijstingSubnets.png}
+    \includegraphics[width=10cm]{netadmin\_NieuweHost\_oplijstingSubnets.png}
     \caption{Oplijsting Subnetnamen}
     \label{fig:netadmin_NieuweHost_oplijstingSubnets}
 \end{figure}
 \begin{figure}[H]
-    \includegraphics[width=15cm]{netadmin_NieuweHost_Foutmelding.png}
+    \includegraphics[width=15cm]{netadmin\_NieuweHost\_Foutmelding.png}
     \caption{Hostnaam foutmelding}
     \label{fig:netadmin_NieuweHost_Foutmelding}
 \end{figure}
 \begin{figure}[H]
-    \includegraphics[width=15cm]{netadmin_NieuweHost_SuccessRequest.png}
+    \includegraphics[width=15cm]{netadmin\_NieuweHost\_SuccessRequest.png}
     \caption{Succesvolle registratie}
     \label{fig:netadmin_NieuweHost_SuccessRequest}
 \end{figure}
 \subsection{Back-end}
-Voor het ophalen van de subnetten op basis van FI-code is het python-script \textit{getSubnets.py} geschreven. Ook dit script schrijft een log weg, controleert de meegegeven argumenten op aantallen en leest het configuratiebestand op de webserver uit waarin onder andere de inloggegevens voor EfficientIP staan. Dit script accepteert twee argumenten: campus en gebouw. Op basis van een JSON-bestand waarin alle campussen en gebouwen en de daarbij horende FI-codes staan, wordt de juiste FI-code opgehaald. JSON (JavaScript Object Notation) is een lichtgewicht dataformaat dat gemakkelijk leesbaar is voor mensen en eenvoudig te parsen en te genereren is door machines. Daarna zal het script via een API-call alle subnetten die tot deze FI-code behoren, ophalen binnen EfficientIP. Voor elk subnet in de resultaten wordt de volgende informatie weggeschreven naar de output van het script:
+Voor het ophalen van de subnetten op basis van FI-code is het python-script \\\textit{getSubnets.py} geschreven. Ook dit script schrijft een log weg, controleert de meegegeven argumenten op aantallen en leest het configuratiebestand op de webserver uit waarin onder andere de inloggegevens voor EfficientIP staan. Dit script accepteert twee argumenten: campus en gebouw. Op basis van een JSON-bestand waarin alle campussen en gebouwen en de daarbij horende FI-codes staan, wordt de juiste FI-code opgehaald. JSON (JavaScript Object Notation) is een lichtgewicht dataformaat dat gemakkelijk leesbaar is voor mensen en eenvoudig te parsen en te genereren is door machines. Daarna zal het script via een API-oproep alle subnetten die tot deze FI-code behoren, ophalen binnen EfficientIP. Voor elk subnet in de resultaten wordt de volgende informatie weggeschreven naar de output van het script:
 \begin{itemize}
     \item \textbf{Name}: Naam van het subnet.
     \item \textbf{Mask}: Netwerkmasker van het subnet, hiervoor wordt een vertaling gedaan van de subnet grootte naar het netwerkmasker.
@@ -142,20 +142,20 @@ Netwerkbeheerders zullen hier registraties kunnen aanpassen, goedkeuren, afkeure
 \subsection{Back-end}
 Bij het laden van de aanvragen-pagina krijgen alle registraties die nog geen IP-adres in de database hebben, een IP-adres toegewezen voor het subnet waarin de registratie zich bevindt.
 Netwerkbeheerders kunnen via een knop op deze pagina IP-adressen ophalen voor elke nieuwe registratie die nog geen IP-adres bevat.
-Hiervoor wordt het python-script \textit{getAvailableIP.py} gebruikt. Dit script accepteert twee argumenten: het subnet-ID en dot1x. Dit is allebei info die wordt meegegeven bij het ophalen van elk subnet (zie back-end in sectie \ref{nieuwe-registratie}). Nadat de logging is ingesteld, het configuratiebestand inclusief de inloggegevens van EfficientIP en MySQL zijn gelezen en de argumenten zijn gecontroleerd, wordt er een API-call gemaakt naar EfficientIP op basis van het meegegeven subnetID. Als er geen beschikbare IP-adressen zijn, wordt dit gelogd en krijgt de netwerkbeheerder een melding dat die het subnet moet opschonen.
+Hiervoor wordt het python-script \textit{getAvailableIP.py} gebruikt. Dit script accepteert twee argumenten: het subnet-ID en dot1x. Dit is allebei info die wordt meegegeven bij het ophalen van elk subnet (zie back-end in sectie \ref{nieuwe-registratie}). Nadat de logging is ingesteld, het configuratiebestand inclusief de inloggegevens van EfficientIP en MySQL zijn gelezen en de argumenten zijn gecontroleerd, wordt er een API-oproep gemaakt naar EfficientIP op basis van het meegegeven subnetID. Als er geen beschikbare IP-adressen zijn, wordt dit gelogd en krijgt de netwerkbeheerder een melding dat die het subnet moet opschonen.
 Indien er wel vrije IP-adressen in het subnet beschikbaar zijn, wordt er nagekeken of het IP-adres in een pool zit, wat voor pool dit is, of dot1x actief is en of het IP-adres al in gebruik is door een andere registratie en dus reeds is toegewezen in de MySQL tabel new\_hosts. Het script geeft tenslotte een lijst van beschikbare IP-adressen als output voor de front-end.
 
 \section{Wijzigingen verwerken}
 \label{wijzigingen-verwerken}
 Er worden eveneens drie scripts geschreven die op de webserver geplaatst zullen worden en die periodiek zullen draaien.
-Deze drie python-scripts zijn \textit{processNewHosts.py}, \textit{processChangeHosts.py} en \textit{processDeleteHosts.py}.
+Deze drie python-scripts zijn \\\textit{processNewHosts.py}, \textit{processChangeHosts.py} en \textit{processDeleteHosts.py}.
 
 In tegenstelling tot de voorgaande scripts worden er geen argumenten meegegeven, deze scripts zetten logging op, lezen het configuratiebestand met onder andere de inloggegevens van EfficientIP uit en beginnen elk met het verwerken van alle goedgekeurde, onverwerkte registraties in de tabel die daarvoor voorzien is. Bijvoorbeeld processNewHosts.py kijkt in de database enkel naar de tabel new\_hosts.
-Alle URL's die nodig zijn om de host aan te maken, te wijzigen of te verwijderen via een API-call worden per host in een lijst geplaatst.
+Alle URL's die nodig zijn om de host aan te maken, te wijzigen of te verwijderen via een API-oproep worden per host in een lijst geplaatst.
 Nadat alle URL's gemaakt zijn, wordt geteld hoeveel dit er zijn, en wordt gekeken of deze boven een bepaald getal uitkomen.
-Dit getal is een zogenaamde \textit{fail-safe}. Indien er teveel URL's zijn, is er iets foutgelopen en wordt dit gelogd, en worden er dus geen API-calls gemaakt naar EfficientIP.
+Dit getal is een zogenaamde \textit{fail-safe}. Indien er teveel URL's zijn, is er iets foutgelopen en wordt dit gelogd, en worden er dus geen API-oproepen gemaakt naar EfficientIP.
 Als de fail-safe niet afgaat, worden alle URL's per hostregistratie afgegaan en naar EfficientIP verzonden. 
-Indien elke call voor een registatie succesvol verloopt (dit weet het script op basis van het antwoord van EfficientIP), zal het script contact maken met de MySQL database en de waarde aanpassen om aan te geven dat de registratie verwerkt is.
+Indien elke API-oproep voor een registatie succesvol verloopt (dit weet het script op basis van het antwoord van EfficientIP), zal het script contact maken met de MySQL database en de waarde aanpassen om aan te geven dat de registratie verwerkt is.
 
 
 
